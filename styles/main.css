@@ -2186,15 +2186,15 @@ body {
     }.box-shadow-wrapper {
       box-shadow: none !important;
     }body {
-      cursor: default;
+      cursor: url('https://cdn.jsdelivr.net/gh/githubyxymeng/yxymeng.github.io@master/media/curs/default_normal.cur'), default;
     }a {
-      cursor: pointer;
+      cursor: url('https://cdn.jsdelivr.net/gh/githubyxymeng/yxymeng.github.io@master/media/curs/default_link.cur'), pointer !important;
     }input, textarea, code {
-      cursor: text;
+      cursor: url('https://cdn.jsdelivr.net/gh/githubyxymeng/yxymeng.github.io@master/media/curs/default_texto.cur'), text !important;
     }code > span.copy-code {
-      cursor: pointer;
+      cursor: url('https://cdn.jsdelivr.net/gh/githubyxymeng/yxymeng.github.io@master/media/curs/Escritura a Mano.cur'), text !important;
     }.post img {
-      cursor: zoom-in;
+      cursor: url('https://cdn.jsdelivr.net/gh/githubyxymeng/yxymeng.github.io@master/media/curs/precision.cur'), zoom-in !important;
     }.post img {
       cursor: zoom-out;
     }
