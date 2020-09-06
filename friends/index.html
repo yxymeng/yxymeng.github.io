@@ -9,7 +9,7 @@
 <meta name="description" content="Hi,欢迎所有温柔的人们">
 <meta name="theme-color" content="#000">
 <title>颜笑一梦</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1599377399059">
+<link rel="shortcut icon" href="/favicon.ico?v=1599379104929">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -272,6 +272,27 @@
             </div>
             
   
+    
+      <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: '935f01998d338c268b4b',
+    clientSecret: '79f2e4426781546f2e630f1e3abd69e4495c4ee0',
+    repo: 'yxymeng',
+    owner: 'yxymeng',
+    admin: ['yxymeng'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+  gitalk.render('gitalk-container')
+</script>
+    
+    
+  
 
           </section>
         </div>
@@ -309,7 +330,7 @@
   
 <link rel="stylesheet" href="/media/live2d/css/live2d.css" />
 <div class="box-scale">
-  <div id="landlord" style="left: 50px;bottom: 15px;"
+  <div id="landlord" style="left: 1600px;bottom: 50px;"
     data-key="">
     <canvas id="live2d" width="500" height="560" class="live2d"></canvas>
     
