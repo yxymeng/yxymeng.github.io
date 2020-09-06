@@ -2183,7 +2183,9 @@ p > code {
     }
     .mist .site-title i {
       background: #FFFFFF7f;
-    }.footer-box footer.footer .copyright {display: none;}.box-scale > #landlord {
+    }.footer-box footer.footer .copyright {display: none;}
+.site-item-rss a {color: #000000;font-size: 80%; font-weight: bold;}
+.site-item-rss i.fa {color: #000000;font-size: 80%; font-weight: bold;}.box-scale > #landlord {
       transform: scale(0.9);
     }.box-shadow-wrapper {
       box-shadow: none !important;
