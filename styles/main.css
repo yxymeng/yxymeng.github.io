@@ -2181,20 +2181,20 @@ body {
     }
     .mist .site-title i {
       background: #FFFFFFfe;
-    }footer.footer .copyright {display:none;}.box-scale > #landlord {
+    }.box-scale > #landlord {
       transform: scale(0.8);
     }.box-shadow-wrapper {
       box-shadow: none !important;
     }body {
-      cursor: url('https://cdn.jsdelivr.net/gh/githubyxymeng/yxymeng.github.io@master/media/curs/default_normal.cur'), default;
+      cursor: url('/media/curs/default_normal.cur'), default;
     }a {
-      cursor: url('https://cdn.jsdelivr.net/gh/githubyxymeng/yxymeng.github.io@master/media/curs/default_link.cur'), pointer !important;
+      cursor: url('/media/curs/default_link.cur'), pointer !important;
     }input, textarea, code {
-      cursor: url('https://cdn.jsdelivr.net/gh/githubyxymeng/yxymeng.github.io@master/media/curs/default_texto.cur'), text !important;
+      cursor: url('/media/curs/default_texto.cur'), text !important;
     }code > span.copy-code {
-      cursor: url('https://cdn.jsdelivr.net/gh/githubyxymeng/yxymeng.github.io@master/media/curs/Escritura a Mano.cur'), text !important;
+      cursor: url('/media/curs/Escritura a Mano.cur'), text !important;
     }.post img {
-      cursor: url('https://cdn.jsdelivr.net/gh/githubyxymeng/yxymeng.github.io@master/media/curs/precision.cur'), zoom-in !important;
+      cursor: url('/media/curs/precision.cur'), zoom-in !important;
     }.post img {
       cursor: zoom-out;
     }
