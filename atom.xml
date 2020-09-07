@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://yxymeng.github.io</id>
+    <id>https://yxymeng.site</id>
     <title>颜笑一梦</title>
-    <updated>2020-09-06T17:11:12.345Z</updated>
+    <updated>2020-09-07T08:38:15.978Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://yxymeng.github.io"/>
-    <link rel="self" href="https://yxymeng.github.io/atom.xml"/>
+    <link rel="alternate" href="https://yxymeng.site"/>
+    <link rel="self" href="https://yxymeng.site/atom.xml"/>
     <subtitle>Hi,欢迎所有温柔的人们</subtitle>
-    <logo>https://yxymeng.github.io/images/avatar.png</logo>
-    <icon>https://yxymeng.github.io/favicon.ico</icon>
+    <logo>https://yxymeng.site/images/avatar.png</logo>
+    <icon>https://yxymeng.site/favicon.ico</icon>
     <rights>All rights reserved 2020, 颜笑一梦</rights>
 </feed>
