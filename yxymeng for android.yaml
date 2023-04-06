@@ -49,7 +49,7 @@ proxy-providers:
     v2free:
         type: http
         path: ./hk.yaml
-        url: https://v1.v2free.top/link/cEqeg9UVOxWVtjIM?list=clash
+        url: https://v1.v2free.top/link/
         interval: 86400
         filter: ^[^游戏]*$
         health-check:
@@ -60,7 +60,7 @@ proxy-providers:
     Steam:
         type: http
         path: ./hk.yaml
-        url: https://v1.v2free.top/link/cEqeg9UVOxWVtjIM?list=clash
+        url: https://v1.v2free.top/link/
         interval: 86400
         filter: 土耳其
         health-check:
