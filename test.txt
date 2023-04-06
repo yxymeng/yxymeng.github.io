@@ -1,3 +1,0 @@
-payload:
-  - PROCESS-NAME,v2ray
-  - DOMAIN-NAME,google
