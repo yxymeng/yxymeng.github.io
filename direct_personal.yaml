@@ -16,7 +16,7 @@ payload:
   - DOMAIN-KEYWORD,1b2a.net
   - DOMAIN-KEYWORD,zmk
   - DOMAIN-KEYWORD,zimuku
-  - DOMAIN-KEYWORD,huya.com
+  - DOMAIN-SUFFIX,huya.com:443
   - DOMAIN-KEYWORD,kisssub   #樱花动漫
   - DOMAIN-KEYWORD,btnull
   - DOMAIN-KEYWORD,pianyuan
