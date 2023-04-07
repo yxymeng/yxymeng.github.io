@@ -1,6 +1,21 @@
 payload:
+
+  #EPIC游戏商城
   - PROCESS-NAME,EpicGamesLauncher.exe
   - PROCESS-NAME,EpicWebHelper.exe
   - PROCESS-NAME,UnrealEngineLauncher.exe
+  - PROCESS-NAME,UnrealVersionSelector.exe
   - DOMAIN-KEYWORD,epic
   - DOMAIN-KEYWORD,unrealengine
+
+  #一些用到的网址
+  - DOMAIN-KEYWORD,geosite
+  - DOMAIN-KEYWORD,subhd
+  - DOMAIN-KEYWORD,v2free
+  - DOMAIN-KEYWORD,huo720
+  - DOMAIN-KEYWORD,zmk
+  - DOMAIN-KEYWORD,zimuku
+  - DOMAIN-KEYWORD,huya
+  - DOMAIN-KEYWORD,kisssub   #樱花动漫
+  - DOMAIN-KEYWORD,btnull
+  - DOMAIN-KEYWORD,pianyuan
