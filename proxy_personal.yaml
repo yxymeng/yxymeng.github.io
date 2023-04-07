@@ -1,4 +1,3 @@
 payload:
-  - PROCESS-NAME,steam.exe
-  - PROCESS-NAME,steamwebhelper.exe
-  - DOMAIN-KEYWORD,steam
+  #禁漫天堂
+  - DOMAIN-KEYWORD,cambiaip
