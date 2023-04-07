@@ -1,1 +1,6 @@
-
+payload:
+  - PROCESS-NAME,EpicGamesLauncher.exe
+  - PROCESS-NAME,EpicWebHelper.exe
+  - PROCESS-NAME,UnrealEngineLauncher.exe
+  - DOMAIN-KEYWORD,epic
+  - DOMAIN-KEYWORD,unrealengine
