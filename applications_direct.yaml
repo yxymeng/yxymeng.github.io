@@ -62,3 +62,5 @@ payload:
   - PROCESS-NAME,EpicWebHelper.exe
   - PROCESS-NAME,UnrealEngineLauncher.exe
   - PROCESS-NAME,UnrealVersionSelector.exe
+  - PROCESS-NAME,LootHoarder.exe         #永杰无间
+  - PROCESS-NAME,NarakaBladepoint.exe    #永杰无间
