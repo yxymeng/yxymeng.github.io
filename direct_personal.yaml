@@ -14,11 +14,11 @@ payload:
     #MATCH：全匹配
     
   #EPIC游戏商城
-  - PROCESS-NAME,EpicGamesLauncher.exe
-  - PROCESS-NAME,EpicWebHelper.exe
-  - PROCESS-NAME,UnrealEngineLauncher.exe
-  - PROCESS-NAME,UnrealVersionSelector.exe
-  - DOMAIN-KEYWORD,epic
+  - DOMAIN-SUFFIX,epicgames.com
+  - DOMAIN-SUFFIX,epicgames.dev
+  - DOMAIN-SUFFIX,helpshift.com
+  - DOMAIN-SUFFIX,paragon.com
+  - DOMAIN-SUFFIX,unrealengine.com
   - DOMAIN-KEYWORD,unrealengine
 
   #一些用到的网址
