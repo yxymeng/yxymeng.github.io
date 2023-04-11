@@ -52,3 +52,13 @@ payload:
   - PROCESS-NAME,WeChat.exe
   - PROCESS-NAME,QQ.exe
   - PROCESS-NAME,aegisub32.exe
+  - PROCESS-NAME,baidunetdisk.exe
+  - PROCESS-NAME,baidunetdiskhost.exe
+  - PROCESS-NAME,IDMan.exe
+  - PROCESS-NAME,QQMusic.exe
+  - PROCESS-NAME,vmware.exe
+  #游戏
+  - PROCESS-NAME,EpicGamesLauncher.exe
+  - PROCESS-NAME,EpicWebHelper.exe
+  - PROCESS-NAME,UnrealEngineLauncher.exe
+  - PROCESS-NAME,UnrealVersionSelector.exe
