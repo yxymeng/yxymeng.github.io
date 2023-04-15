@@ -49,19 +49,12 @@ payload:
   - PROCESS-NAME,MsMpEng.exe
   - PROCESS-NAME,Cinebench.exe
   #常用
-  #- PROCESS-NAME,WeChat.exe
-  #- PROCESS-NAME,QQ.exe
-  #- PROCESS-NAME,aegisub32.exe
-  #- PROCESS-NAME,baidunetdisk.exe
-  #- PROCESS-NAME,baidunetdiskhost.exe
+
   - PROCESS-NAME,IDMan.exe
   #- PROCESS-NAME,QQMusic.exe
-  - PROCESS-NAME,vmware.exe
+
   #游戏
   - PROCESS-NAME,EpicGamesLauncher.exe
   - PROCESS-NAME,EpicWebHelper.exe
   - PROCESS-NAME,UnrealEngineLauncher.exe
   - PROCESS-NAME,UnrealVersionSelector.exe
-  #- PROCESS-NAME,LootHoarder.exe         #永杰无间
-  #- PROCESS-NAME,NarakaBladepoint.exe    #永杰无间
-  #- PROCESS-NAME,NeacClient.exe          #永杰无间
