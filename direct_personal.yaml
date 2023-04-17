@@ -35,3 +35,5 @@ payload:
   - DOMAIN-KEYWORD,xiaoheihe
   - DOMAIN-KEYWORD,bing
   - DOMAIN-SUFFIX,115.com
+  - DOMAIN,login.live.com
+  - DOMAIN,account.live.com
