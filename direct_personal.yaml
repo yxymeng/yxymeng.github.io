@@ -37,3 +37,4 @@ payload:
   - DOMAIN-SUFFIX,115.com
   - DOMAIN,login.live.com     #微软登录
   - DOMAIN,account.live.com     #微软登录
+  - DOMAIN-SUFFIX,steamdb.info
