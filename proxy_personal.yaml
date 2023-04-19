@@ -9,3 +9,4 @@ payload:
   - DOMAIN-SUFFIX,forzamotorsport.net  #地平线官网
   - DOMAIN-KEYWORD,patreon
   - PROCESS-NAME,Paradox Launcher.exe    #城市天际线启动器
+  - PROCESS-NAME,ForzaHorizon4.exe    #地平线4
