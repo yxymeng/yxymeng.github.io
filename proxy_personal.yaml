@@ -5,8 +5,8 @@ payload:
   - DOMAIN-SUFFIX,bulianglin.com
   - DOMAIN-SUFFIX,hanime1.me
   - DOMAIN-KEYWORD,potplayer
-  - DOMAIN-SUFFIX,forza.net  #极速竞技地平线
-  - DOMAIN-SUFFIX,forzamotorsport.net  #地平线官网
-  - PROCESS-NAME,ForzaHorizon4.exe    #地平线4
+  - DOMAIN-SUFFIX,forza.net              #极速竞技地平线
+  - DOMAIN-SUFFIX,forzamotorsport.net    #地平线官网
+  - PROCESS-NAME,ForzaHorizon4.exe       #极速竞技地平线4
   - DOMAIN-KEYWORD,patreon
   - PROCESS-NAME,Paradox Launcher.exe    #城市天际线启动器
