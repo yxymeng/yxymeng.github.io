@@ -23,19 +23,24 @@ payload:
 
   #一些用到的网址
   - DOMAIN-KEYWORD,geosite
-  - DOMAIN-KEYWORD,subhd
+  - DOMAIN-SUFFIX,subhd.tv             #字幕平台
+  - DOMAIN-SUFFIX,assrt.net            #射手字幕网
+  - DOMAIN-SUFFIX,opensubtitles.org    #字幕网
   - DOMAIN-KEYWORD,v2free
   - DOMAIN-KEYWORD,huo720
   - DOMAIN-KEYWORD,1b2a.net
   - DOMAIN-KEYWORD,zmk
   - DOMAIN-KEYWORD,zimuku
-  - DOMAIN-KEYWORD,kisssub   #樱花动漫
-  - DOMAIN-SUFFIX,mcdm7.com  #樱花动漫
+  - DOMAIN-SUFFIX,kisssub.org       #爱恋动漫
+  - DOMAIN-SUFFIX,mcdm7.com         #樱花动漫
+  - DOMAIN-SUFFIX,yinghuacd.com     #樱花动漫
+  - DOMAIN-SUFFIX,sbsub.com         #银色子弹字幕组
+  - DOMAIN-SUFFIX,rottentomatoes.com  #烂番茄
   - DOMAIN-KEYWORD,btnull
-  - DOMAIN-KEYWORD,pianyuan
+  - DOMAIN-SUFFIX,pianyuan.org      #片源网
   - DOMAIN-KEYWORD,xiaoheihe
   - DOMAIN-KEYWORD,bing
   - DOMAIN-SUFFIX,115.com
-  - DOMAIN,login.live.com     #微软登录
-  - DOMAIN,account.live.com     #微软登录
+  - DOMAIN,login.live.com           #微软登录
+  - DOMAIN,account.live.com         #微软登录
   - DOMAIN-SUFFIX,steamdb.info
