@@ -45,3 +45,4 @@ payload:
   - DOMAIN,account.live.com         #微软登录
   - DOMAIN-SUFFIX,steamdb.info
   - DOMAIN-SUFFIX,snapdrop.net
+  - DOMAIN-SUFFIX,nexusmods.com     #游戏mod
