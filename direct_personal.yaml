@@ -46,3 +46,4 @@ payload:
   - DOMAIN-SUFFIX,steamdb.info
   - DOMAIN-SUFFIX,snapdrop.net
   - DOMAIN-SUFFIX,nexusmods.com     #游戏mod
+  - DOMAIN,sms-activate.org
