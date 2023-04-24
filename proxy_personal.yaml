@@ -1,7 +1,6 @@
 payload:
 
-  #禁漫天堂
-  - DOMAIN-KEYWORD,18comic
+  - DOMAIN-KEYWORD,18comic               #禁漫天堂
   
   - DOMAIN-SUFFIX,bulianglin.com
   - DOMAIN-SUFFIX,hanime1.me
