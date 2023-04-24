@@ -48,4 +48,4 @@ payload:
   - DOMAIN-SUFFIX,nexusmods.com     #游戏mod
   - DOMAIN,sms-activate.org
   - DOMAIN-SUFFIX,greasyfork.org    #油猴脚本
-  - DOMAIN-SUFFIX,tampermonkey.net  #篡改猴插件
+  - DOMAIN-KEYWORD,tampermonkey  #篡改猴插件
