@@ -52,3 +52,4 @@ payload:
   - DOMAIN-SUFFIX,msn.com           #EDGE手机启动界面
   - DOMAIN-SUFFIX,img-s-msn-com.akamaized.net #EDGE手机启动
   - DOMAIN-SUFFIX,appcenter.com     #edge手机启动
+  - DOMAIN-SUFFIX,skype.com         #微软即时通讯app
