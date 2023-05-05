@@ -15,3 +15,4 @@ payload:
   - DOMAIN-SUFFIX,rutracker.org          #俄罗斯游戏破解网址
   - DOMAIN-SUFFIX,nexusmods.com          #游戏mod
   - DOMAIN-SUFFIX,aqxaromods.com         #游戏mod
+  - DOMAIN-SUFFIX,wbgames.com
