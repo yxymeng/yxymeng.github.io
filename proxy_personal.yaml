@@ -18,3 +18,4 @@ payload:
   - DOMAIN-SUFFIX,wbgames.com
   - DOMAIN-SUFFIX,fanbox.cc              #pixiv
   - DOMAIN-SUFFIX,eldenring.com
+  - DOMAIN-SUFFIX,twitter.com
