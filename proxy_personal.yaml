@@ -20,3 +20,4 @@ payload:
   - DOMAIN-SUFFIX,howlongtobeat.com      #收集玩家通关游戏时长的网站
   - DOMAIN-SUFFIX,ign.com                #IGN
   - DOMAIN-SUFFIX,ignimgs.com
+  - DOMAIN-SUFFIX,deepl.com
