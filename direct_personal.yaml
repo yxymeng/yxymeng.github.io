@@ -39,7 +39,7 @@ payload:
   - DOMAIN-KEYWORD,btnull
   - DOMAIN-SUFFIX,pianyuan.org      #片源网
   - DOMAIN-KEYWORD,xiaoheihe
-  - DOMAIN-KEYWORD,bing
+  #- DOMAIN-KEYWORD,bing
   - DOMAIN-SUFFIX,115.com
   - DOMAIN,login.live.com           #微软登录
   - DOMAIN,account.live.com         #微软登录
