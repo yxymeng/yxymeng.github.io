@@ -22,3 +22,4 @@ payload:
   - DOMAIN-SUFFIX,ign.com                #IGN
   - DOMAIN-SUFFIX,ignimgs.com
   - DOMAIN-SUFFIX,deepl.com
+  - DOMAIN-SUFFIX,zmk.pw
