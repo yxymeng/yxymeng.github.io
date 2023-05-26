@@ -24,3 +24,4 @@ payload:
   - DOMAIN-SUFFIX,deepl.com
   - DOMAIN-SUFFIX,zmk.pw
   - DOMAIN-SUFFIX,python.org
+  - PROCESS-NAME,Python.exe 
