@@ -25,3 +25,4 @@ payload:
   - DOMAIN-SUFFIX,zmk.pw
   - DOMAIN-SUFFIX,python.org
   - PROCESS-NAME,Python.exe 
+  - DOMAIN-KEYWORD,lib-
