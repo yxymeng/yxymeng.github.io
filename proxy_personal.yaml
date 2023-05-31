@@ -26,3 +26,4 @@ payload:
   - DOMAIN-SUFFIX,python.org
   - PROCESS-NAME,Python.exe 
   - DOMAIN-KEYWORD,lib-
+  - DOMAIN-SUFFIX,vercel.com
