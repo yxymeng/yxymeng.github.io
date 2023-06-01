@@ -23,7 +23,6 @@ payload:
   - DOMAIN-SUFFIX,ignimgs.com
   - DOMAIN-SUFFIX,deepl.com
   - DOMAIN-SUFFIX,zmk.pw
-  - DOMAIN-SUFFIX,python.org
-  - PROCESS-NAME,Python.exe 
+  - DOMAIN-KEYWORD,python
   - DOMAIN-KEYWORD,lib-
   - DOMAIN-SUFFIX,vercel.com
