@@ -26,3 +26,4 @@ payload:
   - DOMAIN-KEYWORD,python
   - DOMAIN-KEYWORD,lib-
   - DOMAIN-SUFFIX,vercel.com
+  - DOMAIN-SUFFIX,railway.app
