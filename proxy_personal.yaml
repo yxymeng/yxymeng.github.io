@@ -27,3 +27,4 @@ payload:
   - DOMAIN-KEYWORD,lib-
   - DOMAIN-SUFFIX,vercel.com
   - DOMAIN-SUFFIX,railway.app
+  - DOMAIN-SUFFIX,langchain.com
