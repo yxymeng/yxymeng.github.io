@@ -30,6 +30,6 @@ payload:
   - DOMAIN-SUFFIX,langchain.com
   - DOMAIN-SUFFIX,livesexhouse.com
   - DOMAIN-SUFFIX,yohohongkong.com
-  - DOMAIN-SUFFIX,api.steampowered.com
-  - DOMAIN-SUFFIX,steamcommunity.com
+ # - DOMAIN-SUFFIX,api.steampowered.com
+
   - DOMAIN-SUFFIX,threads.net
