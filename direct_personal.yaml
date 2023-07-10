@@ -20,7 +20,25 @@ payload:
   - DOMAIN-SUFFIX,paragon.com
   - DOMAIN-SUFFIX,unrealengine.com
   - DOMAIN-KEYWORD,unrealengine
-
+  # 内容：GameDownload
+  # 数量：20条
+  - DOMAIN,ssl-lvlt.cdn.ea.com
+  - DOMAIN,origin-a.akamaihd.net
+  - DOMAIN,uplaypc-s-ubisoft.cdn.ubionline.com.cn
+  - DOMAIN,gamedownloads-rockstargames-com.akamaized.net
+  - DOMAIN,gog-cdn-lumen.secure2.footprint.net
+  - DOMAIN,download.cdp.bethesda.net
+  - DOMAIN,download.hikarifield.co.jp
+  - DOMAIN,client.hikarifield.co.jp
+  - DOMAIN,epicgames-download1.akamaized.net
+  - DOMAIN,packagespc.xboxlive.com
+  - DOMAIN,xvcf1.xboxlive.com
+  - DOMAIN,xvcf2.xboxlive.com
+  - DOMAIN,assets1.xboxlive.com
+  - DOMAIN,assets2.xboxlive.com
+  - DOMAIN-SUFFIX,dyn.riotcdn.net
+  - DOMAIN-SUFFIX,cdn.ubi.com
+  
   #一些用到的网址
   - DOMAIN-KEYWORD,geosite
   - DOMAIN-SUFFIX,subhd.tv             #字幕平台
