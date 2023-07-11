@@ -32,7 +32,7 @@ payload:
   - DOMAIN-SUFFIX,yohohongkong.com
 
 ###Threads app
-  - DOMAIN-SUFFIX,threads.net
-  - DOMAIN-KEYWORD,instagram
-  - DOMAIN-KEYWORD,facebook
-  - DOMAIN-SUFFIX,fbcdn.net
+  #- DOMAIN-SUFFIX,threads.net
+  #- DOMAIN-KEYWORD,instagram
+  #- DOMAIN-KEYWORD,facebook
+  #- DOMAIN-SUFFIX,fbcdn.net
