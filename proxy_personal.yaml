@@ -32,3 +32,4 @@ payload:
   - DOMAIN-SUFFIX,yohohongkong.com
   - DOMAIN-SUFFIX,bethesda.net
   - PROCESS-NAME,PotPlayerMini64.exe
+  - DOMAIN-SUFFIX,dealabs.com
