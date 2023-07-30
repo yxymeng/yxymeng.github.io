@@ -107,7 +107,6 @@ parsers: # array
         - RULE-SET,MyDirect,DIRECT
         - RULE-SET,Openai,🤖 openAI
         - RULE-SET,bing,🔍 Bing
-
         - DOMAIN-SUFFIX,messenger.live.com,🔍 Bing
         - DOMAIN,login.live.com,🔍 Bing           #微软登录
         - DOMAIN,account.live.com,🔍 Bing         #微软登录
@@ -115,6 +114,7 @@ parsers: # array
         
         # 白名单
         - RULE-SET,UnBan,DIRECT
+        
         # 广告
         - RULE-SET,BanAD,💩 ‍广告
         - RULE-SET,BanEasyListChina,💩 ‍广告
@@ -147,26 +147,34 @@ parsers: # array
         - RULE-SET,Nintendo,✈️ ‍起飞
         - RULE-SET,Origin,✈️ ‍起飞
         - RULE-SET,Sony,DIRECT
+        
         # 媒体
         - RULE-SET,ChinaMedia,DIRECT
         - RULE-SET,ProxyMedia,✈️ ‍起飞
         - RULE-SET,YouTube,✈️ ‍起飞
+        
         # 开发
         - RULE-SET,Developer,✈️ ‍起飞
+        
         # 18
         - RULE-SET,EHGallery,✈️ ‍起飞
         - RULE-SET,Porn,✈️ ‍起飞
+        - DOMAIN-SUFFIX,hanime1.me,🇨🇳 港台
+        
         # 学术
         - RULE-SET,Scholar,✈️ ‍起飞
+        
         # GFW
         - RULE-SET,ProxyGFWlist,✈️ ‍起飞
+        
         # 国内
         - RULE-SET,ChinaCompanyIp,DIRECT
         - RULE-SET,ChinaDomain,DIRECT
         - RULE-SET,ChinaIp,DIRECT
+        
         # 本地
-        #- RULE-SET,Download,DIRECT
         - RULE-SET,LocalAreaNetwork,DIRECT
+        
         # 其他
         - RULE-SET,Adobe,✈️ ‍起飞
         - RULE-SET,Google,✈️ ‍起飞
@@ -174,7 +182,6 @@ parsers: # array
         - RULE-SET,Microsoft,DIRECT
         - RULE-SET,OneDrive,✈️ ‍起飞
         - RULE-SET,Telegram,✈️ ‍起飞
-        - DOMAIN-SUFFIX,hanime1.me,🇨🇳 港台
 
         - MATCH,🐟 漏网之鱼
 
@@ -184,14 +191,14 @@ parsers: # array
         MyProxies:
           type: http
           behavior: classical
-          url: "https://raw.staticdn.net/yxymeng/yxymeng.github.io/master/proxy_personal.yaml"
+          url: "https://raw.staticdn.net/yxymeng/yxymeng.github.io/master/proxy_personal.list"
           path: ./ruleset/MyProxies.yaml
           interval: 36000
 
         MyDirect:
           type: http
           behavior: classical
-          url: "https://raw.staticdn.net/yxymeng/yxymeng.github.io/master/direct_personal.yaml"
+          url: "https://raw.staticdn.net/yxymeng/yxymeng.github.io/master/direct_personal.list"
           path: ./ruleset/MyDirect.yaml
           interval: 36000
 
