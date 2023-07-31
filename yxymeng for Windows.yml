@@ -111,7 +111,17 @@ parsers: # array
         - DOMAIN,login.live.com,🔍 Bing           #微软登录
         - DOMAIN,account.live.com,🔍 Bing         #微软登录
         - DOMAIN,storage.live.com,🔍 Bing         #微软登录
-        
+        - DOMAIN-KEYWORD,tiktokcdn,🇺🇸 美国         #TIKTOK
+        - DOMAIN-SUFFIX,byteoversea.com,🇺🇸 美国
+        - DOMAIN-SUFFIX,ibytedtos.com,🇺🇸 美国
+        - DOMAIN-SUFFIX,ipstatp.com,🇺🇸 美国
+        - DOMAIN-SUFFIX,muscdn.com,🇺🇸 美国
+        - DOMAIN-SUFFIX,musical.ly,🇺🇸 美国
+        - DOMAIN-SUFFIX,tik-tokapi.com,🇺🇸 美国
+        - DOMAIN-SUFFIX,tiktok.com,🇺🇸 美国
+        - DOMAIN-SUFFIX,tiktokcdn.com,🇺🇸 美国
+        - DOMAIN-SUFFIX,tiktokv.com,🇺🇸 美国
+
         # 白名单
         - RULE-SET,UnBan,DIRECT
         
