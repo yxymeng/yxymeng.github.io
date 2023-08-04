@@ -33,3 +33,4 @@ payload:
   - DOMAIN-SUFFIX,bethesda.net
   - PROCESS-NAME,PotPlayerMini64.exe
   - DOMAIN-SUFFIX,dealabs.com
+  - DOMAIN-SUFFIX,civitai.com    #AI绘画模型
