@@ -34,3 +34,4 @@ payload:
   - PROCESS-NAME,PotPlayerMini64.exe
   - DOMAIN-SUFFIX,dealabs.com
   - DOMAIN-SUFFIX,civitai.com    #AI绘画模型
+  - DOMAIN-SUFFIX,convertio.co   #WEBP转换器
