@@ -35,3 +35,4 @@ payload:
   - DOMAIN-SUFFIX,dealabs.com
   - DOMAIN-SUFFIX,civitai.com    #AI绘画模型
   - DOMAIN-SUFFIX,convertio.co   #WEBP转换器
+  - PROCESS-NAME,Code.exe         #vscode代码编辑器
