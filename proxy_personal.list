@@ -5,6 +5,7 @@ payload:
   - DOMAIN-SUFFIX,njav.tv
   - DOMAIN-SUFFIX,javcdn.info
   - DOMAIN-SUFFIX,thedayweplay.lol
+  - DOMAIN-SUFFIX,javplayer.me
 
   - DOMAIN-SUFFIX,bulianglin.com
   - DOMAIN-SUFFIX,forza.net              #极速竞技地平线
