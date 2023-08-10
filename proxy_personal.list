@@ -2,7 +2,9 @@ payload:
 
   - DOMAIN-KEYWORD,18comic               #禁漫天堂
   - DOMAIN-KEYWORD,javday
-  
+  - DOMAIN-SUFFIX,njav.tv
+  - DOMAIN-SUFFIX,javcdn.info
+
   - DOMAIN-SUFFIX,bulianglin.com
   - DOMAIN-SUFFIX,forza.net              #极速竞技地平线
   - DOMAIN-SUFFIX,forzamotorsport.net    #地平线官网
