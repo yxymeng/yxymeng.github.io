@@ -1,6 +1,7 @@
 payload:
 
   - DOMAIN-KEYWORD,18comic               #禁漫天堂
+  - DOMAIN-SUFFIX,javday.tv
   
   - DOMAIN-SUFFIX,bulianglin.com
   - DOMAIN-SUFFIX,forza.net              #极速竞技地平线
