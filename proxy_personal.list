@@ -44,3 +44,4 @@ payload:
   - PROCESS-NAME,Code.exe         #vscode代码编辑器
   - DOMAIN-SUFFIX,linktr.ee
   - DOMAIN-SUFFIX,clipconverter.cc
+  - DOMAIN-KEYWORD,gamescom
