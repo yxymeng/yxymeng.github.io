@@ -43,3 +43,4 @@ payload:
   - DOMAIN-SUFFIX,convertio.co   #WEBP转换器
   - PROCESS-NAME,Code.exe         #vscode代码编辑器
   - DOMAIN-SUFFIX,linktr.ee
+  - DOMAIN-SUFFIX,clipconverter.cc
