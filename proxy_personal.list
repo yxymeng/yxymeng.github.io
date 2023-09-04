@@ -47,3 +47,6 @@ payload:
   - DOMAIN-SUFFIX,gamespot.com
   - DOMAIN-KEYWORD,gamescom
   - DOMAIN-SUFFIX,metacritic.com
+  - DOMAIN-SUFFIX,tgx.rs  #
+  - DOMAIN-SUFFIX,tgx.sb  #
+  - DOMAIN,proxygalaxy.me  #替代rarbg的资源网站
