@@ -47,3 +47,7 @@ payload:
   - DOMAIN-SUFFIX,gamespot.com
   - DOMAIN-KEYWORD,gamescom
   - DOMAIN-SUFFIX,metacritic.com
+
+  - DOMAIN-SUFFIX,proxygalaxy.me     #替代rarbg的种子网站
+  - DOMAIN-SUFFIX,torrentgalaxy.to
+  - DOMAIN-SUFFIX,torrentgalaxy.mx     #分站
