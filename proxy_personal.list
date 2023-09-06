@@ -50,3 +50,4 @@ payload:
   - DOMAIN-SUFFIX,tgx.rs  #
   - DOMAIN-SUFFIX,tgx.sb  #
   - DOMAIN,proxygalaxy.me  #替代rarbg的资源网站
+  - DOMAIN-SUFFIX,twcdn.xyz     #下载twitter视频
