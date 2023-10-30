@@ -1,0 +1,71 @@
+    #目前Clash支持的规则类型如下:
+    #DOMAIN-SUFFIX：域名后缀匹配
+    #DOMAIN：域名匹配
+    #DOMAIN-KEYWORD：域名关键字匹配
+    #IP-CIDR：IP段匹配
+    #SRC-IP-CIDR：源IP段匹配
+    #GEOIP：GEOIP数据库（国家代码）匹配
+    #DST-PORT：目标端口匹配
+    #SRC-PORT：源端口匹配
+    #PROCESS-NAME：源进程名匹配
+    #RULE-SET：Rule Provider规则匹配
+    #MATCH：全匹配
+    
+  #EPIC游戏商城
+#DOMAIN-SUFFIX,epicgames.com
+#DOMAIN-SUFFIX,epicgames.dev
+#DOMAIN-SUFFIX,helpshift.com
+#DOMAIN-SUFFIX,paragon.com
+#DOMAIN-SUFFIX,unrealengine.com
+#DOMAIN-KEYWORD,unrealengine
+  
+  # 内容：GameDownload
+  # 数量：20条
+DOMAIN,ssl-lvlt.cdn.ea.com
+DOMAIN,origin-a.akamaihd.net
+DOMAIN,uplaypc-s-ubisoft.cdn.ubionline.com.cn
+DOMAIN,gamedownloads-rockstargames-com.akamaized.net
+DOMAIN,gog-cdn-lumen.secure2.footprint.net
+DOMAIN,download.cdp.bethesda.net
+DOMAIN,download.hikarifield.co.jp
+DOMAIN,client.hikarifield.co.jp
+DOMAIN,epicgames-download1.akamaized.net
+DOMAIN,packagespc.xboxlive.com
+DOMAIN,xvcf1.xboxlive.com
+DOMAIN,xvcf2.xboxlive.com
+DOMAIN,assets1.xboxlive.com
+DOMAIN,assets2.xboxlive.com
+DOMAIN-SUFFIX,dyn.riotcdn.net
+DOMAIN-SUFFIX,cdn.ubi.com
+  
+  #一些用到的网址
+DOMAIN-KEYWORD,geosite
+DOMAIN-SUFFIX,subhd.tv             #字幕平台
+DOMAIN-SUFFIX,assrt.net            #射手字幕网
+DOMAIN-SUFFIX,opensubtitles.org    #字幕网
+DOMAIN-KEYWORD,v2free
+DOMAIN-KEYWORD,huo720
+DOMAIN-KEYWORD,1b2a.net
+DOMAIN-KEYWORD,zmk
+DOMAIN-KEYWORD,zimuku
+DOMAIN-SUFFIX,kisssub.org       #爱恋动漫
+DOMAIN-SUFFIX,mcdm7.com         #樱花动漫
+DOMAIN-SUFFIX,yinghuacd.com     #樱花动漫
+DOMAIN-SUFFIX,sbsub.com         #银色子弹字幕组
+DOMAIN-SUFFIX,rottentomatoes.com  #烂番茄
+DOMAIN-KEYWORD,btnull
+DOMAIN-SUFFIX,pianyuan.org      #片源网
+DOMAIN-KEYWORD,xiaoheihe
+DOMAIN-SUFFIX,115.com
+DOMAIN-SUFFIX,steamdb.info
+DOMAIN-SUFFIX,snapdrop.net
+DOMAIN,sms-activate.org
+DOMAIN-SUFFIX,greasyfork.org    #油猴脚本
+DOMAIN-SUFFIX,tampermonkey.net  #篡改猴插件
+DOMAIN-SUFFIX,msn.com           #EDGE手机启动界面
+DOMAIN-SUFFIX,img-s-msn-com.akamaized.net #EDGE手机启动
+DOMAIN-SUFFIX,appcenter.ms      #edge手机启动
+DOMAIN-SUFFIX,skype.com         #微软即时通讯app
+DOMAIN-SUFFIX,deepl.com
+DOMAIN,www.hogwartslegacy.com
+DOMAIN-SUFFIX,notion.so
