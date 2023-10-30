@@ -1,0 +1,23 @@
+payload:
+
+  - DOMAIN-SUFFIX,steam-api.com,🎮 Steam
+  - DOMAIN-KEYWORD,steammobile,🎮 Steam
+  - DOMAIN,steambroadcast.akamaized.net,🎮 Steam
+  - DOMAIN,steamcommunity-a.akamaihd.net,🎮 Steam
+  - DOMAIN,steamcdn-a.akamaihd.net,🎮 Steam
+  - DOMAIN,steampipe.akamaized.net,🎮 Steam
+  - DOMAIN,steamstore-a.akamaihd.net,🎮 Steam
+  - DOMAIN,steamusercontent-a.akamaihd.net,🎮 Steam
+  - DOMAIN,steamuserimages-a.akamaihd.net,🎮 Steam
+  - DOMAIN-SUFFIX,fanatical.com,🎮 Steam
+  - DOMAIN-SUFFIX,humblebundle.com,🎮 Steam
+  - DOMAIN-SUFFIX,playartifact.com,🎮 Steam
+  - DOMAIN-SUFFIX,steam-chat.com,🎮 Steam
+  - DOMAIN-SUFFIX,steamcommunity.com,🎮 Steam
+  - DOMAIN-SUFFIX,steamgames.com,🎮 Steam
+  - DOMAIN-SUFFIX,steampowered.com,🎮 Steam
+  - DOMAIN-SUFFIX,steamserver.net,🎮 Steam
+  - DOMAIN-SUFFIX,steamstat.us,🎮 Steam
+  - DOMAIN-SUFFIX,steamstatic.com,🎮 Steam
+  - DOMAIN-SUFFIX,underlords.com,🎮 Steam
+  - DOMAIN-SUFFIX,valvesoftware.com,🎮 Steam
