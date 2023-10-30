@@ -21,6 +21,9 @@ parsers: # array
         - name: 🎮 Steam
           type: select
 
+        - name: 🎮 Epic
+          type: select
+
         - name: 🤖 openAI
           type: select
           proxies:
@@ -100,7 +103,10 @@ parsers: # array
         - proxy-groups.🎮 Steam.proxies.0+✈️ ‍起飞 
         - proxy-groups.🎮 Steam.proxies.1+🚀 全球手动
         - proxy-groups.🎮 Steam.proxies.2+DIRECT
-
+        - proxy-groups.🎮 Epic.proxies.0+DIRECT
+        - proxy-groups.🎮 Epic.proxies.1+✈️ ‍起飞 
+        - proxy-groups.🎮 Epic.proxies.2+🚀 全球手动
+                
       prepend-rules: # 规则由上往下遍历，如上面规则已经命中，则不再往下处理
 
         - DOMAIN,clash.razord.top,DIRECT
@@ -158,6 +164,12 @@ parsers: # array
         - DOMAIN-SUFFIX,steamstatic.com,🎮 Steam
         - DOMAIN-SUFFIX,underlords.com,🎮 Steam
         - DOMAIN-SUFFIX,valvesoftware.com,🎮 Steam
+        - DOMAIN-SUFFIX,epicgames.com,🎮 Epic
+        - DOMAIN-SUFFIX,epicgames.dev,🎮 Epic
+        - DOMAIN-SUFFIX,helpshift.com,🎮 Epic
+        - DOMAIN-SUFFIX,paragon.com,🎮 Epic
+        - DOMAIN-KEYWORD,unrealengine,🎮 Epic
+  
         - RULE-SET,SteamCN,DIRECT
         - RULE-SET,Xbox,DIRECT
         - RULE-SET,Nintendo,✈️ ‍起飞
