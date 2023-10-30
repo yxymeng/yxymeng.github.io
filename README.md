@@ -1,6 +1,6 @@
 # yxymeng.github.io
 
-自己用的一个Clash for Windows的预处理配置，完全定制化的规则集、规则、策略组。原文是来自[Iridescent-me的parser分享](https://github.com/Fndroid/clash_for_windows_pkg/issues/2193)。
+自己用的一个Clash for Windows的预处理配置，完全定制化的规则集、规则、策略组。原文是来自[Iridescent-me](https://github.com/Fndroid/clash_for_windows_pkg/issues/2193)的parser分享。
 以及根据[Wzieee 的配置](https://github.com/Fndroid/clash_for_windows_pkg/issues/2729)慢慢调整的自己的配置文件。
 
 ---
