@@ -219,14 +219,14 @@ parsers: # array
         MyProxies:
           type: http
           behavior: classical
-          url: "https://raw.githubusercontent.com/yxymeng/yxymeng.github.io/master/proxy_personal.yml"
+          url: "https://raw.staticdn.net/yxymeng/yxymeng.github.io/master/proxy_personal.yml"
           path: ./ruleset/MyProxies.yaml
           interval: 36000
 
         MyDirect:
           type: http
           behavior: classical
-          url: "https://raw.githubusercontent.com/yxymeng/yxymeng.github.io/master/direct_personal.yml"
+          url: "https://raw.staticdn.net/yxymeng/yxymeng.github.io/master/direct_personal.yml"
           path: ./ruleset/MyDirect.yaml
           interval: 36000
 
