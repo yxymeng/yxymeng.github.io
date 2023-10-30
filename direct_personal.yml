@@ -14,12 +14,12 @@ payload:
     #MATCH：全匹配
     
   #EPIC游戏商城
-  - DOMAIN-SUFFIX,epicgames.com
-  - DOMAIN-SUFFIX,epicgames.dev
-  - DOMAIN-SUFFIX,helpshift.com
-  - DOMAIN-SUFFIX,paragon.com
-  - DOMAIN-SUFFIX,unrealengine.com
-  - DOMAIN-KEYWORD,unrealengine
+#  - DOMAIN-SUFFIX,epicgames.com
+#  - DOMAIN-SUFFIX,epicgames.dev
+#  - DOMAIN-SUFFIX,helpshift.com
+#  - DOMAIN-SUFFIX,paragon.com
+#  - DOMAIN-SUFFIX,unrealengine.com
+#  - DOMAIN-KEYWORD,unrealengine
   
   # 内容：GameDownload
   # 数量：20条
