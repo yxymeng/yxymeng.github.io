@@ -123,16 +123,7 @@ parsers: # array
         - DOMAIN,login.live.com,🔍 Bing           #微软登录
         - DOMAIN,account.live.com,🔍 Bing         #微软登录
         - DOMAIN,storage.live.com,🔍 Bing         #微软登录
-        - DOMAIN-KEYWORD,tiktokcdn,🇺🇸 美国         #TIKTOK
-        - DOMAIN-SUFFIX,byteoversea.com,🇺🇸 美国
-        - DOMAIN-SUFFIX,ibytedtos.com,🇺🇸 美国
-        - DOMAIN-SUFFIX,ipstatp.com,🇺🇸 美国
-        - DOMAIN-SUFFIX,muscdn.com,🇺🇸 美国
-        - DOMAIN-SUFFIX,musical.ly,🇺🇸 美国
-        - DOMAIN-SUFFIX,tik-tokapi.com,🇺🇸 美国
-        - DOMAIN-SUFFIX,tiktok.com,🇺🇸 美国
-        - DOMAIN-SUFFIX,tiktokcdn.com,🇺🇸 美国
-        - DOMAIN-SUFFIX,tiktokv.com,🇺🇸 美国
+        - RULE-SET,America,🇺🇸 美国
 
         # 白名单
         - RULE-SET,UnBan,DIRECT
@@ -143,27 +134,7 @@ parsers: # array
         - RULE-SET,BanProgramAD,💩 ‍广告
 
         # 游戏
-        - DOMAIN-SUFFIX,steam-api.com,🎮 Steam
-        - DOMAIN-KEYWORD,steammobile,🎮 Steam
-        - DOMAIN,steambroadcast.akamaized.net,🎮 Steam
-        - DOMAIN,steamcommunity-a.akamaihd.net,🎮 Steam
-        - DOMAIN,steamcdn-a.akamaihd.net,🎮 Steam
-        - DOMAIN,steampipe.akamaized.net,🎮 Steam
-        - DOMAIN,steamstore-a.akamaihd.net,🎮 Steam
-        - DOMAIN,steamusercontent-a.akamaihd.net,🎮 Steam
-        - DOMAIN,steamuserimages-a.akamaihd.net,🎮 Steam
-        - DOMAIN-SUFFIX,fanatical.com,🎮 Steam
-        - DOMAIN-SUFFIX,humblebundle.com,🎮 Steam
-        - DOMAIN-SUFFIX,playartifact.com,🎮 Steam
-        - DOMAIN-SUFFIX,steam-chat.com,🎮 Steam
-        - DOMAIN-SUFFIX,steamcommunity.com,🎮 Steam
-        - DOMAIN-SUFFIX,steamgames.com,🎮 Steam
-        - DOMAIN-SUFFIX,steampowered.com,🎮 Steam
-        - DOMAIN-SUFFIX,steamserver.net,🎮 Steam
-        - DOMAIN-SUFFIX,steamstat.us,🎮 Steam
-        - DOMAIN-SUFFIX,steamstatic.com,🎮 Steam
-        - DOMAIN-SUFFIX,underlords.com,🎮 Steam
-        - DOMAIN-SUFFIX,valvesoftware.com,🎮 Steam
+        - RULE-SET,Steam,🎮 Steam
         - DOMAIN-SUFFIX,epicgames.com,🎮 Epic
         - DOMAIN-SUFFIX,epicgames.dev,🎮 Epic
         - DOMAIN-SUFFIX,helpshift.com,🎮 Epic
@@ -228,6 +199,20 @@ parsers: # array
           behavior: classical
           url: "https://raw.staticdn.net/yxymeng/yxymeng.github.io/master/direct_personal.yml"
           path: ./ruleset/MyDirect.yaml
+          interval: 36000
+
+        Steam:
+          type: http
+          behavior: classical
+          url: "https://raw.githubusercontent.com/yxymeng/yxymeng.github.io/master/Steam.yml"
+          path: ./ruleset/Steam.yaml
+          interval: 36000
+
+        America:
+          type: http
+          behavior: classical
+          url: "https://raw.githubusercontent.com/yxymeng/yxymeng.github.io/master/America.yml"
+          path: ./ruleset/America.yaml
           interval: 36000
 
         Openai:
