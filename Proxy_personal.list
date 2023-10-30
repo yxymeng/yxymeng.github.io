@@ -1,5 +1,5 @@
 
-DOMAIN-KEYWORD,18comic               #禁漫天堂
+DOMAIN-KEYWORD,18comic
 DOMAIN-KEYWORD,javday
 DOMAIN-SUFFIX,njav.tv
 DOMAIN-SUFFIX,javcdn.info
@@ -7,23 +7,23 @@ DOMAIN-SUFFIX,thedayweplay.lol
 DOMAIN-SUFFIX,javplayer.me
 
 DOMAIN-SUFFIX,bulianglin.com
-DOMAIN-SUFFIX,forza.net              #极速竞技地平线
-DOMAIN-SUFFIX,forzamotorsport.net    #地平线官网
-PROCESS-NAME,ForzaHorizon4.exe       #极速竞技地平线4
+DOMAIN-SUFFIX,forza.net
+DOMAIN-SUFFIX,forzamotorsport.net
+PROCESS-NAME,ForzaHorizon4.exe
 
 DOMAIN-KEYWORD,patreon
-PROCESS-NAME,Paradox Launcher.exe    #城市天际线启动器
+PROCESS-NAME,Paradox Launcher.exe
 
-DOMAIN-SUFFIX,rutracker.org          #俄罗斯游戏破解网址
-DOMAIN-SUFFIX,nexusmods.com          #游戏mod
+DOMAIN-SUFFIX,rutracker.org
+DOMAIN-SUFFIX,nexusmods.com
 DOMAIN-SUFFIX,nexus-cdn.com
-DOMAIN-SUFFIX,aqxaromods.com         #游戏mod
+DOMAIN-SUFFIX,aqxaromods.com
 DOMAIN-SUFFIX,wbgames.com
-DOMAIN-SUFFIX,fanbox.cc              #pixiv
-DOMAIN-SUFFIX,eldenring.com          #老头环
+DOMAIN-SUFFIX,fanbox.cc
+DOMAIN-SUFFIX,eldenring.com
 DOMAIN-SUFFIX,twitter.com
-DOMAIN-SUFFIX,howlongtobeat.com      #收集玩家通关游戏时长的网站
-DOMAIN-SUFFIX,ign.com                #IGN
+DOMAIN-SUFFIX,howlongtobeat.com
+DOMAIN-SUFFIX,ign.com
 DOMAIN-SUFFIX,ignimgs.com
 DOMAIN-SUFFIX,deepl.com
 DOMAIN-SUFFIX,zmk.pw
@@ -38,15 +38,15 @@ DOMAIN-SUFFIX,yohohongkong.com
 DOMAIN-SUFFIX,bethesda.net
 PROCESS-NAME,PotPlayerMini64.exe
 DOMAIN-SUFFIX,dealabs.com
-DOMAIN-SUFFIX,civitai.com    #AI绘画模型
-DOMAIN-SUFFIX,convertio.co   #WEBP转换器
-PROCESS-NAME,Code.exe         #vscode代码编辑器
+DOMAIN-SUFFIX,civitai.com
+DOMAIN-SUFFIX,convertio.co
+PROCESS-NAME,Code.exe
 DOMAIN-SUFFIX,linktr.ee
 DOMAIN-SUFFIX,clipconverter.cc
 DOMAIN-SUFFIX,gamespot.com
 DOMAIN-KEYWORD,gamescom
 DOMAIN-SUFFIX,metacritic.com
-DOMAIN-SUFFIX,tgx.rs  #
-DOMAIN-SUFFIX,tgx.sb  #
-DOMAIN,proxygalaxy.me  #替代rarbg的资源网站
-DOMAIN-SUFFIX,twcdn.xyz     #下载twitter视频
+DOMAIN-SUFFIX,tgx.rs
+DOMAIN-SUFFIX,tgx.sb
+DOMAIN,proxygalaxy.me
+DOMAIN-SUFFIX,twcdn.xyz
