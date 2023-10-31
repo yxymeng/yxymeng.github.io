@@ -186,32 +186,32 @@ parsers: # array
 
       mix-rule-providers: 
         # 选中 raw.githubusercontent.com 用 ctrl+shift+L 批量全改为 raw.staticdn.net 方便更新providers
-        
+        #后缀为.yaml或者.list都行
         MyProxies:
           type: http
           behavior: classical
-          url: "https://raw.staticdn.net/yxymeng/yxymeng.github.io/master/proxy_personal.yml"
+          url: "https://raw.staticdn.net/yxymeng/yxymeng.github.io/master/proxy_personal.yaml"
           path: ./ruleset/MyProxies.yaml
           interval: 36000
 
         MyDirect:
           type: http
           behavior: classical
-          url: "https://raw.staticdn.net/yxymeng/yxymeng.github.io/master/direct_personal.yml"
+          url: "https://raw.staticdn.net/yxymeng/yxymeng.github.io/master/direct_personal.yaml"
           path: ./ruleset/MyDirect.yaml
           interval: 36000
 
         Steam:
           type: http
           behavior: classical
-          url: "https://raw.githubusercontent.com/yxymeng/yxymeng.github.io/master/Steam.yml"
+          url: "https://raw.githubusercontent.com/yxymeng/yxymeng.github.io/master/Steam.yaml"
           path: ./ruleset/Steam.yaml
           interval: 36000
 
         America:
           type: http
           behavior: classical
-          url: "https://raw.githubusercontent.com/yxymeng/yxymeng.github.io/master/America.yml"
+          url: "https://raw.githubusercontent.com/yxymeng/yxymeng.github.io/master/America.yaml"
           path: ./ruleset/America.yaml
           interval: 36000
 
