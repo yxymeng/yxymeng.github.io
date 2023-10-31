@@ -37,6 +37,7 @@ DOMAIN,assets1.xboxlive.com
 DOMAIN,assets2.xboxlive.com
 DOMAIN-SUFFIX,dyn.riotcdn.net
 DOMAIN-SUFFIX,cdn.ubi.com
+DOMAIN-SUFFIX,download.epicgames.com
   
   #一些用到的网址
 DOMAIN-KEYWORD,geosite
