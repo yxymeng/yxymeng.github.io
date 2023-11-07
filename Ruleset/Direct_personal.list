@@ -79,3 +79,8 @@ DOMAIN-SUFFIX,time.asia.apple.com
 DOMAIN-SUFFIX,stun.voipraider.com
 DOMAIN-SUFFIX,analytics.95516.com
 #美团分界线，傻逼美团搞什么飞机
+#小黑盒
+DOMAIN-KEYWORD,imgheybox
+DOMAIN-SUFFIX,cdn.max-c.com
+DOMAIN-SUFFIX,sysdk.cl2009.com
+DOMAIN-SUFFIX,tencentcloudapi.com
