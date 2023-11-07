@@ -21,7 +21,7 @@
   
   # 内容：GameDownload
   # 数量：20条
-DOMAIN,ssl-lvlt.cdn.ea.com
+#DOMAIN,ssl-lvlt.cdn.ea.com
 DOMAIN,origin-a.akamaihd.net
 DOMAIN,uplaypc-s-ubisoft.cdn.ubionline.com.cn
 DOMAIN,gamedownloads-rockstargames-com.akamaized.net
@@ -57,9 +57,7 @@ DOMAIN-SUFFIX,rottentomatoes.com
 DOMAIN-KEYWORD,btnull
 DOMAIN-SUFFIX,pianyuan.org
 DOMAIN-KEYWORD,xiaoheihe
-DOMAIN-SUFFIX,115.com
 DOMAIN-SUFFIX,steamdb.info
-DOMAIN-SUFFIX,snapdrop.net
 DOMAIN,sms-activate.org
 DOMAIN-SUFFIX,greasyfork.org
 DOMAIN-SUFFIX,tampermonkey.net
