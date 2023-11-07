@@ -7,9 +7,6 @@ DOMAIN-SUFFIX,thedayweplay.lol
 DOMAIN-SUFFIX,javplayer.me
 
 DOMAIN-SUFFIX,bulianglin.com
-DOMAIN-SUFFIX,forza.net
-DOMAIN-SUFFIX,forzamotorsport.net
-PROCESS-NAME,ForzaHorizon4.exe
 
 DOMAIN-KEYWORD,patreon
 PROCESS-NAME,Paradox Launcher.exe
@@ -20,8 +17,7 @@ DOMAIN-SUFFIX,nexus-cdn.com
 DOMAIN-SUFFIX,aqxaromods.com
 DOMAIN-SUFFIX,wbgames.com
 DOMAIN-SUFFIX,fanbox.cc
-DOMAIN-SUFFIX,eldenring.com
-DOMAIN-SUFFIX,twitter.com
+
 DOMAIN-SUFFIX,howlongtobeat.com
 DOMAIN-SUFFIX,ign.com
 DOMAIN-SUFFIX,ignimgs.com
