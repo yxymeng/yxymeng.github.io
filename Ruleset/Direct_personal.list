@@ -71,4 +71,11 @@ DOMAIN-SUFFIX,deepl.com
 DOMAIN,www.hogwartslegacy.com
 DOMAIN-SUFFIX,notion.so
 DOMAIN-SUFFIX,steampy.com
+#饿了么
 DOMAIN-SUFFIX,elemecdn.com
+#美团，你搞什么东西？
+DOMAIN-SUFFIX,pool.ntp.org
+DOMAIN-SUFFIX,time.asia.apple.com
+DOMAIN-SUFFIX,stun.voipraider.com
+DOMAIN-SUFFIX,analytics.95516.com
+#美团分界线，傻逼美团搞什么飞机
