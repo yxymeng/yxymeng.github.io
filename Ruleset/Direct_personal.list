@@ -72,6 +72,13 @@ DOMAIN-SUFFIX,grammarly.com
 DOMAIN-SUFFIX,ubisoft.com
 DOMAIN-SUFFIX,ubi.com
 DOMAIN-SUFFIX,weixinbridge.com
+DOMAIN-SUFFIX,alibabachengdun.com
+#网易buff
+DOMAIN-SUFFIX,netease.im
+DOMAIN-SUFFIX,qiyukf.com
+#黑鲨工具箱
+DOMAIN-SUFFIX,blackshark.com
+
 #滴滴
 DOMAIN-SUFFIX,didistatic.com
 #王者营地
