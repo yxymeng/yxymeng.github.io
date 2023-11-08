@@ -72,9 +72,11 @@ DOMAIN-SUFFIX,grammarly.com
 DOMAIN-SUFFIX,ubisoft.com
 DOMAIN-SUFFIX,ubi.com
 DOMAIN-SUFFIX,weixinbridge.com
-DOMAIN-SUFFIX,didistatic.com   #滴滴
-DOMAIN-SUFFIX,rumt-zh.com   #王者营地
-DOMAIN-SUFFIX,cdntips.net   #王者营地
+#滴滴
+DOMAIN-SUFFIX,didistatic.com
+#王者营地
+DOMAIN-SUFFIX,rumt-zh.com
+DOMAIN-SUFFIX,cdntips.net
 #饿了么
 DOMAIN-SUFFIX,elemecdn.com
 #美团，你搞什么东西？
