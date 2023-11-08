@@ -84,3 +84,13 @@ DOMAIN-KEYWORD,imgheybox
 DOMAIN-SUFFIX,cdn.max-c.com
 DOMAIN-SUFFIX,sysdk.cl2009.com
 DOMAIN-SUFFIX,tencentcloudapi.com
+#b站
+DOMAIN-KEYWORD,ecombd
+DOMAIN-SUFFIX,bytegecko.com
+DOMAIN-SUFFIX,biliimg.com
+DOMAIN-SUFFIX,dbankcloud.com
+DOMAIN-SUFFIX,vcloud.ks-live.com
+#网易大神
+DOMAIN-SUFFIX,dutils.com
+DOMAIN-SUFFIX,166.net
+DOMAIN-SUFFIX,16163.com
