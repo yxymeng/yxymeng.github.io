@@ -84,6 +84,8 @@ DOMAIN-KEYWORD,imgheybox
 DOMAIN-SUFFIX,cdn.max-c.com
 DOMAIN-SUFFIX,sysdk.cl2009.com
 DOMAIN-SUFFIX,tencentcloudapi.com
+DOMAIN-SUFFIX,eccdnx.com
+DOMAIN-SUFFIX,static.max-c.com
 #b站
 DOMAIN-KEYWORD,ecombd
 DOMAIN-SUFFIX,bytegecko.com
