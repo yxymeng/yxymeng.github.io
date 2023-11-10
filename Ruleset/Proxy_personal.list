@@ -10,12 +10,14 @@ DOMAIN-SUFFIX,bulianglin.com
 
 DOMAIN-KEYWORD,patreon
 PROCESS-NAME,Paradox Launcher.exe
-#霍格沃茨
+#华纳兄弟、霍格沃茨
 DOMAIN-SUFFIX,warnerbrosgames.com
 DOMAIN-SUFFIX,hogwartslegacy.com
 DOMAIN-SUFFIX,wizardingworld.com
 DOMAIN-SUFFIX,ctfassets.net
 DOMAIN,sessions.bugsnag.com
+DOMAIN-SUFFIX,warnermediacdn.com
+DOMAIN-SUFFIX,wbagora.com
 
 DOMAIN-SUFFIX,rutracker.org
 DOMAIN-SUFFIX,nexusmods.com
@@ -23,6 +25,8 @@ DOMAIN-SUFFIX,nexus-cdn.com
 DOMAIN-SUFFIX,aqxaromods.com
 DOMAIN-SUFFIX,wbgames.com
 DOMAIN-SUFFIX,fanbox.cc
+DOMAIN-SUFFIX,grammarly.io
+DOMAIN-SUFFIX,grammarly.com
 
 DOMAIN-SUFFIX,howlongtobeat.com
 DOMAIN-SUFFIX,ign.com
