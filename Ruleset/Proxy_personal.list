@@ -14,7 +14,7 @@ PROCESS-NAME,Paradox Launcher.exe
 DOMAIN-SUFFIX,warnerbrosgames.com
 DOMAIN-SUFFIX,hogwartslegacy.com
 DOMAIN-SUFFIX,wizardingworld.com
-DOMAIN,images.ctfassets.net
+DOMAIN-SUFFIX,ctfassets.net
 DOMAIN,sessions.bugsnag.com
 
 DOMAIN-SUFFIX,rutracker.org
