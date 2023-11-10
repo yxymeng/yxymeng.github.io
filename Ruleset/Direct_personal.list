@@ -47,8 +47,6 @@ DOMAIN-SUFFIX,opensubtitles.org
 DOMAIN-KEYWORD,v2free
 DOMAIN-KEYWORD,huo720
 DOMAIN-KEYWORD,1b2a.net
-DOMAIN-KEYWORD,zmk
-DOMAIN-KEYWORD,zimuku
 DOMAIN-SUFFIX,kisssub.org
 DOMAIN-SUFFIX,mcdm7.com
 DOMAIN-SUFFIX,iyinghua.io
@@ -68,7 +66,7 @@ DOMAIN-SUFFIX,skype.com
 DOMAIN,www.hogwartslegacy.com
 DOMAIN-SUFFIX,notion.so
 DOMAIN-SUFFIX,steampy.com
-DOMAIN-SUFFIX,grammarly.com
+#DOMAIN-SUFFIX,grammarly.com
 DOMAIN-SUFFIX,ubisoft.com
 DOMAIN-SUFFIX,ubi.com
 DOMAIN-SUFFIX,weixinbridge.com
