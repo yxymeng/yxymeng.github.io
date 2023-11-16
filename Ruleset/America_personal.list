@@ -8,3 +8,6 @@ DOMAIN-SUFFIX,tik-tokapi.com
 DOMAIN-SUFFIX,tiktok.com
 DOMAIN-SUFFIX,tiktokcdn.com
 DOMAIN-SUFFIX,tiktokv.com
+
+#chatgpt-4用
+DOMAIN-SUFFIX,oaistatic.com
