@@ -21,7 +21,8 @@
   
 # 内容：GameDownload
 # 数量：20条
-#DOMAIN,ssl-lvlt.cdn.ea.com
+#第一个cdn.ea.com的我好像给它注释掉了忘记为什么了，取消注释试试
+DOMAIN,ssl-lvlt.cdn.ea.com
 DOMAIN,origin-a.akamaihd.net
 DOMAIN,uplaypc-s-ubisoft.cdn.ubionline.com.cn
 DOMAIN,gamedownloads-rockstargames-com.akamaized.net
@@ -65,6 +66,8 @@ URL-REGEX,(api|ps|sv|offnavi|newvector|ulog.imap|newloc)(.map|).(baidu|n.shifen)
   
 #一些用到的网址
 DOMAIN-KEYWORD,geosite
+DOMAIN,clash.razord.top
+DOMAIN,yacd.haishan.me
 DOMAIN-SUFFIX,subhd.tv
 DOMAIN-SUFFIX,assrt.net
 DOMAIN-SUFFIX,opensubtitles.org
