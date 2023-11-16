@@ -11,7 +11,7 @@
     #RULE-SET：Rule Provider规则匹配
     #MATCH：全匹配
     
-  #EPIC游戏商城
+#EPIC游戏商城
 #DOMAIN-SUFFIX,epicgames.com
 #DOMAIN-SUFFIX,epicgames.dev
 #DOMAIN-SUFFIX,helpshift.com
@@ -19,8 +19,8 @@
 #DOMAIN-SUFFIX,unrealengine.com
 #DOMAIN-KEYWORD,unrealengine
   
-  # 内容：GameDownload
-  # 数量：20条
+# 内容：GameDownload
+# 数量：20条
 #DOMAIN,ssl-lvlt.cdn.ea.com
 DOMAIN,origin-a.akamaihd.net
 DOMAIN,uplaypc-s-ubisoft.cdn.ubionline.com.cn
@@ -38,8 +38,32 @@ DOMAIN,assets2.xboxlive.com
 DOMAIN-SUFFIX,dyn.riotcdn.net
 DOMAIN-SUFFIX,cdn.ubi.com
 DOMAIN-SUFFIX,download.epicgames.com
+
+# 内容：Download
+# 数量：21条
+DOMAIN-KEYWORD,aria2
+DOMAIN-SUFFIX,smtp
+PROCESS-NAME,DownloadService.exe
+PROCESS-NAME,Folx.exe
+PROCESS-NAME,NetTransport.exe
+PROCESS-NAME,Thunder.exe
+PROCESS-NAME,Transmission.exe
+PROCESS-NAME,WebTorrent Helper.exe
+PROCESS-NAME,WebTorrent.exe
+PROCESS-NAME,Weiyun.exe
+PROCESS-NAME,aria2c.exe
+PROCESS-NAME,baidunetdisk.exe
+PROCESS-NAME,fdm.exe
+PROCESS-NAME,qbittorrent.exe
+PROCESS-NAME,uTorrent.exe
+URL-REGEX,(.+.)?(torrent|announce.php?passkey=|tracker|BitTorrent|bt_key|ed2k|find_node|get_peers|info_hash|magnet:|peer_id=|xunlei)(..+)?
+URL-REGEX,(.+.|^)(360|so|qihoo|360safe|qhimg|360totalsecurity|yunpan).(cn|com)
+URL-REGEX,(.+\.|^)(360|so)\.(cn|com)
+URL-REGEX,(.?)(xunlei|sandai|Thunder|XLLiveUD)(.)
+URL-REGEX,(Subject|HELO|SMTP)
+URL-REGEX,(api|ps|sv|offnavi|newvector|ulog.imap|newloc)(.map|).(baidu|n.shifen).com
   
-  #一些用到的网址
+#一些用到的网址
 DOMAIN-KEYWORD,geosite
 DOMAIN-SUFFIX,subhd.tv
 DOMAIN-SUFFIX,assrt.net
