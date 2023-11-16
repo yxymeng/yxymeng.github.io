@@ -11,3 +11,5 @@ DOMAIN-SUFFIX,tiktokv.com
 
 #chatgpt-4用
 DOMAIN-SUFFIX,oaistatic.com
+DOMAIN,gist-queue-consumer-api.cloud.gist.build
+DOMAIN-SUFFIX,oaiusercontent.com
