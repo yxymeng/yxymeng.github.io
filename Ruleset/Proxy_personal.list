@@ -61,5 +61,4 @@ DOMAIN,proxygalaxy.me
 DOMAIN-SUFFIX,twcdn.xyz
 DOMAIN-SUFFIX,notion.so
 DOMAIN-SUFFIX,grammarly.com
-DOMAIN-SUFFIX,ubisoft.com
-DOMAIN-SUFFIX,ubi.com
+PROCESS-NAME,UbisoftConnect.exe
