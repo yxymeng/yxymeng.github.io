@@ -1,0 +1,22 @@
+proxies:
+  - name: vless-proxy
+    type: vless
+    server: proxy.yxymeng.link
+    port: 443
+    uuid: 1c27f7e0-801e-43c9-989b-5d41d25af39e
+    alterId: 2048
+    cipher: none
+    tls: true
+    network: ws
+    ws-path: /
+    sni: proxy.yxymeng.link
+
+proxy-groups:
+  - name: Proxy
+    type: select
+    proxies:
+      - DIRECT
+      - vless-proxy
+
+rules:
+  - DOMAIN-SUFFIX,proxy.yxymeng.link,Proxy
