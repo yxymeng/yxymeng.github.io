@@ -13,3 +13,6 @@ DOMAIN-SUFFIX,tiktokv.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN,gist-queue-consumer-api.cloud.gist.build
 DOMAIN-SUFFIX,oaiusercontent.com
+
+#bingai用
+DOMAIN,copilot.microsoft.com
