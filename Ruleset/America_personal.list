@@ -14,5 +14,6 @@ DOMAIN-SUFFIX,oaistatic.com
 DOMAIN,gist-queue-consumer-api.cloud.gist.build
 DOMAIN-SUFFIX,oaiusercontent.com
 
-#bingai用
+#bingai用，  copilot.microsoft.com
 DOMAIN,copilot.microsoft.com
+DOMAIN,sydney.bing.com
