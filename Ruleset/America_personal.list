@@ -21,3 +21,5 @@ DOMAIN-SUFFIX,access-point.cloudmessaging.edge.microsoft.com
 DOMAIN-SUFFIX,prod.do.dsp.mp.microsoft.com
 DOMAIN,functional.events.data.microsoft.com
 DOMAIN,edgeservices.bing.com
+
+DOMAIN,bard.google.com
