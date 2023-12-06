@@ -34,6 +34,8 @@ DOMAIN-SUFFIX,grammarly.com
 DOMAIN-KEYWORD,zmk
 DOMAIN-KEYWORD,zimuku
 
+DOMAIN-SUFFIX,thewitcher.com
+DOMAIN-SUFFIX,cdprojektred.com
 DOMAIN-SUFFIX,howlongtobeat.com
 DOMAIN-SUFFIX,ign.com
 DOMAIN-SUFFIX,ignimgs.com
@@ -64,4 +66,4 @@ DOMAIN-SUFFIX,grammarly.com
 #樱花动漫加载视频
 DOMAIN-SUFFIX,yzzy-online.com
 DOMAIN-SUFFIX,vip-yzzyonline.com
-DOMAIN-SUFFIX,vip-vip-yzzy.com
+#DOMAIN-SUFFIX,vip-vip-yzzy.com
