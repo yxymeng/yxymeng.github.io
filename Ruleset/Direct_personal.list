@@ -113,18 +113,18 @@ DOMAIN,assets2.xboxlive.com
 DOMAIN-SUFFIX,dyn.riotcdn.net
 DOMAIN-SUFFIX,cdn.ubi.com
 DOMAIN-SUFFIX,download.epicgames.com
-#以下steam下载cdn，看看能不能行
-DOMAIN-SUFFIX,steam-dns.top.comcast.net
-DOMAIN-SUFFIX,steampipe-partner.secure2.footprint.net
-DOMAIN-SUFFIX,qtlglb.com
-DOMAIN,steampipe-kr.akamaized.net
-DOMAIN,steampipe-partner.akamaized.net
-DOMAIN,steampipe.akamaized.net
-DOMAIN-SUFFIX,ssl.hwcdn.net
-DOMAIN,steam.cdn.on.net
-DOMAIN,steam.cdn.orcon.net.nz
-DOMAIN,steam.cdn.slingshot.co.nz
-DOMAIN,steam.cdn.webra.ru
+#以下steam下载cdn，看看能不能行。看来不能行，点数商店等会用到，会加载不出
+#DOMAIN-SUFFIX,steam-dns.top.comcast.net
+#DOMAIN-SUFFIX,steampipe-partner.secure2.footprint.net
+#DOMAIN-SUFFIX,qtlglb.com
+#DOMAIN,steampipe-kr.akamaized.net
+#DOMAIN,steampipe-partner.akamaized.net
+#DOMAIN,steampipe.akamaized.net
+#DOMAIN-SUFFIX,ssl.hwcdn.net
+#DOMAIN,steam.cdn.on.net
+#DOMAIN,steam.cdn.orcon.net.nz
+#DOMAIN,steam.cdn.slingshot.co.nz
+#DOMAIN,steam.cdn.webra.ru
 
 
 # 内容：Download
