@@ -113,19 +113,6 @@ DOMAIN,assets2.xboxlive.com
 DOMAIN-SUFFIX,dyn.riotcdn.net
 DOMAIN-SUFFIX,cdn.ubi.com
 DOMAIN-SUFFIX,download.epicgames.com
-#以下steam下载cdn，看看能不能行。看来不能行，点数商店等会用到，会加载不出
-#DOMAIN-SUFFIX,steam-dns.top.comcast.net
-#DOMAIN-SUFFIX,steampipe-partner.secure2.footprint.net
-#DOMAIN-SUFFIX,qtlglb.com
-#DOMAIN,steampipe-kr.akamaized.net
-#DOMAIN,steampipe-partner.akamaized.net
-#DOMAIN,steampipe.akamaized.net
-#DOMAIN-SUFFIX,ssl.hwcdn.net
-#DOMAIN,steam.cdn.on.net
-#DOMAIN,steam.cdn.orcon.net.nz
-#DOMAIN,steam.cdn.slingshot.co.nz
-#DOMAIN,steam.cdn.webra.ru
-
 
 # 内容：Download
 # 数量：21条
@@ -157,7 +144,7 @@ DOMAIN,uplaypc-s-ubisoft.cdn.ubi.com
 DOMAIN,uplaypc-s-ubisoft-ww.cdn.ubi.com
 DOMAIN,api.steampowered.com
 DOMAIN-SUFFIX,cm.steampowered.com
-DOMAIN-SUFFIX,steamserver.net
+#DOMAIN-SUFFIX,steamserver.net 不确定下载会不会用这个后缀，先取消，因为加载商店的一些内容需要用到，走直连的话加载慢，下载好像是走steamcontent.com
 IP-CIDR,103.10.124.0/24,no-resolve
 IP-CIDR,103.10.125.0/24,no-resolve
 IP-CIDR,103.28.54.0/24,no-resolve
