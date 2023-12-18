@@ -131,6 +131,7 @@ PROCESS-NAME,baidunetdisk.exe
 PROCESS-NAME,fdm.exe
 PROCESS-NAME,qbittorrent.exe
 PROCESS-NAME,uTorrent.exe
+PROCESS-NAME,BitComet.exe
 URL-REGEX,(.+.)?(torrent|announce.php?passkey=|tracker|BitTorrent|bt_key|ed2k|find_node|get_peers|info_hash|magnet:|peer_id=|xunlei)(..+)?
 URL-REGEX,(.+.|^)(360|so|qihoo|360safe|qhimg|360totalsecurity|yunpan).(cn|com)
 URL-REGEX,(.+\.|^)(360|so)\.(cn|com)
