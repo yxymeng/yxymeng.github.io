@@ -113,6 +113,9 @@ DOMAIN,assets2.xboxlive.com
 DOMAIN-SUFFIX,dyn.riotcdn.net
 DOMAIN-SUFFIX,cdn.ubi.com
 DOMAIN-SUFFIX,download.epicgames.com
+#steam下载永杰时出现的，阿里云接入的万网域名
+DOMAIN-SUFFIX,viv.wanwang.space
+
 
 # 内容：Download
 # 数量：21条
