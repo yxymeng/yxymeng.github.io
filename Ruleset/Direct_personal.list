@@ -54,6 +54,10 @@ DOMAIN-SUFFIX,ubisoft.com
 DOMAIN-SUFFIX,ubi.com
 DOMAIN-SUFFIX,weixinbridge.com
 DOMAIN-SUFFIX,alibabachengdun.com
+
+#知网
+DOMAIN-SUFFIX,cnki.net
+
 #网易buff
 DOMAIN-SUFFIX,netease.im
 DOMAIN-SUFFIX,qiyukf.com
