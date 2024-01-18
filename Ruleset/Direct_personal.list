@@ -117,7 +117,6 @@ DOMAIN,assets2.xboxlive.com
 DOMAIN-SUFFIX,dyn.riotcdn.net
 DOMAIN-SUFFIX,cdn.ubi.com
 DOMAIN-SUFFIX,download.epicgames.com
-DOMAIN-SUFFIX,vlabstatic.com
 #steam下载永杰时出现的，阿里云接入的万网域名
 DOMAIN-SUFFIX,viv.wanwang.space
 
@@ -126,6 +125,8 @@ DOMAIN-SUFFIX,viv.wanwang.space
 # 数量：21条
 DOMAIN-KEYWORD,aria2
 DOMAIN-SUFFIX,smtp
+DOMAIN-SUFFIX,ulikecam.com
+DOMAIN-SUFFIX,vlabstatic.com
 PROCESS-NAME,DownloadService.exe
 PROCESS-NAME,Folx.exe
 PROCESS-NAME,NetTransport.exe
@@ -140,6 +141,7 @@ PROCESS-NAME,fdm.exe
 PROCESS-NAME,qbittorrent.exe
 PROCESS-NAME,uTorrent.exe
 PROCESS-NAME,BitComet.exe
+
 URL-REGEX,(.+.)?(torrent|announce.php?passkey=|tracker|BitTorrent|bt_key|ed2k|find_node|get_peers|info_hash|magnet:|peer_id=|xunlei)(..+)?
 URL-REGEX,(.+.|^)(360|so|qihoo|360safe|qhimg|360totalsecurity|yunpan).(cn|com)
 URL-REGEX,(.+\.|^)(360|so)\.(cn|com)
