@@ -77,6 +77,9 @@ DOMAIN-SUFFIX,pool.ntp.org
 DOMAIN-SUFFIX,time.asia.apple.com
 DOMAIN-SUFFIX,stun.voipraider.com
 DOMAIN-SUFFIX,analytics.95516.com
+DOMAIN-KEYWORD,meituan
+DOMAIN-SUFFIX,id6.me
+DOMAIN-KEYWORD,kuaishou
 #美团分界线，傻逼美团搞什么飞机
 #小黑盒
 DOMAIN-KEYWORD,imgheybox
