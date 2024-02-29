@@ -203,3 +203,9 @@ IP-CIDR,208.64.201.0/24,no-resolve
 IP-CIDR,208.64.202.0/24,no-resolve
 IP-CIDR,208.64.203.0/24,no-resolve
 IP-CIDR,208.78.164.0/22,no-resolve
+
+#流利说英语
+DOMAIN-SUFFIX,llscdn.com
+DOMAIN-SUFFIX,llsapp.com
+DOMAIN-SUFFIX,llsserver.com
+DOMAIN-SUFFIX,qzs.gdtimg.com
