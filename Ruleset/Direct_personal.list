@@ -58,6 +58,13 @@ DOMAIN-SUFFIX,gaoding.com
 
 #知网
 DOMAIN-SUFFIX,cnki.net
+#流利说英语
+DOMAIN-SUFFIX,llscdn.com
+DOMAIN-SUFFIX,llsapp.com
+DOMAIN-SUFFIX,llsserver.com
+DOMAIN-SUFFIX,liulishuo.com
+DOMAIN-SUFFIX,qzs.gdtimg.com
+DOMAIN-SUFFIX,eudic.net
 
 #网易buff
 DOMAIN-SUFFIX,netease.im
@@ -98,6 +105,10 @@ DOMAIN-SUFFIX,vcloud.ks-live.com
 DOMAIN-SUFFIX,dutils.com
 DOMAIN-SUFFIX,166.net
 DOMAIN-SUFFIX,16163.com
+#微信小程序
+DOMAIN-SUFFIX,servicewechat.com
+DOMAIN-SUFFIX,shuxinyc.com
+DOMAIN-SUFFIX,wxcloudrun.com
 
 #———————————————————————————————————————————————————————Download部分———————————————————————————————————————————————————————————————————————————————
   
@@ -207,10 +218,3 @@ IP-CIDR,208.64.202.0/24,no-resolve
 IP-CIDR,208.64.203.0/24,no-resolve
 IP-CIDR,208.78.164.0/22,no-resolve
 
-#流利说英语
-DOMAIN-SUFFIX,llscdn.com
-DOMAIN-SUFFIX,llsapp.com
-DOMAIN-SUFFIX,llsserver.com
-DOMAIN-SUFFIX,liulishuo.com
-DOMAIN-SUFFIX,qzs.gdtimg.com
-DOMAIN-SUFFIX,eudic.net
