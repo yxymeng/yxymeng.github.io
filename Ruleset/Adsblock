@@ -1,0 +1,62 @@
+    #目前Clash支持的规则类型如下:
+    #DOMAIN-SUFFIX：域名后缀匹配
+    #DOMAIN：域名匹配
+    #DOMAIN-KEYWORD：域名关键字匹配
+    #IP-CIDR：IP段匹配
+    #SRC-IP-CIDR：源IP段匹配
+    #GEOIP：GEOIP数据库（国家代码）匹配
+    #DST-PORT：目标端口匹配
+    #SRC-PORT：源端口匹配
+    #PROCESS-NAME：源进程名匹配
+    #RULE-SET：Rule Provider规则匹配
+    #MATCH：全匹配
+
+DOMAIN-SUFFIX,s-gm.mmstat.com
+DOMAIN-SUFFIX,gm.mmstat.com
+DOMAIN-SUFFIX,px.ucweb.com
+DOMAIN-SUFFIX,mdap.alipay.com
+DOMAIN-SUFFIX,dorangesource.alicdn.com
+DOMAIN-SUFFIX,audid-api.taobao.com
+DOMAIN-SUFFIX,amdc.m.taobao.com
+DOMAIN-SUFFIX,umengacs.m.taobao.com
+DOMAIN-SUFFIX,hm.baidu.com
+DOMAIN-SUFFIX,mobads.baidu.com
+DOMAIN-SUFFIX,beacon.qq.com
+DOMAIN-SUFFIX,trace.qq.com
+DOMAIN-SUFFIX,m.qq.com
+DOMAIN-SUFFIX,monitor.music.qq.com
+DOMAIN-SUFFIX,aegis.qq.com
+DOMAIN-SUFFIX,report.tv.kohesport.qq.com
+DOMAIN-SUFFIX,tbs.qq.com
+DOMAIN-SUFFIX,imtt.qq.com
+DOMAIN-SUFFIX,3g.qq.com
+DOMAIN-SUFFIX,api.sec.miui.com
+
+ulogs.umengcloud.com
+ulogs.umeng.com
+log.umsns.com
+gorgon.youdao.com
+fp-it.fengkongcloud.com
+adv.sec.miui.com
+dig.bdurl.net
+grs.dbankcloud.com
+grs.dbankcloud.cn
+grs.dbankcloud.asia
+line1-log.biligame.net
+android.bugly.qq.com
+mdap.alipay.com
+metok.sys.miui.com
+analytics.meituan.net
+open.kwaizt.com
+open.kuaishouzt.com
+cpro.baidustatic.com
+sf3-fe-tos.pglstatp-toutiao.com
+
+msg.umengcloud.com
+amdcopen.m.taobao.com
+cn-fp.apitd.net
+adxlog-adnet.vivo.com.cn
+p6-be-pack-sign.pglstatp-toutiao.com
+p26-be-pack-sign.pglstatp-toutiao.com
+open.e.kuaishou.com
+mobads.baidu.com
