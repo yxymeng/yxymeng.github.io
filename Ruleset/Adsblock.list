@@ -11,6 +11,7 @@
     #RULE-SET：Rule Provider规则匹配
     #MATCH：全匹配
 
+DOMAIN-KEYWORD,normal-lq.zijieapi.com
 DOMAIN-SUFFIX,s-gm.mmstat.com
 DOMAIN-SUFFIX,gm.mmstat.com
 DOMAIN-SUFFIX,px.ucweb.com
