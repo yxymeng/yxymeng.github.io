@@ -48,4 +48,7 @@ DOMAIN-SUFFIX,amdcopen.m.taobao.com
 DOMAIN-SUFFIX,cn-fp.apitd.net
 DOMAIN-SUFFIX,adxlog-adnet.vivo.com.cn
 DOMAIN-SUFFIX,e.kuaishou.com
-DOMAIN-SUFFIX,cm.bilibili.com
+DOMAIN-SUFFIX,cm.bilibili.ccom
+
+#iyinghua.io樱花动漫弹窗广告
+DOMAIN-SUFFIX,jg.awaliwa.com
