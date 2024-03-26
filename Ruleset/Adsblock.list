@@ -22,7 +22,7 @@ DOMAIN-SUFFIX,amdc.m.taobao.com
 DOMAIN-SUFFIX,umengacs.m.taobao.com
 DOMAIN-SUFFIX,hm.baidu.com
 DOMAIN-SUFFIX,mobads.baidu.com
-#DOMAIN-SUFFIX,beacon.qq.com
+DOMAIN-SUFFIX,beacon.qq.com
 DOMAIN-SUFFIX,trace.qq.com
 DOMAIN-SUFFIX,m.qq.com
 DOMAIN-SUFFIX,monitor.music.qq.com
