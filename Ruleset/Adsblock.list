@@ -12,6 +12,7 @@
     #MATCH：全匹配
 
 DOMAIN-KEYWORD,normal-lq.zijieapi.com
+DOMAIN,p3-ad-sign.byteimg.com
 DOMAIN-SUFFIX,s-gm.mmstat.com
 DOMAIN-SUFFIX,gm.mmstat.com
 DOMAIN-SUFFIX,px.ucweb.com
@@ -22,7 +23,7 @@ DOMAIN-SUFFIX,amdc.m.taobao.com
 DOMAIN-SUFFIX,umengacs.m.taobao.com
 DOMAIN-SUFFIX,hm.baidu.com
 DOMAIN-SUFFIX,mobads.baidu.com
-#DOMAIN-SUFFIX,beacon.qq.com
+DOMAIN-SUFFIX,beacon.qq.com
 DOMAIN-SUFFIX,trace.qq.com
 DOMAIN-SUFFIX,m.qq.com
 DOMAIN-SUFFIX,monitor.music.qq.com
