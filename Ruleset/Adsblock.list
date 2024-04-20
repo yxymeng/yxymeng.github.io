@@ -13,7 +13,7 @@
 
 DOMAIN-KEYWORD,normal-lq.zijieapi.com
 DOMAIN-KEYWORD,ad-sign.byteimg.com
-DOMAIN-SUFFIX,douyincdn.com
+#DOMAIN-SUFFIX,douyincdn.com
 #DOMAIN-KEYWORD,webcast.douyinpic.com抖音直播
 DOMAIN-SUFFIX,s-gm.mmstat.com
 DOMAIN-SUFFIX,gm.mmstat.com
