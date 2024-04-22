@@ -2,9 +2,11 @@
 此仓库主要使用的是[Ruleset](https://github.com/yxymeng/yxymeng.github.io/tree/master/Ruleset)文件夹里的[Clash.ini](https://github.com/yxymeng/yxymeng.github.io/blob/master/Ruleset/Clash.ini)，使用[ACL4SSR](https://acl4ssr-sub.github.io/)来进行节点转换。Parsers预处理配置的方式可以搁置，对于多端使用不是很方便。
 
 1. 需要用到的链接或网站：[在线订阅转换网站](https://acl4ssr-sub.github.io/)、[URLEncode](https://www.urlencoder.org/)处理网站以及你自己的机场订阅链接等。
-2. 可能用到的Github仓库：本仓库[Ruleset](https://github.com/yxymeng/yxymeng.github.io/tree/master/Ruleset)里的`.ini`后缀的文档链接、[Subconverter](https://github.com/tindy2013/subconverter/tree/master)、[ACL4SSR](https://github.com/ACL4SSR/ACL4SSR)
+2. 可能用到的Github仓库：本仓库[Ruleset](https://github.com/yxymeng/yxymeng.github.io/tree/master/Ruleset)里的`.ini`和`.list`后缀的文档链接、[Subconverter](https://github.com/tindy2013/subconverter/tree/master)、[ACL4SSR](https://github.com/ACL4SSR/ACL4SSR)
 
-
+#使用
+1. 对于Clash，用于订阅转换时用到的远程配置链接：`https://raw.githubusercontent.com/yxymeng/yxymeng.github.io/master/Ruleset/Clash.ini`，或者直接在你转换了的链接后面直接插入`&config=https%3A%2F%2Fraw.githubusercontent.com%2Fyxymeng%2Fyxymeng.github.io%2Fmaster%2FRuleset%2FClash.ini`可以直接使用；
+2. 对于ShadowRocket，使用订阅转换网站将订阅链接转换成`SS`、`SSR`或者`V2ray`格式后，在配置页面加入如下链接即可：`https://raw.githubusercontent.com/yxymeng/yxymeng.github.io/master/Shadowrocket.ini`。
 
 ---
 ###### 需要注意的点：
