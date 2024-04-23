@@ -6,8 +6,20 @@
 3. 推荐的后端地址，直接替换前面部分的网址就行：`https://api-huacloud.com/sub?`。
 
 # 使用
-1. 对于Clash，用于订阅转换时用到的远程配置链接：`https://raw.githubusercontent.com/yxymeng/yxymeng.github.io/master/Ruleset/Clash.ini`，或者直接在你转换了的链接后面直接插入`&config=https%3A%2F%2Fraw.githubusercontent.com%2Fyxymeng%2Fyxymeng.github.io%2Fmaster%2FRuleset%2FClash.ini`可以直接使用；
-2. 对于ShadowRocket，使用订阅转换网站将订阅链接转换成`SS`、`SSR`或者`V2ray`格式后，在配置页面加入如下链接即可：`https://raw.githubusercontent.com/yxymeng/yxymeng.github.io/master/Shadowrocket.ini`。
+1. 对于Clash，用于订阅转换时用到的远程配置链接：
+```
+https://raw.githubusercontent.com/yxymeng/yxymeng.github.io/master/Ruleset/Clash.ini
+```
+或者直接在你转换了的链接后面直接插入
+```
+&config=https%3A%2F%2Fraw.githubusercontent.com%2Fyxymeng%2Fyxymeng.github.io%2Fmaster%2FRuleset%2FClash.ini
+```
+可以直接使用；
+
+2. 对于ShadowRocket，使用订阅转换网站将订阅链接转换成`SS`、`SSR`或者`V2ray`格式后，在配置页面加入如下链接即可：
+```
+https://raw.githubusercontent.com/yxymeng/yxymeng.github.io/master/Shadowrocket.ini
+```
 
 ---
 ###### 需要注意的点：
