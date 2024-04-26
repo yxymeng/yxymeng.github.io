@@ -33,7 +33,11 @@ DOMAIN-SUFFIX,grammarly.io
 DOMAIN-SUFFIX,grammarly.com
 DOMAIN-KEYWORD,zmk
 DOMAIN-KEYWORD,zimuku
+
+#zlibrary网址
 DOMAIN-KEYWORD,zlibrary
+DOMAIN-KEYWORD,z-library
+DOMAIN-SUFFIX,singlelogin.re
 
 DOMAIN-SUFFIX,thewitcher.com
 DOMAIN-SUFFIX,cdprojektred.com
