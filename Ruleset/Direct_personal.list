@@ -56,7 +56,10 @@ DOMAIN-SUFFIX,ubi.com
 DOMAIN-SUFFIX,weixinbridge.com
 DOMAIN-SUFFIX,alibabachengdun.com
 DOMAIN-SUFFIX,gaoding.com
+#抖音
 DOMAIN-SUFFIX,ourdvsss.com
+DOMAIN-SUFFIX,bytetcc.com
+DOMAIN-SUFFIX,bytefcdnrd.com
 
 #知网
 DOMAIN-SUFFIX,cnki.net
