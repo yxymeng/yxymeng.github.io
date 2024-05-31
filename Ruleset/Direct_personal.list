@@ -66,6 +66,12 @@ DOMAIN-SUFFIX,idouyinvod.com
 DOMAIN-SUFFIX,ndcpp.com
 DOMAIN-SUFFIX,supercachenet.com
 
+#虎牙
+DOMAIN-SUFFIX,node.ppio.cloud
+DOMAIN-SUFFIX,cloudvdn.com
+DOMAIN-SUFFIX,xdrtc.com
+DOMAIN-SUFFIX,tliveapp.com
+
 #知网
 DOMAIN-SUFFIX,cnki.net
 #流利说英语
