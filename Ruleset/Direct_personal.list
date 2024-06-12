@@ -25,7 +25,7 @@ DOMAIN-SUFFIX,heishenhua.com
 DOMAIN-KEYWORD,geosite
 DOMAIN,clash.razord.top
 DOMAIN,yacd.haishan.me
-DOMAIN-KEYWORD,api-huacloud
+#DOMAIN-KEYWORD,api-huacloud
 DOMAIN-SUFFIX,subhd.tv
 DOMAIN-SUFFIX,assrt.net
 DOMAIN-SUFFIX,opensubtitles.org
