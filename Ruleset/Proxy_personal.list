@@ -33,10 +33,10 @@ DOMAIN-SUFFIX,grammarly.io
 DOMAIN-SUFFIX,grammarly.com
 DOMAIN-KEYWORD,zmk
 DOMAIN-KEYWORD,zimuku
+DOMAIN-KEYWORD,gog.com
 
 #zlibrary网址
-DOMAIN-KEYWORD,zlibrary
-DOMAIN-KEYWORD,z-library
+DOMAIN-KEYWORD,cdn-zlib.se
 DOMAIN-SUFFIX,singlelogin.re
 
 DOMAIN-SUFFIX,thewitcher.com
