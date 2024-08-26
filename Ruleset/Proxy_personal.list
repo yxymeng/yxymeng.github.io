@@ -34,7 +34,9 @@ DOMAIN-SUFFIX,grammarly.com
 DOMAIN-KEYWORD,zmk
 DOMAIN-KEYWORD,zimuku
 DOMAIN-KEYWORD,gog.com
-DOMAIN-SUFFIX,manhuabika.com 
+DOMAIN-SUFFIX,manhuabika.com
+DOMAIN-SUFFIX,manhuapica.com
+DOMAIN-SUFFIX,picawang.com
 
 #zlibrary网址
 DOMAIN-KEYWORD,cdn-zlib.se
