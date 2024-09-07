@@ -11,4 +11,11 @@
     #RULE-SET：Rule Provider规则匹配
     #MATCH：全匹配
 
-DOMAIN-KEYWORD,normal-lq.zijieapi.com
+
+#以下为樱花动漫网站用到的
+DOMAIN-KEYWORD,iyinghua
+DOMAIN-KEYWORD,yhdmtu
+
+#zoom.earth网站用到的
+DOMAIN-SUFFIX,zoom.earth
+DOMAIN,tilecache.rainviewer.com
