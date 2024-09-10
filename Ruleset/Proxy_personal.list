@@ -80,3 +80,5 @@ DOMAIN-SUFFIX,crystaldynamic-sf.b-cdn.net
 DOMAIN-SUFFIX,avengers.crystald.com
 
 DOMAIN-SUFFIX,ssl-images-amazon.com
+#intel.cn可以直连很快，但是厦门这intel.com比较慢
+DOMAIN-SUFFIX,intel.com
