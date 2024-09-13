@@ -65,9 +65,11 @@ DOMAIN-SUFFIX,clipconverter.cc
 DOMAIN-SUFFIX,gamespot.com
 DOMAIN-KEYWORD,gamescom
 DOMAIN-SUFFIX,metacritic.com
+
+#torrentgalaxy网站
 DOMAIN-SUFFIX,tgx.rs
 DOMAIN-SUFFIX,tgx.sb
-DOMAIN,proxygalaxy.me
+
 DOMAIN-SUFFIX,twcdn.xyz
 DOMAIN-SUFFIX,notion.so
 DOMAIN-SUFFIX,grammarly.com
