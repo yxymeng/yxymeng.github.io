@@ -21,3 +21,5 @@ DOMAIN-SUFFIX,steamstatic.com
 DOMAIN-SUFFIX,underlords.com
 DOMAIN-SUFFIX,valvesoftware.com
 DOMAIN-SUFFIX,steambroadcastchat.akamaized.net
+#任天堂付款需要
+DOMAIN-SUFFIX,salesforce.com
