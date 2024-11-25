@@ -182,6 +182,9 @@ PROCESS-NAME,fdm.exe
 PROCESS-NAME,qbittorrent.exe
 PROCESS-NAME,uTorrent.exe
 PROCESS-NAME,BitComet.exe
+PROCESS-NAME,Moonlight.exe
+PROCESS-NAME,sunshine.exe
+PROCESS-NAME,ToDesk.exe
 
 URL-REGEX,(.+.)?(torrent|announce.php?passkey=|tracker|BitTorrent|bt_key|ed2k|find_node|get_peers|info_hash|magnet:|peer_id=|xunlei)(..+)?
 URL-REGEX,(.+.|^)(360|so|qihoo|360safe|qhimg|360totalsecurity|yunpan).(cn|com)
