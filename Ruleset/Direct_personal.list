@@ -201,7 +201,8 @@ DOMAIN,uplaypc-s-ubisoft.cdn.ubi.com
 DOMAIN,uplaypc-s-ubisoft-ww.cdn.ubi.com
 #DOMAIN,api.steampowered.com走直连有时候手机端会连不上，握手失败
 DOMAIN-SUFFIX,cm.steampowered.com
-#DOMAIN-SUFFIX,steamserver.net 不确定下载会不会用这个后缀，先取消，因为加载商店的一些内容需要用到，走直连的话加载慢，下载好像是走steamcontent.com|测试后需要用到
+DOMAIN-SUFFIX,steamserver.net
+#上面Steamserver.net不确定下载会不会用这个后缀，先取消，因为加载商店的一些内容需要用到，走直连的话加载慢，下载好像是走steamcontent.com|测试后需要用到。2024年12月29日重新用上，应该能让登陆走直连，从而下载用国内cdn
 IP-CIDR,103.10.124.0/24,no-resolve
 IP-CIDR,103.10.125.0/24,no-resolve
 IP-CIDR,103.28.54.0/24,no-resolve
