@@ -19,6 +19,8 @@
 #DOMAIN-SUFFIX,unrealengine.com
 #DOMAIN-KEYWORD,unrealengine
 
+PROCESS-NAME,PalServer.exe
+PROCESS-NAME,PalServer-Win64-Shipping.exe
 PROCESS-NAME,PalServer-Win64-Shipping-Cmd.exe
 DOMAIN-SUFFIX,heishenhua.com
 
