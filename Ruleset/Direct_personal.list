@@ -22,6 +22,7 @@
 PROCESS-NAME,PalServer.exe
 PROCESS-NAME,PalServer-Win64-Shipping.exe
 PROCESS-NAME,PalServer-Win64-Shipping-Cmd.exe
+DOMAIN-SUFFIX,palworldgame.com
 DOMAIN-SUFFIX,heishenhua.com
 
 #一些用到的网址
