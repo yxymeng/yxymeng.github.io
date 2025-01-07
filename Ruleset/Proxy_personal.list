@@ -12,6 +12,7 @@ DOMAIN-SUFFIX,javplayer.me
 
 DOMAIN-SUFFIX,bulianglin.com
 DOMAIN-SUFFIX,palworldgame.com
+DOMAIN,presence-heartbeat.xboxlive.com
 
 DOMAIN-KEYWORD,patreon
 PROCESS-NAME,Paradox Launcher.exe
