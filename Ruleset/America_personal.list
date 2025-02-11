@@ -14,6 +14,7 @@ DOMAIN-SUFFIX,oaistatic.com
 DOMAIN,gist-queue-consumer-api.cloud.gist.build
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,chatboxai.app
+DOMAIN-SUFFIX,cherry-ai.com
 
 #bingai用，  copilot.microsoft.com
 DOMAIN-SUFFIX,copilot.microsoft.com
