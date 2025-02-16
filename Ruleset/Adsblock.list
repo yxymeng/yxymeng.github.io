@@ -55,3 +55,22 @@ DOMAIN-SUFFIX,cm.bilibili.ccom
 
 #iyinghua.io樱花动漫弹窗广告
 DOMAIN-SUFFIX,jg.awaliwa.com
+
+DOMAIN,v3-novelapp.fqnovelvod.com
+DOMAIN,v6-novelapp.fqnovelvod.com
+DOMAIN,sf3-fe-tos.pglstatp-toutiao.com
+DOMAIN,saveu5-normal-lq.zijieapi.com
+DOMAIN,v3-be-pack.pglstatp-toutiao.com
+DOMAIN,p3-webcast.douyinpic.com
+DOMAIN,tnc3-bjlgy.zijieapi.com
+DOMAIN,log-api.pangolin-sdk-toutiao-b.com
+DOMAIN,p9-developer-sign.bytemaimg.com
+DOMAIN,tnc11-bjlgy.zijieapi.com
+DOMAIN,tnc3-aliec2.zijieapi.com
+DOMAIN,p3-webcast-sign.douyinpic.com
+DOMAIN,lf9-cdn-tos.bytegecko.com
+
+  # 拦截指定IP（含端口需单独处理）
+IP-CIDR,116.169.11.31/32
+IP-CIDR,123.6.82.180/32
+IP-CIDR,203.119.216.50/32
