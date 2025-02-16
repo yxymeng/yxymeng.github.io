@@ -11,8 +11,8 @@
     #RULE-SET：Rule Provider规则匹配
     #MATCH：全匹配
 
-DOMAIN-KEYWORD,misc-hl.fqnovel.com
-DOMAIN-KEYWORD,normal-lq.zijieapi.com
+#DOMAIN-KEYWORD,misc-hl.fqnovel.com
+#番茄小说（字节跳动旗下）视频广告节点
 DOMAIN-KEYWORD,normal-hl.zijieapi.com
 DOMAIN-KEYWORD,ad-sign.byteimg.com
 #DOMAIN-SUFFIX,douyincdn.com
