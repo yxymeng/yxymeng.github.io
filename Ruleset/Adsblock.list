@@ -11,7 +11,7 @@
     #RULE-SET：Rule Provider规则匹配
     #MATCH：全匹配
 
-#番茄小说（字节跳动旗下）视频广告节点
+##番茄小说（字节跳动旗下）视频广告节点
 ##DOMAIN-KEYWORD,misc-hl.fqnovel.com
 DOMAIN-KEYWORD,normal-hl.zijieapi.com
 
@@ -56,7 +56,7 @@ DOMAIN-KEYWORD,normal-hl.zijieapi.com
 #DOMAIN-SUFFIX,e.kuaishou.com
 #DOMAIN-SUFFIX,cm.bilibili.ccom
 
-#iyinghua.io樱花动漫弹窗广告
+##iyinghua.io樱花动漫弹窗广告
 #DOMAIN-SUFFIX,jg.awaliwa.com
 
 #DOMAIN,v3-novelapp.fqnovelvod.com
@@ -73,7 +73,7 @@ DOMAIN-KEYWORD,normal-hl.zijieapi.com
 #DOMAIN,p3-webcast-sign.douyinpic.com
 #DOMAIN,lf9-cdn-tos.bytegecko.com
 
-# 拦截指定IP（含端口需单独处理）
+##拦截指定IP（含端口需单独处理）
 #IP-CIDR,116.169.11.31/32
 #IP-CIDR,123.6.82.180/32
 #IP-CIDR,203.119.216.50/32
