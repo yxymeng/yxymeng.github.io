@@ -1,7 +1,7 @@
     #目前Clash支持的规则类型如下:
-    #DOMAIN-SUFFIX：域名后缀匹配
-    #DOMAIN：域名匹配
-    #DOMAIN-KEYWORD：域名关键字匹配
+    ##DOMAIN-SUFFIX：域名后缀匹配
+    ##DOMAIN：域名匹配
+    ##DOMAIN-KEYWORD：域名关键字匹配
     #IP-CIDR：IP段匹配
     #SRC-IP-CIDR：源IP段匹配
     #GEOIP：GEOIP数据库（国家代码）匹配
@@ -11,68 +11,69 @@
     #RULE-SET：Rule Provider规则匹配
     #MATCH：全匹配
 
-#DOMAIN-KEYWORD,misc-hl.fqnovel.com
 #番茄小说（字节跳动旗下）视频广告节点
+##DOMAIN-KEYWORD,misc-hl.fqnovel.com
 DOMAIN-KEYWORD,normal-hl.zijieapi.com
-DOMAIN-KEYWORD,ad-sign.byteimg.com
-#DOMAIN-SUFFIX,douyincdn.com
-#DOMAIN-KEYWORD,webcast.douyinpic.com抖音直播
-DOMAIN-SUFFIX,s-gm.mmstat.com
-DOMAIN-SUFFIX,gm.mmstat.com
-DOMAIN-SUFFIX,px.ucweb.com
-DOMAIN-SUFFIX,mdap.alipay.com
-DOMAIN-SUFFIX,dorangesource.alicdn.com
-DOMAIN-SUFFIX,audid-api.taobao.com
-DOMAIN-SUFFIX,amdc.m.taobao.com
-DOMAIN-SUFFIX,umengacs.m.taobao.com
-DOMAIN-SUFFIX,hm.baidu.com
-DOMAIN-SUFFIX,mobads.baidu.com
-#DOMAIN-SUFFIX,beacon.qq.com
-#DOMAIN-SUFFIX,trace.qq.com
-DOMAIN-SUFFIX,m.qq.com
-DOMAIN-SUFFIX,monitor.music.qq.com
-DOMAIN-SUFFIX,aegis.qq.com
-DOMAIN-SUFFIX,report.tv.kohesport.qq.com
-DOMAIN-SUFFIX,tbs.qq.com
-DOMAIN-SUFFIX,imtt.qq.com
-DOMAIN-SUFFIX,3g.qq.com
-DOMAIN-SUFFIX,api.sec.miui.com
-DOMAIN-SUFFIX,ulogs.umengcloud.com
-DOMAIN-SUFFIX,log.umsns.com
-DOMAIN-SUFFIX,fp-it.fengkongcloud.com
-DOMAIN-SUFFIX,dig.bdurl.net
-DOMAIN-SUFFIX,grs.dbankcloud.cn
-DOMAIN-SUFFIX,grs.dbankcloud.asia
-DOMAIN-SUFFIX,line1-log.biligame.net
-DOMAIN-SUFFIX,mdap.alipay.com
-DOMAIN-SUFFIX,metok.sys.miui.com
-DOMAIN-SUFFIX,analytics.meituan.net
-DOMAIN-SUFFIX,open.kwaizt.com
-DOMAIN-SUFFIX,open.kuaishouzt.com
-DOMAIN-SUFFIX,amdcopen.m.taobao.com
-DOMAIN-SUFFIX,cn-fp.apitd.net
-DOMAIN-SUFFIX,adxlog-adnet.vivo.com.cn
-DOMAIN-SUFFIX,e.kuaishou.com
-DOMAIN-SUFFIX,cm.bilibili.ccom
+
+#DOMAIN-KEYWORD,ad-sign.byteimg.com
+##DOMAIN-SUFFIX,douyincdn.com
+##DOMAIN-KEYWORD,webcast.douyinpic.com抖音直播
+#DOMAIN-SUFFIX,s-gm.mmstat.com
+#DOMAIN-SUFFIX,gm.mmstat.com
+#DOMAIN-SUFFIX,px.ucweb.com
+#DOMAIN-SUFFIX,mdap.alipay.com
+#DOMAIN-SUFFIX,dorangesource.alicdn.com
+#DOMAIN-SUFFIX,audid-api.taobao.com
+#DOMAIN-SUFFIX,amdc.m.taobao.com
+#DOMAIN-SUFFIX,umengacs.m.taobao.com
+#DOMAIN-SUFFIX,hm.baidu.com
+#DOMAIN-SUFFIX,mobads.baidu.com
+##DOMAIN-SUFFIX,beacon.qq.com
+##DOMAIN-SUFFIX,trace.qq.com
+#DOMAIN-SUFFIX,m.qq.com
+#DOMAIN-SUFFIX,monitor.music.qq.com
+#DOMAIN-SUFFIX,aegis.qq.com
+#DOMAIN-SUFFIX,report.tv.kohesport.qq.com
+#DOMAIN-SUFFIX,tbs.qq.com
+#DOMAIN-SUFFIX,imtt.qq.com
+#DOMAIN-SUFFIX,3g.qq.com
+#DOMAIN-SUFFIX,api.sec.miui.com
+#DOMAIN-SUFFIX,ulogs.umengcloud.com
+#DOMAIN-SUFFIX,log.umsns.com
+#DOMAIN-SUFFIX,fp-it.fengkongcloud.com
+#DOMAIN-SUFFIX,dig.bdurl.net
+#DOMAIN-SUFFIX,grs.dbankcloud.cn
+#DOMAIN-SUFFIX,grs.dbankcloud.asia
+#DOMAIN-SUFFIX,line1-log.biligame.net
+#DOMAIN-SUFFIX,mdap.alipay.com
+#DOMAIN-SUFFIX,metok.sys.miui.com
+#DOMAIN-SUFFIX,analytics.meituan.net
+#DOMAIN-SUFFIX,open.kwaizt.com
+#DOMAIN-SUFFIX,open.kuaishouzt.com
+#DOMAIN-SUFFIX,amdcopen.m.taobao.com
+#DOMAIN-SUFFIX,cn-fp.apitd.net
+#DOMAIN-SUFFIX,adxlog-adnet.vivo.com.cn
+#DOMAIN-SUFFIX,e.kuaishou.com
+#DOMAIN-SUFFIX,cm.bilibili.ccom
 
 #iyinghua.io樱花动漫弹窗广告
-DOMAIN-SUFFIX,jg.awaliwa.com
+#DOMAIN-SUFFIX,jg.awaliwa.com
 
-DOMAIN,v3-novelapp.fqnovelvod.com
-DOMAIN,v6-novelapp.fqnovelvod.com
-DOMAIN,sf3-fe-tos.pglstatp-toutiao.com
-DOMAIN,saveu5-normal-lq.zijieapi.com
-DOMAIN,v3-be-pack.pglstatp-toutiao.com
-DOMAIN,p3-webcast.douyinpic.com
-DOMAIN,tnc3-bjlgy.zijieapi.com
-DOMAIN,log-api.pangolin-sdk-toutiao-b.com
-DOMAIN,p9-developer-sign.bytemaimg.com
-DOMAIN,tnc11-bjlgy.zijieapi.com
-DOMAIN,tnc3-aliec2.zijieapi.com
-DOMAIN,p3-webcast-sign.douyinpic.com
-DOMAIN,lf9-cdn-tos.bytegecko.com
+#DOMAIN,v3-novelapp.fqnovelvod.com
+#DOMAIN,v6-novelapp.fqnovelvod.com
+#DOMAIN,sf3-fe-tos.pglstatp-toutiao.com
+#DOMAIN,saveu5-normal-lq.zijieapi.com
+#DOMAIN,v3-be-pack.pglstatp-toutiao.com
+#DOMAIN,p3-webcast.douyinpic.com
+#DOMAIN,tnc3-bjlgy.zijieapi.com
+#DOMAIN,log-api.pangolin-sdk-toutiao-b.com
+#DOMAIN,p9-developer-sign.bytemaimg.com
+#DOMAIN,tnc11-bjlgy.zijieapi.com
+#DOMAIN,tnc3-aliec2.zijieapi.com
+#DOMAIN,p3-webcast-sign.douyinpic.com
+#DOMAIN,lf9-cdn-tos.bytegecko.com
 
-  # 拦截指定IP（含端口需单独处理）
-IP-CIDR,116.169.11.31/32
-IP-CIDR,123.6.82.180/32
-IP-CIDR,203.119.216.50/32
+# 拦截指定IP（含端口需单独处理）
+#IP-CIDR,116.169.11.31/32
+#IP-CIDR,123.6.82.180/32
+#IP-CIDR,203.119.216.50/32
