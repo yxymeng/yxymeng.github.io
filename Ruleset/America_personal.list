@@ -28,6 +28,7 @@ DOMAIN-SUFFIX,designer.microsoft.com
 #grok用
 DOMAIN-SUFFIX,x.ai
 DOMAIN-SUFFIX,grok.com
+DOMAIN,imgs.search.brave.com
 
 DOMAIN,bard.google.com
 DOMAIN-KEYWORD,paypal
