@@ -25,6 +25,10 @@ DOMAIN,functional.events.data.microsoft.com
 DOMAIN,edgeservices.bing.com
 DOMAIN-SUFFIX,designer.microsoft.com
 
+#grok用
+DOMAIN-SUFFIX,x.ai
+DOMAIN-SUFFIX,grok.com
+
 DOMAIN,bard.google.com
 DOMAIN-KEYWORD,paypal
 #DOMAIN-SUFFIX,zoom.earth
