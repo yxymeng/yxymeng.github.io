@@ -26,7 +26,7 @@ dns:
     - tls://120.53.53.53
     - tls://1.12.12.12
   fallback:
-    - tls://1.1.1.1
+    - tls://8.8.8.8
   fallback-filter:
     geoip: true
     geosite:
