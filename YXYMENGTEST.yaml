@@ -16,7 +16,21 @@ experimental:
 dns:
   enable: true
   ipv6: false
-  listen: 0.0.0.0:53
+  enhanced-mode: fake-ip
+  listen: :1053
+  nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+    - tls://223.5.5.5:853
+    - tls://223.6.6.6:853
+    - tls://120.53.53.53
+    - tls://1.12.12.12
+  fallback:
+    - tls://1.1.1.1
+  fallback-filter:
+    geoip: true
+    geosite:
+      - cn
   fake-ip-filter:
     - "*.lan"
     - "*.srv.nintendo.net"
@@ -27,13 +41,6 @@ dns:
     - "*.sktswe.net"
     - rtc.goodfone.co.kr
     - "*.chattti.com"
-  nameserver:
-    - 119.29.29.29
-    - 223.5.5.5
-    - tls://223.5.5.5:853
-    - tls://223.6.6.6:853
-    - tls://120.53.53.53
-    - tls://1.12.12.12
 proxies:
   - {name: "Traffic: 112.45 GB | 150 GB", server: gzdata1.233netboom.com, port: 10001, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: fd791ea725.m.ctrip.com}, udp: true}
   - {name: "Expire: 2026-04-11", server: gzdata1.233netboom.com, port: 10001, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: fd791ea725.m.ctrip.com}, udp: true}
