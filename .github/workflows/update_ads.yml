@@ -1,0 +1,32 @@
+name: 更新广告规则
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 每天 UTC 时间 00:00 运行
+  workflow_dispatch:
+
+jobs:
+  update-ads:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v3
+
+      - name: 设置 Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: 安装依赖
+        run: pip install requests
+
+      - name: 合并广告规则
+        run: |
+          python merge_ads_rules.py   # 执行步骤 3 中的脚本
+
+      - name: 提交更新
+        run: |
+          git config user.name 'github-actions'
+          git config user.email 'actions@github.com'
+          git add Ruleset/AdsUnified.list
+          git commit -m "Daily update AdsUnified.list"
+          git push
