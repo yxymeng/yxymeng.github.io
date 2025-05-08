@@ -30,11 +30,15 @@ jobs:
         run: python merge_ads_rules.py
 
       # —— 临时加入调试步骤 —— #
+
       - name: 列出当前目录结构
         run: ls -R .
 
+      - name: 查看 Ruleset 目录下文件
+        run: ls Ruleset || echo "Ruleset 目录不存在或为空"
+
       - name: 查看生成的规则文件前十行
-        run: head -n 10 Ruleset/AdsUnified.list || echo "文件不存在"
+        run: head -n 10 Ruleset/AdsUnified.list || echo "AdsUnified.list 不存在"
 
       # —— 调试结束 —— #
 
