@@ -1,57 +1,43 @@
-name: 更新广告屏蔽规则
+# .github/workflows/update_ads.yml
+name: 更新广告规则
 
-# 定时与手动触发
+# 定时每天运行一次（UTC 时间），也可手动触发
 on:
   schedule:
-    - cron:  '0 0 * * *'      # UTC 每天 00:00 运行 → 北京时间 08:00 :contentReference[oaicite:2]{index=2}
-  workflow_dispatch:         # 手动触发
-
-permissions:
-  contents: write            # 允许写入仓库内容 :contentReference[oaicite:3]{index=3}
+    - cron: '0 0 * * *'     # 每天 00:00 UTC 执行一次（即北京时间上午 8 点）
+  # 允许手动触发
+  workflow_dispatch:
 
 jobs:
-  merge_and_push:
+  update_ads:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
 
-      - name: 设置 Python
+    steps:
+      - name: 检出仓库代码
+        uses: actions/checkout@v4
+        with:
+          # 保留凭证以便后续推送更改
+          persist-credentials: true
+
+      - name: 设置 Python 环境
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
-      - name: 安装依赖
+      - name: 安装 Python 依赖
         run: pip install requests
 
-      - name: 确保 Ruleset 目录存在
-        run: mkdir -p Ruleset
-
       - name: 运行合并脚本
-        run: python merge_ads_rules.py
-
-      # —— 临时加入调试步骤 —— #
-
-      - name: 列出当前目录结构
-        run: ls -R .
-
-      - name: 查看 Ruleset 目录下文件
-        run: ls Ruleset || echo "Ruleset 目录不存在或为空"
-
-      - name: 查看生成的规则文件前十行
-        run: head -n 10 Ruleset/AdsUnified.list || echo "AdsUnified.list 不存在"
-
-      # —— 调试结束 —— #
+        # 执行前需确保 merge_ads.py 已经存在于仓库根目录
+        run: python merge_ads.py
 
       - name: 提交并推送更新
         run: |
+          # 配置 Git 用户名和邮箱（使用 Actions 机器人身份）
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          # 添加并提交更改，如果无更改则跳过提交
           git add Ruleset/AdsUnified.list
-          if git diff --cached --exit-code; then
-            echo "无更新，跳过提交"
-          else
-            git commit -m "自动更新 AdsUnified.list"
-            git push
-          fi
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          git commit -m "更新广告规则列表" || echo "没有检测到更改，跳过提交"
+          # 推送到默认的主分支
+          git push
