@@ -1,4 +1,6 @@
 import requests
+import os
+
 
 os.makedirs("Ruleset", exist_ok=True)
 
