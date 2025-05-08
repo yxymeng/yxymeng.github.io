@@ -1,32 +1,47 @@
-name: 更新广告规则
+name: 更新广告屏蔽规则
+
+# 定时与手动触发
 on:
   schedule:
-    - cron: '0 0 * * *'  # 每天 UTC 时间 00:00 运行
-  workflow_dispatch:
+    - cron:  '0 0 * * *'      # UTC 每天 00:00 运行 → 北京时间 08:00 :contentReference[oaicite:2]{index=2}
+  workflow_dispatch:         # 手动触发
+
+permissions:
+  contents: write            # 允许写入仓库内容 :contentReference[oaicite:3]{index=3}
 
 jobs:
-  update-ads:
+  merge_and_push:
     runs-on: ubuntu-latest
-    steps:
-      - name: 检出仓库
-        uses: actions/checkout@v3
 
-      - name: 设置 Python
+    steps:
+      - name: 检出仓库代码
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0      # 获取完整历史，确保能推送所有分支 :contentReference[oaicite:4]{index=4}
+
+      - name: 设置 Python 环境
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
       - name: 安装依赖
-        run: pip install requests
+        run: pip install requests PyGithub
 
-      - name: 合并广告规则
-        run: |
-          python merge_ads_rules.py   # 执行步骤 3 中的脚本
+      - name: 运行合并脚本
+        run: python merge_ads_rules.py
 
-      - name: 提交更新
+      - name: 提交并推送更新
         run: |
-          git config user.name 'github-actions'
-          git config user.email 'actions@github.com'
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add Ruleset/AdsUnified.list
-          git commit -m "Daily update AdsUnified.list"
-          git push
+          # 检查是否有改动
+          if ! git diff --cached --exit-code; then
+            git commit -m "自动更新 AdsUnified.list (由 GitHub Actions)" 
+            git push
+          else
+            echo "无更新，跳过提交"
+          fi
+        env:
+          # Persist default token 以便无需再次登录 :contentReference[oaicite:5]{index=5}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
