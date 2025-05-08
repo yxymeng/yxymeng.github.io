@@ -1,5 +1,7 @@
 import requests
 
+os.makedirs("Ruleset", exist_ok=True)
+
 urls = [
     "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list",
     "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list",
