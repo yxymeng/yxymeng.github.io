@@ -42,7 +42,7 @@ for line in china_lines:
         merged_rules.append(line)
 
 # 处理其他所有广告规则列表
-for name in ["BanAD", "BanProgramAD", "BanEasyList", "BanEasyPrivacy"]:
+for name in ["BanAD", "BanProgramAD", "BanEasyPrivacy"]:
     print(f"开始下载规则列表: {name} ...")
     resp = requests.get(urls[name])
     resp.encoding = 'utf-8'
