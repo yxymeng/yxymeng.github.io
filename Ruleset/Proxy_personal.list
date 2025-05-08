@@ -69,6 +69,8 @@ DOMAIN-SUFFIX,gamespot.com
 DOMAIN-KEYWORD,gamescom
 DOMAIN-SUFFIX,metacritic.com
 DOMAIN-SUFFIX,flightradar24.com
+DOMAIN-SUFFIX,easylist.to
+DOMAIN-SUFFIX,adblockplus.org
 
 #torrentgalaxy网站
 DOMAIN-SUFFIX,tgx.rs
