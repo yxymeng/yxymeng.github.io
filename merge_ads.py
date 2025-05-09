@@ -14,6 +14,7 @@ urls = {
     # 优先保留中国版 EasyList
     "BanEasyListChina": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyListChina.list",
     # 其他广告规则列表
+    "Adsblock":       "https://raw.githubusercontent.com/yxymeng/yxymeng.github.io/refs/heads/master/Ruleset/Adsblock.list",
     "BanAD":          "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list",
     "BanProgramAD":   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list",
     "BanEasyList":    "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyList.list",
