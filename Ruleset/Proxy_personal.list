@@ -1,5 +1,5 @@
-DOMAIN-SUFFIX,xn--ngstr-lra8j.com
-DOMAIN-SUFFIX,services.googleapis.cn
+#DOMAIN-SUFFIX,xn--ngstr-lra8j.com    已添加进America规则集
+#DOMAIN-SUFFIX,services.googleapis.cn  同上
 DOMAIN-KEYWORD,github
 DOMAIN-KEYWORD,jsdelivr
 DOMAIN-SUFFIX,pypi.org
