@@ -10,14 +10,16 @@ DOMAIN-SUFFIX,tiktokcdn.com
 DOMAIN-SUFFIX,tiktokv.com
 
 #chatgpt-4用
-DOMAIN-SUFFIX,oaistatic.com
+#DOMAIN-SUFFIX,oaistatic.com
 DOMAIN,gist-queue-consumer-api.cloud.gist.build
-DOMAIN-SUFFIX,oaiusercontent.com
+#DOMAIN-SUFFIX,oaiusercontent.com
+
+#CherryAi等app用api
 DOMAIN-SUFFIX,chatboxai.app
 DOMAIN-SUFFIX,cherry-ai.com
 
 #bingai用，  copilot.microsoft.com
-DOMAIN-SUFFIX,copilot.microsoft.com
+#DOMAIN-SUFFIX,copilot.microsoft.com
 DOMAIN,sydney.bing.com
 DOMAIN-SUFFIX,access-point.cloudmessaging.edge.microsoft.com
 DOMAIN-SUFFIX,prod.do.dsp.mp.microsoft.com
@@ -32,7 +34,7 @@ DOMAIN,imgs.search.brave.com
 DOMAIN-SUFFIX,stripe.network
 DOMAIN-SUFFIX,stripecdn.com
 
-DOMAIN,bard.google.com
+#DOMAIN,bard.google.com
 DOMAIN-KEYWORD,paypal
 #DOMAIN-SUFFIX,zoom.earth
 
@@ -50,10 +52,10 @@ DOMAIN-SUFFIX,googleapis.cn
 DOMAIN-SUFFIX,googleapis.com
 DOMAIN-SUFFIX,gstatic.cn
 DOMAIN-SUFFIX,gstatic.com
-DOMAIN-SUFFIX,gvt0.com
-DOMAIN-SUFFIX,gvt1.com
-DOMAIN-SUFFIX,gvt2.com
-DOMAIN-SUFFIX,gvt3.com
+#DOMAIN-SUFFIX,gvt0.com
+#DOMAIN-SUFFIX,gvt1.com
+#DOMAIN-SUFFIX,gvt2.com
+#DOMAIN-SUFFIX,gvt3.com
 DOMAIN-SUFFIX,xn--ngstr-lra8j.com
 IP-CIDR,74.125.0.0/16,no-resolve
 IP-CIDR,173.194.0.0/16,no-resolve
