@@ -35,3 +35,4 @@ DOMAIN-SUFFIX,stripecdn.com
 DOMAIN,bard.google.com
 DOMAIN-KEYWORD,paypal
 #DOMAIN-SUFFIX,zoom.earth
+PROCESS-NAME,com.android.vending
