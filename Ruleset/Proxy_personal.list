@@ -40,7 +40,10 @@ DOMAIN-KEYWORD,gog.com
 DOMAIN-SUFFIX,manhuabika.com
 DOMAIN-SUFFIX,manhuapica.com
 DOMAIN-SUFFIX,picawang.com
+DOMAIN-SUFFIX,eu.org
 DOMAIN-SUFFIX,dnsleaktest.com
+DOMAIN-SUFFIX,browserleaks.com
+DOMAIN-SUFFIX,ipleak.net
 
 #zlibrary网址
 DOMAIN-KEYWORD,cdn-zlib.se
