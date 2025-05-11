@@ -4,6 +4,18 @@ DOMAIN-KEYWORD,github
 DOMAIN-KEYWORD,jsdelivr
 DOMAIN-SUFFIX,pypi.org
 
+#youtube
+DOMAIN-KEYWORD,youtube
+DOMAIN,youtubei.googleapis.com
+DOMAIN,yt3.ggpht.com
+DOMAIN-SUFFIX,googlevideo.com
+DOMAIN-SUFFIX,gvt0.com
+DOMAIN-SUFFIX,gvt1.com
+DOMAIN-SUFFIX,gvt2.com
+DOMAIN-SUFFIX,gvt3.com
+DOMAIN-SUFFIX,yt.be
+DOMAIN-SUFFIX,ytimg.com
+
 DOMAIN-KEYWORD,18comic
 DOMAIN-KEYWORD,javday
 DOMAIN-SUFFIX,njav.tv
