@@ -35,6 +35,8 @@ DOMAIN-SUFFIX,stripe.network
 DOMAIN-SUFFIX,stripecdn.com
 
 #DOMAIN,bard.google.com
+DOMAIN-SUFFIX,c.gle
+
 DOMAIN-KEYWORD,paypal
 #DOMAIN-SUFFIX,zoom.earth
 
