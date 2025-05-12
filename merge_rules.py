@@ -45,7 +45,7 @@ def merge_and_optimize(category, urls):
 
     final = keywords + optimized_suffix + optimized_domains + others
     # 写入文件
-    fname = f"{category.capitalize()}Unified.list"
+    fname = f"{category.capitalize()}_merged.list"
     with open(os.path.join(OUTPUT_DIR, fname), "w", encoding="utf-8") as f:
         for rule in final:
             f.write(rule + "\n")
