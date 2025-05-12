@@ -3,7 +3,7 @@ import json
 import requests
 
 # 输出根目录及合并规则配置路径
-OUTPUT_DIR = os.path.join("Ruleset", "Merge")
+OUTPUT_DIR = os.path.join("Ruleset", "Merged")
 CONFIG_FILE = "merge_config.json"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
