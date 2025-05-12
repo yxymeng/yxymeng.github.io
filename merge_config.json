@@ -1,0 +1,10 @@
+{
+  "ads": [
+    "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list",
+    "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyPrivacy.list"
+  ],
+  "ai": [
+    "https://raw.githubusercontent.com/user/some-repo/master/openai.list",
+    "https://raw.githubusercontent.com/user/another-repo/master/perplexity.list"
+  ]
+}
