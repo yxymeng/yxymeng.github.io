@@ -31,4 +31,4 @@ jobs:
           author_name: GitHub Action
           author_email: 'github-actions[bot]@users.noreply.github.com'
           message: '自动合并更新 Clash 规则'
-          add: 'Ruleset/Merge'
+          add: 'Ruleset/Merged'
