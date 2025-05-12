@@ -1,6 +1,12 @@
 {
   "ads": [
+    # 优先保留中国版 EasyList
+    "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyListChina.list",
+    # 其他广告规则列表
+    "https://raw.githubusercontent.com/yxymeng/yxymeng.github.io/refs/heads/master/Ruleset/Adsblock.list",
     "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list",
+    "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list",
+    "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyList.list",
     "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyPrivacy.list"
   ],
   "ai": [
