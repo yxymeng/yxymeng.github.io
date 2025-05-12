@@ -1,43 +1,33 @@
-# .github/workflows/update_ads.yml
-name: 更新广告规则
-
-# 定时每天运行一次（UTC 时间），也可手动触发
+name: Merge Clash Rules
 on:
   schedule:
-    - cron: '0 19 * * *'   # 对应 UTC 19:00，即北京时间次日 03:00；'0 19 * * *'即北京时间8点整
-  # 允许手动触发
-  workflow_dispatch:
-
+    - cron: '0 19 * * *'   # 每天 UTC 19:00（北京时间凌晨3:00）10
 jobs:
-  update_ads:
+  merge:
+    permissions:
+      contents: write    # 赋予写权限以便推送更新11
     runs-on: ubuntu-latest
-
     steps:
-      - name: 检出仓库代码
-        uses: actions/checkout@v4
-        with:
-          # 保留凭证以便后续推送更改
-          persist-credentials: true
+      - name: Checkout 仓库
+        uses: actions/checkout@v3
 
       - name: 设置 Python 环境
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
-      - name: 安装 Python 依赖
-        run: pip install requests
+      - name: 安装依赖
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
 
       - name: 运行合并脚本
-        # 执行前需确保 merge_ads.py 已经存在于仓库根目录
-        run: python merge_ads.py
+        run: python merge_rules.py
 
       - name: 提交并推送更新
-        run: |
-          # 配置 Git 用户名和邮箱（使用 Actions 机器人身份）
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          # 添加并提交更改，如果无更改则跳过提交
-          git add Ruleset/AdsUnified.list
-          git commit -m "更新广告规则列表" || echo "没有检测到更改，跳过提交"
-          # 推送到默认的主分支
-          git push
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: GitHub Action
+          author_email: 41898282+github-actions[bot]@users.noreply.github.com
+          message: "自动合并更新 Clash 规则"
+          add: "Ruleset/Merge"
