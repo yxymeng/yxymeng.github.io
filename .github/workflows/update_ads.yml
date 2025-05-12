@@ -1,5 +1,6 @@
 name: Merge Clash Rules
 on:
+  workflow_dispatch:       #允许手动触发
   schedule:
     - cron: '0 19 * * *'   # 每天 UTC 19:00（北京时间凌晨3:00）10
 jobs:
