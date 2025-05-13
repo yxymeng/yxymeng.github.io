@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+# 本脚本用于合并和排除 Clash 规则，支持按 URL 及类型跳过特定规则，并输出日志
+# 使用方式：python merge_rules.py
 import os
 import json
 import requests
