@@ -94,12 +94,18 @@ def exclude_rules(rules, exclude_rules_list, mode):
     # 类型匹配模式：按照关键词、后缀、主域分别过滤
     print(f"[{datetime.now()}] Building exclude sets for type matching")
     ex_kw, ex_suf, ex_dom = set(), set(), set()
+    ex_others = set()  # 用于存储其他类型的排除规则
     for ex in exclude_rules_list:
         for rule in ex:
             t, c = rule_type(rule), rule_content(rule)
-            if t == "DOMAIN-KEYWORD": ex_kw.add(c)
-            elif t == "DOMAIN-SUFFIX": ex_suf.add(c)
-            elif t == "DOMAIN": ex_dom.add(c)
+            if t == "DOMAIN-KEYWORD":
+                ex_kw.add(c)
+            elif t == "DOMAIN-SUFFIX":
+                ex_suf.add(c)
+            elif t == "DOMAIN":
+                ex_dom.add(c)
+            else:
+                ex_others.add(rule)  # 其他类型规则，直接存储完整规则字符串
 
     filtered, removed = [], 0
     for rule in rules:
@@ -116,6 +122,10 @@ def exclude_rules(rules, exclude_rules_list, mode):
         if t == "DOMAIN" and (c in ex_dom or any(k in c for k in ex_kw) or any(c.endswith(s) for s in ex_suf)):
             removed += 1
             continue
+        # 其他类型规则：仅在完全匹配时排除
+        if t not in ("DOMAIN-KEYWORD", "DOMAIN-SUFFIX", "DOMAIN") and rule in ex_others:
+            removed += 1
+            continue
         filtered.append(rule)
 
     print(f"[{datetime.now()}] Type exclude removed {removed} rules")
@@ -126,11 +136,4 @@ def main():
     try:
         with open("merge_config.json", encoding="utf-8") as f:
             cfg = json.load(f)
-    except Exception as e:
-        print(f"[{datetime.now()}] Error reading merge_config.json: {e}")
-        return
-
-    for name, info in cfg.items():
-        print(f"[{datetime.now()}] Processing category: {name}")
-        inc = info.get("include", [])      # 待合并的规则 URL 列表
-        exc = info.get("exclude", [])      # 待排除的规则 URL 列表
+    except Excepti
