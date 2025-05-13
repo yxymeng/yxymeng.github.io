@@ -1,100 +1,186 @@
 import os
 import json
 import requests
+from urllib.parse import urlparse
 
-# 定义输出目录和配置文件路径
+# 输出目录
 OUTPUT_DIR = os.path.join("Ruleset", "Merged")
-CONFIG_FILE = "merge_config.json"
-os.makedirs(OUTPUT_DIR, exist_ok=True)  # 如果目录不存在则创建
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# 判断规则的类型，例如 DOMAIN-SUFFIX、DOMAIN 等
+# 获取规则类型
 def rule_type(line):
-    parts = line.split(",", 1)
-    return parts[0] if len(parts) == 2 else None
+    return line.split(",", 1)[0] if "," in line else None
 
-# 从 URL 获取规则列表（去除注释和空行）
+# 获取规则内容（去除类型前缀）
+def rule_content(line):
+    return line.split(",", 1)[1] if "," in line else line
+
+# 拉取规则集合
 def fetch_rules(url):
-    try:
-        print(f"Fetching rules from: {url}")
-        r = requests.get(url, timeout=15)
-        r.raise_for_status()
-        # 提取非注释和非空白行的规则
-        rules = {ln.strip() for ln in r.text.splitlines() if ln.strip() and not ln.startswith("#")}
-        print(f"Fetched {len(rules)} rules from {url}")
+    r = requests.get(url, timeout=15)
+    r.raise_for_status()
+    return [ln.strip() for ln in r.text.splitlines() if ln.strip() and not ln.startswith("#")]
+
+# 分类规则
+def classify_rules(rules):
+    classified = {
+        "DOMAIN-KEYWORD": set(),
+        "DOMAIN-SUFFIX": set(),
+        "DOMAIN": set(),
+        "OTHERS": set()
+    }
+    for rule in rules:
+        r_type = rule_type(rule)
+        content = rule_content(rule)
+        if r_type in classified:
+            classified[r_type].add(content)
+        else:
+            classified["OTHERS"].add(rule)
+    return classified
+
+# 合并规则，包含去重和优化
+def merge_rules(rules_list):
+    seen = set()
+    final = []
+
+    # 先处理 DOMAIN-KEYWORD
+    keyword_set = set()
+    for rules in rules_list:
+        for rule in rules:
+            if rule_type(rule) == "DOMAIN-KEYWORD":
+                content = rule_content(rule)
+                if content not in keyword_set:
+                    keyword_set.add(content)
+                    if rule not in seen:
+                        seen.add(rule)
+                        final.append(rule)
+
+    # 处理 DOMAIN-SUFFIX 和 DOMAIN，避免与 DOMAIN-KEYWORD 冲突
+    suffix_set = set()
+    domain_set = set()
+    for rules in rules_list:
+        for rule in rules:
+            r_type = rule_type(rule)
+            content = rule_content(rule)
+            if r_type == "DOMAIN-SUFFIX":
+                if any(kw in content for kw in keyword_set):
+                    continue
+                if content not in suffix_set:
+                    suffix_set.add(content)
+                    if rule not in seen:
+                        seen.add(rule)
+                        final.append(rule)
+            elif r_type == "DOMAIN":
+                if any(kw in content for kw in keyword_set):
+                    continue
+                if any(content.endswith(suf) for suf in suffix_set):
+                    continue
+                if content not in domain_set:
+                    domain_set.add(content)
+                    if rule not in seen:
+                        seen.add(rule)
+                        final.append(rule)
+
+    # 处理其他类型
+    for rules in rules_list:
+        for rule in rules:
+            r_type = rule_type(rule)
+            if r_type not in ["DOMAIN-KEYWORD", "DOMAIN-SUFFIX", "DOMAIN"]:
+                if rule not in seen:
+                    seen.add(rule)
+                    final.append(rule)
+
+    return final
+
+# 排除规则
+def exclude_rules(rules, exclude_rules_list, mode):
+    if mode == "exact":
+        exclude_set = set()
+        for ex_rules in exclude_rules_list:
+            exclude_set.update(ex_rules)
+        return [rule for rule in rules if rule not in exclude_set]
+    elif mode == "type":
+        # 分类排除规则
+        ex_classified = {
+            "DOMAIN-KEYWORD": set(),
+            "DOMAIN-SUFFIX": set(),
+            "DOMAIN": set()
+        }
+        for ex_rules in exclude_rules_list:
+            for rule in ex_rules:
+                r_type = rule_type(rule)
+                content = rule_content(rule)
+                if r_type in ex_classified:
+                    ex_classified[r_type].add(content)
+
+        # 排除规则
+        result = []
+        for rule in rules:
+            r_type = rule_type(rule)
+            content = rule_content(rule)
+            if r_type == "DOMAIN-KEYWORD":
+                if content in ex_classified["DOMAIN-KEYWORD"]:
+                    continue
+            elif r_type == "DOMAIN-SUFFIX":
+                if any(kw in content for kw in ex_classified["DOMAIN-KEYWORD"]):
+                    continue
+                if content in ex_classified["DOMAIN-SUFFIX"]:
+                    continue
+            elif r_type == "DOMAIN":
+                if any(kw in content for kw in ex_classified["DOMAIN-KEYWORD"]):
+                    continue
+                if any(content.endswith(suf) for suf in ex_classified["DOMAIN-SUFFIX"]):
+                    continue
+                if content in ex_classified["DOMAIN"]:
+                    continue
+            else:
+                if rule in ex_classified.get("OTHERS", set()):
+                    continue
+            result.append(rule)
+        return result
+    else:
         return rules
-    except Exception as e:
-        print(f"Error fetching {url}: {e}")
-        return set()
 
-# 对规则进行类型级别的过滤（根据 DOMAIN-KEYWORD 剔除相关域）
-def type_based_filter(rules, exclude_rules):
-    print("Applying type-based exclusion filter...")
-    # 提取所有 DOMAIN-KEYWORD 的关键词部分
-    keywords = {r.split(",",1)[1] for r in exclude_rules if rule_type(r) == "DOMAIN-KEYWORD"}
-    filtered = []
-    removed = 0
-    for r in rules:
-        if rule_type(r) in ("DOMAIN-SUFFIX", "DOMAIN"):
-            domain = r.split(",", 1)[1]
-            # 如果当前域名中包含任意关键字，则过滤
-            if any(kw in domain for kw in keywords):
-                removed += 1
-                continue
-        filtered.append(r)
-    print(f"Filtered out {removed} rules based on DOMAIN-KEYWORD match")
-    return filtered
+# 主函数
+def main():
+    with open("merge_config.json", encoding="utf-8") as f:
+        config = json.load(f)
 
-# 合并规则并应用排除逻辑
-def merge_category(name, include_urls, exclude_urls=None, mode="exact"):
-    print(f"\nProcessing category: {name} (mode={mode})")
-    exclude_urls = exclude_urls or []
-    exclude_set = set()
+    for name, info in config.items():
+        include_urls = info.get("include", [])
+        exclude_urls = info.get("exclude", [])
+        exclude_mode = info.get("exclude_mode", "exact")
 
-    # 获取所有排除规则集合
-    for url in exclude_urls:
-        exclude_set |= fetch_rules(url)
+        # 拉取包含规则
+        include_rules_list = []
+        for url in include_urls:
+            try:
+                rules = fetch_rules(url)
+                include_rules_list.append(rules)
+            except Exception as e:
+                print(f"Failed to fetch {url}: {e}")
 
-    seen = set()     # 去重集合
-    ordered = []     # 保留顺序的列表
+        # 合并规则
+        merged_rules = merge_rules(include_rules_list)
 
-    # 遍历每个包含规则的 URL
-    for url in include_urls:
-        rules = fetch_rules(url)
-        before_filter = len(rules)
+        # 拉取排除规则
+        exclude_rules_list = []
+        for url in exclude_urls:
+            try:
+                rules = fetch_rules(url)
+                exclude_rules_list.append(rules)
+            except Exception as e:
+                print(f"Failed to fetch {url}: {e}")
 
-        # 根据排除模式进行处理
-        if mode == "exact":
-            rules = {r for r in rules if r not in exclude_set}  # 精确排除
-        elif mode == "type":
-            rules = set(type_based_filter(list(rules), exclude_set))  # 类型级排除
+        # 排除规则
+        final_rules = exclude_rules(merged_rules, exclude_rules_list, exclude_mode)
 
-        after_filter = len(rules)
-        print(f"{url}: {before_filter - after_filter} rules filtered")
+        # 写入文件
+        output_path = os.path.join(OUTPUT_DIR, f"{name}.list")
+        with open(output_path, "w", encoding="utf-8") as f:
+            for rule in final_rules:
+                f.write(rule + "\n")
+        print(f"Generated {output_path} with {len(final_rules)} rules.")
 
-        # 添加到最终列表中（保持顺序并去重）
-        for r in rules:
-            if r not in seen:
-                seen.add(r)
-                ordered.append(r)
-
-    # 写入合并后的规则到文件
-    fname = f"{name.capitalize()}Unified.list"
-    output_path = os.path.join(OUTPUT_DIR, fname)
-    with open(output_path, 'w', encoding='utf-8') as f:
-        for ln in ordered:
-            f.write(ln + "\n")
-    print(f"Wrote {len(ordered)} rules to {output_path}")
-
-# 读取配置文件
-with open(CONFIG_FILE, encoding='utf-8') as f:
-    cfg = json.load(f)
-
-print("Starting rule merging process...")
-# 遍历每个分类并执行合并流程
-for cat, info in cfg.items():
-    inc = info.get('include', [])  # 包含规则的 URL 列表
-    exc = info.get('exclude', [])  # 排除规则的 URL 列表
-    mode = info.get('exclude_mode', 'exact')  # 排除模式（exact 或 type）
-    merge_category(cat, inc, exc, mode)
-
-print("All categories processed.")
+if __name__ == "__main__":
+    main()
