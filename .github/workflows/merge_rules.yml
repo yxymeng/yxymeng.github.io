@@ -1,34 +1,52 @@
 # .github/workflows/merge_rules.yml
-name: 合并规则工作流
+# 此工作流在仓库根目录下运行 merge_rules.py，合并并排除规则，生成并提交 Ruleset/Merged 目录
+
+name: 合并规则工作流   # GitHub Actions 页面显示的名称
 on:
-  workflow_dispatch:
+  workflow_dispatch:  # 手动触发按钮
   schedule:
-    - cron: '0 19 * * *'  # 每天 UTC 19:00（北京时间凌晨3点）
+    - cron: '0 19 * * *'  # 定时：每天 UTC 19:00（北京时间凌晨3:00）
 
 jobs:
   merge:
-    runs-on: ubuntu-latest
+    name: 合并并推送规则  # 作业内显示的名称
+    runs-on: ubuntu-latest  # 使用最新 Ubuntu 运行环境
 
     steps:
+      # 步骤1：检出当前仓库的代码
       - name: 检出仓库代码
         uses: actions/checkout@v3
+        with:
+          persist-credentials: true  # 保留 GITHUB_TOKEN，便于后续推送
 
+      # 步骤2：设置 Python 运行环境
       - name: 设置 Python 环境
         uses: actions/setup-python@v4
         with:
-          python-version: '3.x'
+          python-version: '3.x'  # 任意 3.x 版本
 
+      # 步骤3：安装依赖库 requests
       - name: 安装依赖
-        run: pip install requests
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
 
+      # 步骤4：执行合并脚本
       - name: 运行合并脚本
-        working-directory: ${{ github.workspace }}   # 默认就是仓库根目录
-        run: python merge_rules.py
+        run: python merge_rules.py  # merge_rules.py 应放在仓库根目录
+        working-directory: ${{ github.workspace }}  # 保证在根目录执行
 
+      # 步骤5：提交并推送合并结果
       - name: 提交并推送更新
         uses: EndBug/add-and-commit@v9
         with:
-          author_name: GitHub Action
-          author_email: 'github-actions[bot]@users.noreply.github.com'
-          message: '自动合并更新 Clash 规则'
-          add: 'Ruleset/Merged'
+          author_name: GitHub Actions  # 提交作者名
+          author_email: github-actions[bot]@users.noreply.github.com  # 提交作者邮箱
+          message: '自动合并并更新规则'  # 提交信息
+          add: 'Ruleset/Merged'  # 添加目录到 commit
+
+# 使用说明：
+# 1. 确保仓库根目录有 merge_rules.py 和 merge_config.json。
+# 2. merge_rules.py 会读取 merge_config.json，按配置合并并排除规则。
+# 3. 通过 Actions 手动触发或定时触发，生成的规则文件会自动提交到 Ruleset/Merged。
+# 4. 若需调整调度时间，修改 cron 表达式即可。
