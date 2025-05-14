@@ -30,6 +30,6 @@
      "exclude": [
         "https://raw.githubusercontent.com/yxymeng/yxymeng.github.io/refs/heads/master/Ruleset/Direct_personal.list"
      ],
-     "exclude_mode": "exact"
+     "exclude_mode": "type"
    }
 }
