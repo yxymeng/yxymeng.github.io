@@ -1,12 +1,12 @@
 # NAME: ads
 # AUTHOR: yxymeng
 # REPO: https://github.com/yxymeng/yxymeng.github.io
-# UPDATED: 2025-05-14T17:25:31Z
+# UPDATED: 2025-05-14T17:44:54Z
 # DOMAIN-KEYWORD: 26
-# DOMAIN-SUFFIX: 71727
+# DOMAIN-SUFFIX: 71724
 # DOMAIN: 8
 # IP-CIDR: 136
-# TOTAL: 71897
+# TOTAL: 71894
 
 DOMAIN-KEYWORD,normal-hl.zijieapi.com
 DOMAIN-KEYWORD,admarvel
@@ -37723,7 +37723,6 @@ DOMAIN-SUFFIX,analytics.matchbin.com
 DOMAIN-SUFFIX,analytics.maxroll.gg
 DOMAIN-SUFFIX,analytics.mc500.info
 DOMAIN-SUFFIX,analytics.media-proweb.de
-DOMAIN-SUFFIX,analytics.meituan.net
 DOMAIN-SUFFIX,analytics.mercadolibre.com
 DOMAIN-SUFFIX,analytics.metro-cc.ru
 DOMAIN-SUFFIX,analytics.metro.be
@@ -56991,7 +56990,6 @@ DOMAIN-SUFFIX,repdata.ydr.com
 DOMAIN-SUFFIX,repdata.yorkdispatch.com
 DOMAIN-SUFFIX,reply.osv.com
 DOMAIN-SUFFIX,report.appmetrica.yandex.net.iberostar.com
-DOMAIN-SUFFIX,report.meituan.com
 DOMAIN-SUFFIX,reportic.app
 DOMAIN-SUFFIX,reporting-api.gannettinnovation.com
 DOMAIN-SUFFIX,reporting.autographapp.me
@@ -70355,7 +70353,6 @@ DOMAIN-SUFFIX,wl.bl.frequentvalues.com.au
 DOMAIN-SUFFIX,wlct-one.de
 DOMAIN-SUFFIX,wlct-two.de
 DOMAIN-SUFFIX,wlkojk.orange.ro
-DOMAIN-SUFFIX,wlog.kuaishou.com
 DOMAIN-SUFFIX,wlp3.aegon.es
 DOMAIN-SUFFIX,wlptux.habitaclia.com
 DOMAIN-SUFFIX,wlqtte.misterspex.at
