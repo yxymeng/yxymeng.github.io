@@ -1,49 +1,58 @@
 # .github/workflows/merge_rules.yml
 # 此工作流在仓库根目录下运行 merge_rules.py，合并并排除规则，生成并提交 Ruleset/Merged 目录
 
-name: 合并规则工作流   # GitHub Actions 页面显示的名称
+name: 合并规则工作流
+permissions:
+  contents: write
+
+concurrency:
+  group: merge-rules
+  cancel-in-progress: true
+
 on:
-  workflow_dispatch:  # 手动触发按钮
+  workflow_dispatch:
   schedule:
-    - cron: '0 19 * * *'  # 定时：每天 UTC 19:00（北京时间凌晨3:00）
+    - cron: '0 19 * * *'
 
 jobs:
   merge:
-    name: 合并并推送规则  # 作业内显示的名称
-    runs-on: ubuntu-latest  # 使用最新 Ubuntu 运行环境
+    runs-on: ubuntu-latest
 
     steps:
-      # 步骤1：检出当前仓库的代码
-      - name: 检出仓库代码
+      - name: Checkout 代码
         uses: actions/checkout@v3
         with:
-          persist-credentials: true  # 保留 GITHUB_TOKEN，便于后续推送
+          persist-credentials: true
 
-      # 步骤2：设置 Python 运行环境
-      - name: 设置 Python 环境
+      - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.x'  # 任意 3.x 版本
+          python-version: '3.x'
 
-      # 步骤3：安装依赖库 requests
-      - name: 安装依赖
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests
+      - name: Cache pip
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
 
-      # 步骤4：执行合并脚本
-      - name: 运行合并脚本
-        run: python merge_rules.py  # merge_rules.py 应放在仓库根目录
-        working-directory: ${{ github.workspace }}  # 保证在根目录执行
+      - name: Install deps
+        run: pip install -r requirements.txt
 
-      # 步骤5：提交并推送合并结果
-      - name: 提交并推送更新
+      - name: Run merge script
+        run: python merge_rules.py
+
+      - name: List merged files
+        run: ls -R Ruleset/Merged
+
+      - name: Commit & Push
         uses: EndBug/add-and-commit@v9
         with:
-          author_name: GitHub Actions  # 提交作者名
-          author_email: github-actions[bot]@users.noreply.github.com  # 提交作者邮箱
-          message: '自动合并并更新规则'  # 提交信息
-          add: 'Ruleset/Merged'  # 添加目录到 commit
+          author_name: GitHub Actions
+          author_email: github-actions[bot]@users.noreply.github.com
+          message: 'Auto merge and update rules'
+          add: 'Ruleset/Merged'
 
 # 使用说明：
 # 1. 确保仓库根目录有 merge_rules.py 和 merge_config.json。
