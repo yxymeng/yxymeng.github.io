@@ -8,7 +8,10 @@
        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyList.list": [],
        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyPrivacy.list": []
      },
-     "exclude": ["https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list"],
+     "exclude": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list",
+        "https://raw.githubusercontent.com/yxymeng/yxymeng.github.io/refs/heads/master/Ruleset/Direct_personal.list"
+     ],
      "exclude_mode": "type"
    },
 
@@ -24,7 +27,9 @@
        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/ChinaIPs/ChinaIPs.list": [],
        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/IPTVMainland/IPTVMainland.list": []
      },
-     "exclude": [],
+     "exclude": [
+        "https://raw.githubusercontent.com/yxymeng/yxymeng.github.io/refs/heads/master/Ruleset/Direct_personal.list"
+     ],
      "exclude_mode": "exact"
    }
 }
