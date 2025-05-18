@@ -44,37 +44,5 @@ def write_clash_list(domains, output_path):
     """
     将域名列表写入 Clash 列表文件，格式：DOMAIN,域名
     :param domains: 域名列表
-    :param output_path: 输出文件路径
-    """
-    # 去重并排序，保证一致性
-    unique_domains = sorted(set(domains))
-    with open(output_path, 'w', encoding='utf-8') as f:
-        for d in unique_domains:
-            # 写入每一行，格式为 "DOMAIN,域名"
-            f.write(f"DOMAIN,{d}\n")
-
-
-def main():
-    """
-    脚本入口：
-    接收两个参数：远程 URL 和 输出文件名。
-    """
-    if len(sys.argv) != 3:
-        # 参数错误时打印用法并退出
-        print("用法: python convert_adguard_to_clash.py <远程URL> <输出文件>")
-        sys.exit(1)
-
-    url = sys.argv[1]          # 远程 AdGuard 规则链接
-    output_file = sys.argv[2]  # 输出文件，如 clash_list.list
-
-    # 拉取远程规则并解析域名
-    lines = fetch_remote(url)
-    domains = parse_adguard(lines)
-
-    # 生成 Clash 列表文件
-    write_clash_list(domains, output_file)
-    print(f"已生成 Clash 列表: {output_file}，共 {len(domains)} 条记录。")
-
-
-if __name__ == '__main__':
-    main()
+    :param output_path: ### 输出文件路径
+脚本会将生成的 `convert_adguard_to_clash` 文件写入当前工作目录（即仓库根目录）。在本地或 GitHub Actions 中，输出路径均为仓库根目录下的 `convert_adguard_to_clash`。
