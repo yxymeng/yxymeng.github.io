@@ -87,6 +87,24 @@ DOMAIN,snowflake.qq.com
 DOMAIN,errnewlog.umeng.com
 DOMAIN,grs.dbankcloud.asia
 DOMAIN,adx-drcn.op.dbankcloud.cn
+DOMAIN,woodpecker.uc.cn
+DOMAIN,open.e.kuaishou.com
+DOMAIN,logs.amap.com
+DOMAIN,open.kuaishouzt.com
+DOMAIN,open.kwaizt.com
+DOMAIN,mobads.baidu.com
+DOMAIN,rmonitor.qq.com
+DOMAIN,h.trace.qq.com
+DOMAIN,config.jpush.cn
+DOMAIN,android.bugly.qq.com
+DOMAIN,ada.baidu.com
+DOMAIN,wn.pos.baidu.com
+DOMAIN,v2.gdt.qq.com
+DOMAIN,tr.byteurl.cn
+DOMAIN,www.pangolin-dsp-toutiao.com
+DOMAIN,sdk.e.qq.com
+DOMAIN,cnlogs.umengcloud.com
+DOMAIN,metok.sys.miui.com
 
 #IP-CIDR,116.169.11.31/32
 #IP-CIDR,123.6.82.180/32
