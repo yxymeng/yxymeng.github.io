@@ -1,44 +1,34 @@
 name: 自动转换adguard规则工作流
 
 on:
-  # 定时触发：每天北京时间 03:30 (UTC+8) 对应 UTC 19:30
   schedule:
+    # 每天北京时间 03:30（对应 UTC 19:30）
     - cron: '30 19 * * *'
-  # 手动触发按钮
-  workflow_dispatch: {}
+  workflow_dispatch:  # 手动触发按钮
 
 jobs:
-  update-clash-list:
-    # 使用最新的 Ubuntu 环境
+  convert:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. 检出仓库代码
-      - name: Checkout repository
+      - name: 检出仓库代码
         uses: actions/checkout@v3
 
-      # 2. 设置 Python 运行环境
-      - name: Set up Python
+      - name: 设置 Python 环境
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
-      # 3. 安装脚本依赖
-      - name: Install dependencies
-        run: |
-          # 安装 requests 库
-          pip install --no-cache-dir -r requirements.txt
+      - name: 安装依赖
+        run: pip install requests
 
-      # 4. 执行转换脚本，拉取并生成列表
-      - name: Generate Clash List
-        run: |
-          python convert_adguard_to_clash.py \
-            https://raw.githubusercontent.com/hululu1068/AdGuard-Rule/main/rule/domain.txt \
-            convert_adguard_to_clash
+      - name: 执行转换脚本
+        run: python convert_adguard_to_clash.py
 
-      # 5. 提交并推送生成的文件
-      - name: Commit and push generated file
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: '自动更新 Clash Remote List'
-          file_pattern: 'convert_adguard_to_clash.list'
+      - name: 提交更改
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add convert_adguard_to_clash.list
+          git commit -m "每日自动更新 Clash 规则列表" || echo "No changes to commit"
+          git push
