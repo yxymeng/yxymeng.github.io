@@ -34,7 +34,7 @@ jobs:
         run: |
           python convert_adguard_to_clash.py \
             https://raw.githubusercontent.com/hululu1068/AdGuard-Rule/main/rule/domain.txt \
-            clash_list.list
+            convert_adguard_to_clash
 
       # 5. 提交并推送生成的文件
       - name: Commit and push generated file
