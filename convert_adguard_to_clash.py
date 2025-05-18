@@ -1,48 +1,47 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+import requests
+import re
 
-import re       # 用于正则表达式匹配
-import sys      # 用于获取脚本参数和退出
-import requests # 用于 HTTP 请求
+# 设置远程 AdGuard 规则的 URL
+ADGUARD_RULE_URL = "https://raw.githubusercontent.com/hululu1068/AdGuard-Rule/main/rule/domain.txt"
 
+# 设置输出文件名
+OUTPUT_FILE = "convert_adguard_to_clash.list"
 
-def fetch_remote(url):
-    """
-    从指定 URL 拉取文本内容，并按行返回。
-    :param url: 远程文件链接
-    :return: 文本按行拆分后的列表
-    """
-    # 发起 GET 请求，设置超时时间为 10 秒
-    resp = requests.get(url, timeout=10)
-    # 如果状态码不是 200，会抛出异常并停止脚本
-    resp.raise_for_status()
-    # 将响应内容按行拆分并返回列表
-    return resp.text.splitlines()
+def fetch_rules(url):
+    """从远程 URL 拉取规则内容"""
+    response = requests.get(url)
+    response.raise_for_status()
+    return response.text
 
+def extract_domains(text):
+    """从 AdGuard 规则文本中提取域名并格式化为 Clash 的 DOMAIN 规则格式"""
+    domain_rules = []
+    for line in text.splitlines():
+        line = line.strip()
+        # 跳过注释或空行
+        if not line or line.startswith("!") or line.startswith("#"):
+            continue
 
-def parse_adguard(lines):
-    """
-    解析 AdGuard 规则行，提取域名。
-    只处理以 "||域名^" 开头的规则。
-    :param lines: 文本行列表
-    :return: 提取出的域名列表
-    """
-    domains = []
-    # 正则：匹配以 || 开头，中间非 ^ 字符，结尾 ^
-    pattern = re.compile(r"^\|\|([^\^]+)\^")
-    for line in lines:
-        line = line.strip()          # 去除首尾空白
-        if not line or line.startswith('#'):
-            continue                 # 跳过空行或注释行
-        m = pattern.match(line)
-        if m:
-            domains.append(m.group(1))
-    return domains
+        # 处理 AdGuard 的 plain domain 规则，如 "||example.com^"
+        if line.startswith("||") and line.endswith("^"):
+            domain = line[2:-1]
+            domain_rules.append(f"DOMAIN,{domain}")
+        # 处理直接写域名的行，如 "example.com"
+        elif re.match(r"^([a-zA-Z0-9_.-]+\.[a-zA-Z]{2,})$", line):
+            domain_rules.append(f"DOMAIN,{line}")
+        # 可根据需要添加更多解析规则
+    return domain_rules
 
+def save_to_file(rules, filename):
+    """将提取的规则保存到文件中"""
+    with open(filename, "w", encoding="utf-8") as f:
+        for rule in rules:
+            f.write(rule + "\n")
 
-def write_clash_list(domains, output_path):
-    """
-    将域名列表写入 Clash 列表文件，格式：DOMAIN,域名
-    :param domains: 域名列表
-    :param output_path: ### 输出文件路径
-脚本会将生成的 `convert_adguard_to_clash` 文件写入当前工作目录（即仓库根目录）。在本地或 GitHub Actions 中，输出路径均为仓库根目录下的 `convert_adguard_to_clash`。
+def main():
+    text = fetch_rules(ADGUARD_RULE_URL)
+    rules = extract_domains(text)
+    save_to_file(rules, OUTPUT_FILE)
+
+if __name__ == "__main__":
+    main()
