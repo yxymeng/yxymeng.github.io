@@ -1,12 +1,12 @@
 # NAME: ads
 # AUTHOR: yxymeng
 # REPO: https://github.com/yxymeng/yxymeng.github.io
-# UPDATED: 2025-05-17T19:10:22Z
+# UPDATED: 2025-05-18T19:09:09Z
 # DOMAIN-KEYWORD: 26
 # DOMAIN-SUFFIX: 71645
-# DOMAIN: 8
+# DOMAIN: 21
 # IP-CIDR: 136
-# TOTAL: 71815
+# TOTAL: 71828
 
 DOMAIN-KEYWORD,normal-hl.zijieapi.com
 DOMAIN-KEYWORD,admarvel
@@ -71679,6 +71679,19 @@ DOMAIN-SUFFIX,zyq2.destinia.sk
 DOMAIN-SUFFIX,zzaoea.costacrociere.it
 DOMAIN-SUFFIX,zzqyxd.smartpozyczka.pl
 DOMAIN-SUFFIX,zzsqqx.shopjapan.co.jp
+DOMAIN,grs.dbankcloud.cn
+DOMAIN,vcs.zijieapi.com
+DOMAIN,toblog.ctobsnssdk.com
+DOMAIN,tnc0-aliec2.zijieapi.com
+DOMAIN,grs.dbankcloud.asia
+DOMAIN,adx-drcn.op.dbankcloud.cn
+DOMAIN,woodpecker.uc.cn
+DOMAIN,logs.amap.com
+DOMAIN,open.kwaizt.com
+DOMAIN,tr.byteurl.cn
+DOMAIN,www.pangolin-dsp-toutiao.com
+DOMAIN,cnlogs.umengcloud.com
+DOMAIN,metok.sys.miui.com
 DOMAIN,adsmind.apdcdn.tc.qq.com
 DOMAIN,adsmind.tc.qq.com
 DOMAIN,pgdt.gtimg.cn
