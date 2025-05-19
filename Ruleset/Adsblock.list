@@ -76,6 +76,10 @@ DOMAIN-KEYWORD,normal-hl.zijieapi.com
 ##拦截指定IP（含端口需单独处理）
 
 #以下为新收集
+DOMAIN-SUFFIX,app-measurement.com
+DOMAIN-SUFFIX,g.doubleclick.net
+DOMAIN-SUFFIX,rmonitor.qq.com
+
 
 
 #IP-CIDR,116.169.11.31/32
