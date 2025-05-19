@@ -1,14 +1,17 @@
 # NAME: ads
 # AUTHOR: yxymeng
 # REPO: https://github.com/yxymeng/yxymeng.github.io
-# UPDATED: 2025-05-18T23:15:20Z
-# DOMAIN-KEYWORD: 26
-# DOMAIN-SUFFIX: 71645
+# UPDATED: 2025-05-19T19:10:17Z
+# DOMAIN-KEYWORD: 28
+# DOMAIN-SUFFIX: 71659
 # DOMAIN: 8
 # IP-CIDR: 136
-# TOTAL: 71815
+# PROCESS-NAME: 2
+# TOTAL: 71833
 
 DOMAIN-KEYWORD,normal-hl.zijieapi.com
+DOMAIN-KEYWORD,grs.dbankcloud
+DOMAIN-KEYWORD,adx-drcn.op.dbankcloud
 DOMAIN-KEYWORD,admarvel
 DOMAIN-KEYWORD,admaster
 DOMAIN-KEYWORD,adsage
@@ -4145,6 +4148,21 @@ DOMAIN-SUFFIX,zylizz.xyz
 DOMAIN-SUFFIX,zyrnbh.xyz
 DOMAIN-SUFFIX,zzohucf.icu
 DOMAIN-SUFFIX,zztxfj.xyz
+DOMAIN-SUFFIX,app-measurement.com
+DOMAIN-SUFFIX,g.doubleclick.net
+DOMAIN-SUFFIX,rmonitor.qq.com
+DOMAIN-SUFFIX,metok.sys.miui.com
+DOMAIN-SUFFIX,analytics.map.qq.com
+DOMAIN-SUFFIX,rumt-zh.com
+DOMAIN-SUFFIX,tdid.m.qq.com
+DOMAIN-SUFFIX,yun-hl.3g.qq.com
+DOMAIN-SUFFIX,tpstelemetry.tencent.com
+DOMAIN-SUFFIX,cnlogs.umengcloud.com
+DOMAIN-SUFFIX,analytics.oceanengine.com
+DOMAIN-SUFFIX,config.jpush.cn
+DOMAIN-SUFFIX,log.tbs.qq.com
+DOMAIN-SUFFIX,ta.pinduoduo.com
+DOMAIN-SUFFIX,th.pinduoduo.com
 DOMAIN-SUFFIX,09mk.cn
 DOMAIN-SUFFIX,100peng.com
 DOMAIN-SUFFIX,114la.com
@@ -37570,7 +37588,6 @@ DOMAIN-SUFFIX,analytics.nordea.no
 DOMAIN-SUFFIX,analytics.nordea.se
 DOMAIN-SUFFIX,analytics.nrg.com
 DOMAIN-SUFFIX,analytics.nrgprotects.com
-DOMAIN-SUFFIX,analytics.oceanengine.com
 DOMAIN-SUFFIX,analytics.okazii.ro
 DOMAIN-SUFFIX,analytics.onlinehomeretail.co.uk
 DOMAIN-SUFFIX,analytics.onlyonlinemarketing.com
@@ -71692,6 +71709,8 @@ IP-CIDR,60.190.139.164/32,no-resolve
 IP-CIDR,154.7.80.158/32,no-resolve
 IP-CIDR,194.59.220.161/32,no-resolve
 IP-CIDR,205.209.138.102/32,no-resolve
+PROCESS-NAME,com.miui.systemAdSolution
+PROCESS-NAME,com.miui.analytics
 IP-CIDR,101.227.200.0/24,no-resolve
 IP-CIDR,101.227.200.11/32,no-resolve
 IP-CIDR,101.227.200.28/32,no-resolve
