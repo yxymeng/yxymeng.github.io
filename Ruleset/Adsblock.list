@@ -86,6 +86,7 @@ DOMAIN-SUFFIX,tdid.m.qq.com
 DOMAIN-SUFFIX,yun-hl.3g.qq.com
 DOMAIN-SUFFIX,tpstelemetry.tencent.com
 PROCESS-NAME,com.miui.analytics
+DOMAIN-KEYWORD,adx-drcn.op.dbankcloud
 
 
 #IP-CIDR,116.169.11.31/32
