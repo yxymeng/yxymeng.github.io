@@ -90,6 +90,7 @@ PROCESS-NAME,JianyingPro.exe
 DOMAIN,audio-ak.spotifycdn.com
 
 DOMAIN-SUFFIX,flydigi.com
+PROCESS-NAME,NarakaBladepoint.exe
 
 #虎牙
 DOMAIN-SUFFIX,node.ppio.cloud
