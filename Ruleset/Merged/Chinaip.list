@@ -1,13 +1,13 @@
 # NAME: Chinaip
 # AUTHOR: yxymeng
 # REPO: https://github.com/yxymeng/yxymeng.github.io
-# UPDATED: 2025-06-22T19:09:50Z
+# UPDATED: 2025-06-23T19:10:56Z
 # DOMAIN-KEYWORD: 17
 # DOMAIN-SUFFIX: 801
 # DOMAIN: 694
-# IP-CIDR: 19622
+# IP-CIDR: 19621
 # PROCESS-NAME: 6
-# TOTAL: 21140
+# TOTAL: 21139
 
 DOMAIN-KEYWORD,360buy
 DOMAIN-KEYWORD,alicdn
@@ -10892,7 +10892,6 @@ IP-CIDR,103.246.8.0/22,no-resolve
 IP-CIDR,103.247.168.0/22,no-resolve
 IP-CIDR,103.247.172.0/22,no-resolve
 IP-CIDR,103.248.0.0/23,no-resolve
-IP-CIDR,103.248.102.0/23,no-resolve
 IP-CIDR,103.248.224.0/21,no-resolve
 IP-CIDR,103.248.230.0/23,no-resolve
 IP-CIDR,103.248.64.0/22,no-resolve
@@ -15057,7 +15056,7 @@ IP-CIDR,175.29.22.0/23,no-resolve
 IP-CIDR,175.6.13.0/24,no-resolve
 IP-CIDR,176.56.38.0/24,no-resolve
 IP-CIDR,178.236.232.0/24,no-resolve
-IP-CIDR,178.236.46.0/23,no-resolve
+IP-CIDR,178.236.47.0/24,no-resolve
 IP-CIDR,18.166.207.110/32,no-resolve
 IP-CIDR,18.166.37.238/32,no-resolve
 IP-CIDR,18.167.115.91/32,no-resolve
@@ -15776,7 +15775,7 @@ IP-CIDR,202.57.192.0/20,no-resolve
 IP-CIDR,202.57.192.0/24,no-resolve
 IP-CIDR,202.57.196.0/22,no-resolve
 IP-CIDR,202.57.200.0/22,no-resolve
-IP-CIDR,202.57.200.0/24,no-resolve
+IP-CIDR,202.57.200.0/23,no-resolve
 IP-CIDR,202.57.204.0/22,no-resolve
 IP-CIDR,202.57.204.0/23,no-resolve
 IP-CIDR,202.58.104.0/22,no-resolve
