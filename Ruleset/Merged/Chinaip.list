@@ -1,13 +1,13 @@
 # NAME: Chinaip
 # AUTHOR: yxymeng
 # REPO: https://github.com/yxymeng/yxymeng.github.io
-# UPDATED: 2025-08-09T19:09:36Z
+# UPDATED: 2025-08-10T19:09:54Z
 # DOMAIN-KEYWORD: 17
-# DOMAIN-SUFFIX: 801
+# DOMAIN-SUFFIX: 802
 # DOMAIN: 694
 # IP-CIDR: 19254
 # PROCESS-NAME: 6
-# TOTAL: 20772
+# TOTAL: 20773
 
 DOMAIN-KEYWORD,360buy
 DOMAIN-KEYWORD,alicdn
@@ -92,6 +92,7 @@ DOMAIN-SUFFIX,tmall.hk
 DOMAIN-SUFFIX,ucweb.com
 DOMAIN-SUFFIX,ykimg.com
 DOMAIN-SUFFIX,youku.com
+DOMAIN-SUFFIX,qwen.ai
 DOMAIN-SUFFIX,baidu.com
 DOMAIN-SUFFIX,baidubcr.com
 DOMAIN-SUFFIX,bcebos.com
