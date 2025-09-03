@@ -1,7 +1,7 @@
 # NAME: Chinaip
 # AUTHOR: yxymeng
 # REPO: https://github.com/yxymeng/yxymeng.github.io
-# UPDATED: 2025-09-02T19:09:04Z
+# UPDATED: 2025-09-03T19:09:49Z
 # DOMAIN-KEYWORD: 17
 # DOMAIN-SUFFIX: 802
 # DOMAIN: 694
@@ -18508,7 +18508,7 @@ IP-CIDR,45.250.136.0/22,no-resolve
 IP-CIDR,45.250.140.0/22,no-resolve
 IP-CIDR,45.250.144.0/22,no-resolve
 IP-CIDR,45.250.148.0/22,no-resolve
-IP-CIDR,45.250.152.0/24,no-resolve
+IP-CIDR,45.250.152.0/23,no-resolve
 IP-CIDR,45.250.180.0/23,no-resolve
 IP-CIDR,45.250.184.0/22,no-resolve
 IP-CIDR,45.250.188.0/22,no-resolve
