@@ -1,13 +1,13 @@
 # NAME: Chinaip
 # AUTHOR: yxymeng
 # REPO: https://github.com/yxymeng/yxymeng.github.io
-# UPDATED: 2025-10-08T19:09:55Z
+# UPDATED: 2025-10-09T19:10:39Z
 # DOMAIN-KEYWORD: 17
 # DOMAIN-SUFFIX: 802
 # DOMAIN: 694
-# IP-CIDR: 19241
+# IP-CIDR: 19240
 # PROCESS-NAME: 6
-# TOTAL: 20760
+# TOTAL: 20759
 
 DOMAIN-KEYWORD,360buy
 DOMAIN-KEYWORD,alicdn
@@ -11837,7 +11837,6 @@ IP-CIDR,103.79.200.0/22,no-resolve
 IP-CIDR,103.79.204.0/22,no-resolve
 IP-CIDR,103.79.208.0/22,no-resolve
 IP-CIDR,103.79.212.0/22,no-resolve
-IP-CIDR,103.79.228.0/24,no-resolve
 IP-CIDR,103.79.24.0/22,no-resolve
 IP-CIDR,103.79.240.0/22,no-resolve
 IP-CIDR,103.79.28.0/22,no-resolve
