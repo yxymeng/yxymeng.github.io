@@ -1,7 +1,7 @@
 # NAME: Chinaip
 # AUTHOR: yxymeng
 # REPO: https://github.com/yxymeng/yxymeng.github.io
-# UPDATED: 2025-11-04T19:10:50Z
+# UPDATED: 2025-11-05T19:10:54Z
 # DOMAIN-KEYWORD: 17
 # DOMAIN-SUFFIX: 802
 # DOMAIN: 694
@@ -12874,6 +12874,7 @@ IP-CIDR,116.153.0.0/16,no-resolve
 IP-CIDR,116.154.0.0/15,no-resolve
 IP-CIDR,116.162.0.0/16,no-resolve
 IP-CIDR,116.163.0.0/18,no-resolve
+IP-CIDR,116.165.0.0/16,no-resolve
 IP-CIDR,116.167.0.0/16,no-resolve
 IP-CIDR,116.168.0.0/15,no-resolve
 IP-CIDR,116.171.0.0/16,no-resolve
@@ -12917,6 +12918,7 @@ IP-CIDR,116.198.176.0/21,no-resolve
 IP-CIDR,116.198.192.0/18,no-resolve
 IP-CIDR,116.198.64.0/21,no-resolve
 IP-CIDR,116.198.72.0/22,no-resolve
+IP-CIDR,116.198.96.0/19,no-resolve
 IP-CIDR,116.204.132.0/22,no-resolve
 IP-CIDR,116.204.132.0/23,no-resolve
 IP-CIDR,116.204.133.0/24,no-resolve
@@ -13989,10 +13991,6 @@ IP-CIDR,124.14.64.0/18,no-resolve
 IP-CIDR,124.14.7.0/24,no-resolve
 IP-CIDR,124.14.8.0/21,no-resolve
 IP-CIDR,124.147.128.0/17,no-resolve
-IP-CIDR,124.151.0.0/17,no-resolve
-IP-CIDR,124.151.128.0/18,no-resolve
-IP-CIDR,124.151.193.0/24,no-resolve
-IP-CIDR,124.151.224.0/19,no-resolve
 IP-CIDR,124.160.0.0/16,no-resolve
 IP-CIDR,124.161.0.0/16,no-resolve
 IP-CIDR,124.162.0.0/16,no-resolve
@@ -14642,6 +14640,7 @@ IP-CIDR,163.177.81.0/24,no-resolve
 IP-CIDR,163.177.89.0/24,no-resolve
 IP-CIDR,163.177.90.0/24,no-resolve
 IP-CIDR,163.223.178.0/23,no-resolve
+IP-CIDR,163.227.40.0/23,no-resolve
 IP-CIDR,163.227.40.0/24,no-resolve
 IP-CIDR,163.53.0.0/22,no-resolve
 IP-CIDR,163.53.100.0/22,no-resolve
@@ -18317,6 +18316,7 @@ IP-CIDR,45.113.16.0/22,no-resolve
 IP-CIDR,45.113.20.0/22,no-resolve
 IP-CIDR,45.113.200.0/22,no-resolve
 IP-CIDR,45.113.204.0/22,no-resolve
+IP-CIDR,45.113.206.0/24,no-resolve
 IP-CIDR,45.113.208.0/22,no-resolve
 IP-CIDR,45.113.212.0/22,no-resolve
 IP-CIDR,45.113.216.0/22,no-resolve
