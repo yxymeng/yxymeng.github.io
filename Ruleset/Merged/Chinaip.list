@@ -1,13 +1,13 @@
 # NAME: Chinaip
 # AUTHOR: yxymeng
 # REPO: https://github.com/yxymeng/yxymeng.github.io
-# UPDATED: 2025-12-05T19:10:49Z
+# UPDATED: 2025-12-06T19:09:39Z
 # DOMAIN-KEYWORD: 17
-# DOMAIN-SUFFIX: 802
+# DOMAIN-SUFFIX: 805
 # DOMAIN: 694
-# IP-CIDR: 19305
+# IP-CIDR: 19306
 # PROCESS-NAME: 6
-# TOTAL: 20824
+# TOTAL: 20828
 
 DOMAIN-KEYWORD,360buy
 DOMAIN-KEYWORD,alicdn
@@ -86,6 +86,7 @@ DOMAIN-SUFFIX,soku.com
 DOMAIN-SUFFIX,taobao.com
 DOMAIN-SUFFIX,taobaocdn.com
 DOMAIN-SUFFIX,tbcache.com
+DOMAIN-SUFFIX,tbcdn.cn
 DOMAIN-SUFFIX,tbcdn.com
 DOMAIN-SUFFIX,tmall.com
 DOMAIN-SUFFIX,tmall.hk
@@ -361,6 +362,7 @@ DOMAIN-SUFFIX,air-matters.com
 DOMAIN-SUFFIX,air-matters.io
 DOMAIN-SUFFIX,aixifan.com
 DOMAIN-SUFFIX,algocasts.io
+DOMAIN-SUFFIX,asklink.com
 DOMAIN-SUFFIX,babytree.com
 DOMAIN-SUFFIX,babytreeimg.com
 DOMAIN-SUFFIX,baicizhan.com
@@ -577,6 +579,7 @@ DOMAIN-SUFFIX,95516.com
 DOMAIN-SUFFIX,acl4.ssr
 DOMAIN-SUFFIX,ip6-localhost
 DOMAIN-SUFFIX,ip6-loopback
+DOMAIN-SUFFIX,internal
 DOMAIN-SUFFIX,lan
 DOMAIN-SUFFIX,local
 DOMAIN-SUFFIX,localhost
@@ -9143,6 +9146,7 @@ IP-CIDR,0.0.0.0/8,no-resolve
 IP-CIDR,10.0.0.0/8,no-resolve
 IP-CIDR,100.64.0.0/10,no-resolve
 IP-CIDR,127.0.0.0/8,no-resolve
+IP-CIDR,169.254.0.0/16,no-resolve
 IP-CIDR,172.16.0.0/12,no-resolve
 IP-CIDR,192.168.0.0/16,no-resolve
 IP-CIDR,198.18.0.0/16,no-resolve
