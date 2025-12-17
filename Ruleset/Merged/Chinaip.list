@@ -1,13 +1,13 @@
 # NAME: Chinaip
 # AUTHOR: yxymeng
 # REPO: https://github.com/yxymeng/yxymeng.github.io
-# UPDATED: 2025-12-16T19:14:30Z
+# UPDATED: 2025-12-17T19:14:37Z
 # DOMAIN-KEYWORD: 17
 # DOMAIN-SUFFIX: 805
 # DOMAIN: 694
-# IP-CIDR: 19377
+# IP-CIDR: 19380
 # PROCESS-NAME: 6
-# TOTAL: 20899
+# TOTAL: 20902
 
 DOMAIN-KEYWORD,360buy
 DOMAIN-KEYWORD,alicdn
@@ -11779,6 +11779,7 @@ IP-CIDR,103.72.16.0/22,no-resolve
 IP-CIDR,103.72.172.0/24,no-resolve
 IP-CIDR,103.72.20.0/22,no-resolve
 IP-CIDR,103.72.224.0/22,no-resolve
+IP-CIDR,103.72.224.0/24,no-resolve
 IP-CIDR,103.72.228.0/22,no-resolve
 IP-CIDR,103.72.232.0/22,no-resolve
 IP-CIDR,103.72.236.0/22,no-resolve
@@ -14536,6 +14537,7 @@ IP-CIDR,157.148.42.0/24,no-resolve
 IP-CIDR,157.148.45.0/24,no-resolve
 IP-CIDR,157.148.51.0/24,no-resolve
 IP-CIDR,157.148.55.0/24,no-resolve
+IP-CIDR,157.15.95.0/24,no-resolve
 IP-CIDR,157.167.231.188/32,no-resolve
 IP-CIDR,157.167.231.39/32,no-resolve
 IP-CIDR,157.167.231.40/32,no-resolve
@@ -15021,6 +15023,7 @@ IP-CIDR,180.89.60.0/23,no-resolve
 IP-CIDR,180.89.64.0/19,no-resolve
 IP-CIDR,180.90.0.0/15,no-resolve
 IP-CIDR,180.91.192.0/20,no-resolve
+IP-CIDR,180.92.176.0/24,no-resolve
 IP-CIDR,180.94.100.0/22,no-resolve
 IP-CIDR,180.94.104.0/21,no-resolve
 IP-CIDR,180.94.120.0/22,no-resolve
@@ -15888,7 +15891,7 @@ IP-CIDR,203.191.29.0/24,no-resolve
 IP-CIDR,203.191.31.0/24,no-resolve
 IP-CIDR,203.192.1.0/24,no-resolve
 IP-CIDR,203.192.16.0/24,no-resolve
-IP-CIDR,203.192.2.0/23,no-resolve
+IP-CIDR,203.192.2.0/24,no-resolve
 IP-CIDR,203.192.24.0/23,no-resolve
 IP-CIDR,203.192.4.0/22,no-resolve
 IP-CIDR,203.192.8.0/21,no-resolve
@@ -17595,9 +17598,9 @@ IP-CIDR,42.201.76.0/23,no-resolve
 IP-CIDR,42.202.141.0/24,no-resolve
 IP-CIDR,42.240.0.0/17,no-resolve
 IP-CIDR,42.240.0.0/21,no-resolve
-IP-CIDR,42.240.12.0/24,no-resolve
+IP-CIDR,42.240.12.0/23,no-resolve
 IP-CIDR,42.240.128.0/17,no-resolve
-IP-CIDR,42.240.16.0/24,no-resolve
+IP-CIDR,42.240.16.0/23,no-resolve
 IP-CIDR,42.240.20.0/22,no-resolve
 IP-CIDR,42.240.8.0/22,no-resolve
 IP-CIDR,42.244.0.0/15,no-resolve
