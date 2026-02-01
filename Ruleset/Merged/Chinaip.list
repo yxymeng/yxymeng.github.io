@@ -1,13 +1,13 @@
 # NAME: Chinaip
 # AUTHOR: yxymeng
 # REPO: https://github.com/yxymeng/yxymeng.github.io
-# UPDATED: 2026-01-31T19:15:38Z
+# UPDATED: 2026-02-01T19:18:06Z
 # DOMAIN-KEYWORD: 17
 # DOMAIN-SUFFIX: 805
 # DOMAIN: 694
-# IP-CIDR: 19293
+# IP-CIDR: 19307
 # PROCESS-NAME: 6
-# TOTAL: 20815
+# TOTAL: 20829
 
 DOMAIN-KEYWORD,360buy
 DOMAIN-KEYWORD,alicdn
@@ -10311,7 +10311,7 @@ IP-CIDR,103.212.8.0/22,no-resolve
 IP-CIDR,103.213.136.0/22,no-resolve
 IP-CIDR,103.213.140.0/22,no-resolve
 IP-CIDR,103.213.144.0/22,no-resolve
-IP-CIDR,103.213.144.0/24,no-resolve
+IP-CIDR,103.213.144.0/23,no-resolve
 IP-CIDR,103.213.148.0/22,no-resolve
 IP-CIDR,103.213.152.0/22,no-resolve
 IP-CIDR,103.213.156.0/22,no-resolve
@@ -11782,7 +11782,6 @@ IP-CIDR,103.72.16.0/22,no-resolve
 IP-CIDR,103.72.172.0/24,no-resolve
 IP-CIDR,103.72.20.0/22,no-resolve
 IP-CIDR,103.72.224.0/22,no-resolve
-IP-CIDR,103.72.224.0/24,no-resolve
 IP-CIDR,103.72.228.0/22,no-resolve
 IP-CIDR,103.72.232.0/22,no-resolve
 IP-CIDR,103.72.236.0/22,no-resolve
@@ -17101,13 +17100,28 @@ IP-CIDR,221.7.96.0/19,no-resolve
 IP-CIDR,221.8.0.0/15,no-resolve
 IP-CIDR,222.126.128.0/17,no-resolve
 IP-CIDR,222.126.128.0/19,no-resolve
-IP-CIDR,222.126.152.0/23,no-resolve
+IP-CIDR,222.126.128.0/23,no-resolve
+IP-CIDR,222.126.132.0/23,no-resolve
+IP-CIDR,222.126.141.0/24,no-resolve
+IP-CIDR,222.126.142.0/23,no-resolve
+IP-CIDR,222.126.146.0/23,no-resolve
+IP-CIDR,222.126.148.0/23,no-resolve
+IP-CIDR,222.126.152.0/21,no-resolve
 IP-CIDR,222.126.164.0/24,no-resolve
-IP-CIDR,222.126.170.0/24,no-resolve
+IP-CIDR,222.126.170.0/23,no-resolve
+IP-CIDR,222.126.172.0/22,no-resolve
 IP-CIDR,222.126.186.0/23,no-resolve
-IP-CIDR,222.126.194.0/23,no-resolve
+IP-CIDR,222.126.188.0/23,no-resolve
+IP-CIDR,222.126.192.0/22,no-resolve
+IP-CIDR,222.126.196.0/23,no-resolve
 IP-CIDR,222.126.200.0/22,no-resolve
+IP-CIDR,222.126.208.0/23,no-resolve
+IP-CIDR,222.126.212.0/22,no-resolve
+IP-CIDR,222.126.216.0/23,no-resolve
 IP-CIDR,222.126.224.0/19,no-resolve
+IP-CIDR,222.126.234.0/23,no-resolve
+IP-CIDR,222.126.236.0/23,no-resolve
+IP-CIDR,222.126.240.0/20,no-resolve
 IP-CIDR,222.128.0.0/14,no-resolve
 IP-CIDR,222.132.0.0/14,no-resolve
 IP-CIDR,222.136.0.0/13,no-resolve
