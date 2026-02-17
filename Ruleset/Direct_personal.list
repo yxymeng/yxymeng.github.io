@@ -45,7 +45,7 @@ DOMAIN-KEYWORD,btnull
 DOMAIN-KEYWORD,s.tutu.pm
 DOMAIN-SUFFIX,pianyuan.org
 DOMAIN-KEYWORD,xiaoheihe
-#DOMAIN-SUFFIX,steamdb.info
+#DOMAIN-SUFFIX,steamdb.info直连会影响加载
 DOMAIN,sms-activate.org
 DOMAIN-SUFFIX,greasyfork.org
 DOMAIN-SUFFIX,tampermonkey.net
