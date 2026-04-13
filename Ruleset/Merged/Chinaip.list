@@ -1,7 +1,7 @@
 # NAME: Chinaip
 # AUTHOR: yxymeng
 # REPO: https://github.com/yxymeng/yxymeng.github.io
-# UPDATED: 2026-04-12T19:33:44Z
+# UPDATED: 2026-04-13T20:00:00Z
 # DOMAIN-KEYWORD: 17
 # DOMAIN-SUFFIX: 805
 # DOMAIN: 694
@@ -9629,6 +9629,7 @@ IP-CIDR,103.110.116.0/22,no-resolve
 IP-CIDR,103.110.127.0/24,no-resolve
 IP-CIDR,103.110.128.0/23,no-resolve
 IP-CIDR,103.110.131.0/24,no-resolve
+IP-CIDR,103.110.139.0/24,no-resolve
 IP-CIDR,103.110.152.0/21,no-resolve
 IP-CIDR,103.110.152.0/22,no-resolve
 IP-CIDR,103.110.32.0/22,no-resolve
@@ -12280,7 +12281,6 @@ IP-CIDR,110.204.0.0/14,no-resolve
 IP-CIDR,110.208.0.0/12,no-resolve
 IP-CIDR,110.211.0.0/16,no-resolve
 IP-CIDR,110.218.0.0/15,no-resolve
-IP-CIDR,110.236.0.0/16,no-resolve
 IP-CIDR,110.34.40.0/22,no-resolve
 IP-CIDR,110.34.44.0/22,no-resolve
 IP-CIDR,110.40.0.0/14,no-resolve
@@ -14014,7 +14014,6 @@ IP-CIDR,125.208.32.0/22,no-resolve
 IP-CIDR,125.208.36.0/23,no-resolve
 IP-CIDR,125.208.38.0/23,no-resolve
 IP-CIDR,125.208.40.0/23,no-resolve
-IP-CIDR,125.208.44.0/22,no-resolve
 IP-CIDR,125.208.48.0/20,no-resolve
 IP-CIDR,125.210.0.0/16,no-resolve
 IP-CIDR,125.211.0.0/16,no-resolve
@@ -15435,6 +15434,7 @@ IP-CIDR,202.41.241.0/24,no-resolve
 IP-CIDR,202.41.242.0/24,no-resolve
 IP-CIDR,202.41.244.0/22,no-resolve
 IP-CIDR,202.41.248.0/21,no-resolve
+IP-CIDR,202.46.224.0/22,no-resolve
 IP-CIDR,202.46.224.0/23,no-resolve
 IP-CIDR,202.46.226.0/24,no-resolve
 IP-CIDR,202.46.228.0/22,no-resolve
@@ -17521,7 +17521,7 @@ IP-CIDR,43.191.32.0/19,no-resolve
 IP-CIDR,43.191.64.0/18,no-resolve
 IP-CIDR,43.192.0.0/16,no-resolve
 IP-CIDR,43.193.0.0/18,no-resolve
-IP-CIDR,43.193.64.0/24,no-resolve
+IP-CIDR,43.193.64.0/23,no-resolve
 IP-CIDR,43.194.0.0/20,no-resolve
 IP-CIDR,43.194.16.0/24,no-resolve
 IP-CIDR,43.196.0.0/16,no-resolve
@@ -19358,7 +19358,7 @@ IP-CIDR,8.162.0.0/18,no-resolve
 IP-CIDR,8.162.64.0/19,no-resolve
 IP-CIDR,8.163.0.0/16,no-resolve
 IP-CIDR,8.164.0.0/14,no-resolve
-IP-CIDR,8.168.0.0/16,no-resolve
+IP-CIDR,8.168.0.0/15,no-resolve
 IP-CIDR,8.210.152.255/32,no-resolve
 IP-CIDR,80.76.36.0/22,no-resolve
 IP-CIDR,81.161.63.0/24,no-resolve
