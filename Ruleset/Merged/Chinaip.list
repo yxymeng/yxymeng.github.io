@@ -1,13 +1,13 @@
 # NAME: Chinaip
 # AUTHOR: yxymeng
 # REPO: https://github.com/yxymeng/yxymeng.github.io
-# UPDATED: 2026-07-12T20:02:32Z
+# UPDATED: 2026-07-13T20:06:17Z
 # DOMAIN-KEYWORD: 17
-# DOMAIN-SUFFIX: 811
-# DOMAIN: 699
+# DOMAIN-SUFFIX: 805
+# DOMAIN: 694
 # IP-CIDR: 19579
 # PROCESS-NAME: 6
-# TOTAL: 21112
+# TOTAL: 21101
 
 DOMAIN-KEYWORD,360buy
 DOMAIN-KEYWORD,alicdn
@@ -96,7 +96,6 @@ DOMAIN-SUFFIX,youku.com
 DOMAIN-SUFFIX,qwen.ai
 DOMAIN-SUFFIX,baidu.com
 DOMAIN-SUFFIX,baidubcr.com
-DOMAIN-SUFFIX,baidustatic.com
 DOMAIN-SUFFIX,bcebos.com
 DOMAIN-SUFFIX,bdimg.com
 DOMAIN-SUFFIX,bdstatic.com
@@ -547,7 +546,6 @@ DOMAIN-SUFFIX,weiphone.com
 DOMAIN-SUFFIX,weiphone.net
 DOMAIN-SUFFIX,womai.com
 DOMAIN-SUFFIX,wscdns.com
-DOMAIN-SUFFIX,xdrig.com
 DOMAIN-SUFFIX,xiachufang.com
 DOMAIN-SUFFIX,xiaojukeji.com
 DOMAIN-SUFFIX,xinhuanet.com
@@ -668,8 +666,6 @@ DOMAIN-SUFFIX,zggbdszt.com.cn
 DOMAIN-SUFFIX,zggbdszt.net.cn
 DOMAIN-SUFFIX,zygbdszt.net.cn
 DOMAIN-SUFFIX,0co3geye.cn
-DOMAIN-SUFFIX,1.letvlive.com
-DOMAIN-SUFFIX,2.letvlive.com
 DOMAIN-SUFFIX,2isbbess.cn
 DOMAIN-SUFFIX,33lwhaoinc.cn
 DOMAIN-SUFFIX,52mtkvideo.cn
@@ -679,7 +675,6 @@ DOMAIN-SUFFIX,9xsecndns.cn
 DOMAIN-SUFFIX,acfun.cn
 DOMAIN-SUFFIX,acfun.com
 DOMAIN-SUFFIX,ads1.lfengmobile.com
-DOMAIN-SUFFIX,afp.pplive.com
 DOMAIN-SUFFIX,aianno.cn
 DOMAIN-SUFFIX,aianno.com
 DOMAIN-SUFFIX,androidgo.duapp.com
@@ -765,7 +760,6 @@ DOMAIN-SUFFIX,yoqoo.tv
 DOMAIN-SUFFIX,youku.com.cn
 DOMAIN-SUFFIX,youku.org
 DOMAIN-SUFFIX,youqoo.net
-DOMAIN-SUFFIX,zamplus.com
 DOMAIN-SUFFIX,inter.ptqy.gitv.tv
 DOMAIN-SUFFIX,api.mob.app.letv.com
 DOMAIN-SUFFIX,vv.video.qq.com
@@ -1283,8 +1277,6 @@ DOMAIN,palive.patv123.com
 DOMAIN,pdlive.lyuncloud.com
 DOMAIN,peixian-tv-hls.cm.jstv.com
 DOMAIN,pili-live-hdl.hsyapp.sobeylingyun.com
-DOMAIN,pili-live-hdl.zhdd.tianma3600.com
-DOMAIN,pili-live-hls-cqgx.tianma3600.com
 DOMAIN,pili-live-hls-qhnqapp2020.sobeylive.com
 DOMAIN,pili-live-hls.140.i2863.com
 DOMAIN,pili-live-hls.171.i2863.com
@@ -1292,13 +1284,11 @@ DOMAIN,pili-live-hls.212.i2863.com
 DOMAIN,pili-live-hls.217.i2863.com
 DOMAIN,pili-live-hls.221.i2863.com
 DOMAIN,pili-live-hls.66.i2863.com
-DOMAIN,pili-live-hls.ahtc.tianma3600.com
 DOMAIN,pili-live-hls.cyyapp2019.sobeylive.com
 DOMAIN,pili-live-hls.guangde.ahxmgk.com
 DOMAIN,pili-live-hls.hebitv.com
 DOMAIN,pili-live-hls.hfmt.net
 DOMAIN,pili-live-hls.jnbctv.com
-DOMAIN,pili-live-hls.jrts.tianma3600.com
 DOMAIN,pili-live-hls.livekpdst.sobeycache.com
 DOMAIN,pili-live-hls.livelztlj.sobeycache.com
 DOMAIN,pili-live-hls.livewafangd.sobeycache.com
@@ -1529,7 +1519,6 @@ DOMAIN,zhxx.chinashadt.com
 DOMAIN,zhz.gxhzxw.com
 DOMAIN,zigui-live21.cjyun.org
 DOMAIN,zigui.live.cjyun.org
-DOMAIN,zjstyhls.tianma3600.com
 DOMAIN,zqy-live.nanyuecloud.com
 DOMAIN,zsxj.chinashadt.com
 DOMAIN,zuikzy.win7i.com
