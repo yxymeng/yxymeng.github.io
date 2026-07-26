@@ -77,6 +77,8 @@ DOMAIN-SUFFIX,supercachenet.com
 DOMAIN-SUFFIX,douyinliving.com
 PROCESS-NAME,JianyingPro.exe
 
+DOMAIN-SUFFIX,coolplay-api.fun
+
 #spotify open.spotifycdn.com/open.spotify.com/accounts.spotify.com 这三个走代理就行，登陆时用到，其他全走直连
 #USER-AGENT,Spotify*
 #DOMAIN-KEYWORD,-spotify-
