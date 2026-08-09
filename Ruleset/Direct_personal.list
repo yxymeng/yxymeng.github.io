@@ -76,6 +76,10 @@ DOMAIN-SUFFIX,ndcpp.com
 DOMAIN-SUFFIX,supercachenet.com
 DOMAIN-SUFFIX,douyinliving.com
 PROCESS-NAME,JianyingPro.exe
+PROCESS-NAME,ddns-go.exe
+PROCESS-NAME,PalServer-Win64-Shipping-Cmd.exe
+PROCESS-NAME,PalServer-Win64-Shipping.exe
+PROCESS-NAME,PalServer.exe
 
 DOMAIN-SUFFIX,coolplay-api.fun
 
