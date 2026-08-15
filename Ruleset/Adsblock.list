@@ -13,7 +13,12 @@
 
 ##番茄小说（字节跳动旗下）视频广告节点
 ##DOMAIN-KEYWORD,misc-hl.fqnovel.com
-DOMAIN-KEYWORD,normal-hl.zijieapi.com
+#DOMAIN-KEYWORD,normal-hl.zijieapi.com会影响抖音，注释掉，改成下面四个测试
+
+DOMAIN-SUFFIX,ads3-normal-hl.zijieapi.com
+DOMAIN-SUFFIX,ads3-normal.zijieapi.com
+DOMAIN-SUFFIX,ads5-normal-hl.zijieapi.com
+DOMAIN-SUFFIX,ads5-normal.zijieapi.com
 
 #DOMAIN-KEYWORD,ad-sign.byteimg.com
 ##DOMAIN-SUFFIX,douyincdn.com
