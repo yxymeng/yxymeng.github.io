@@ -1,15 +1,14 @@
 # NAME: ads
 # AUTHOR: yxymeng
 # REPO: https://github.com/yxymeng/yxymeng.github.io
-# UPDATED: 2026-08-14T19:41:59Z
-# DOMAIN-KEYWORD: 28
-# DOMAIN-SUFFIX: 87108
+# UPDATED: 2026-08-15T19:15:05Z
+# DOMAIN-KEYWORD: 27
+# DOMAIN-SUFFIX: 87112
 # DOMAIN: 8
 # IP-CIDR: 137
 # PROCESS-NAME: 2
-# TOTAL: 87283
+# TOTAL: 87286
 
-DOMAIN-KEYWORD,normal-hl.zijieapi.com
 DOMAIN-KEYWORD,grs.dbankcloud
 DOMAIN-KEYWORD,adx-drcn.op.dbankcloud
 DOMAIN-KEYWORD,admarvel
@@ -5081,6 +5080,10 @@ DOMAIN-SUFFIX,zxpaa.xyz
 DOMAIN-SUFFIX,zxvklz.icu
 DOMAIN-SUFFIX,zybkrv.icu
 DOMAIN-SUFFIX,zymakzaeddla.com
+DOMAIN-SUFFIX,ads3-normal-hl.zijieapi.com
+DOMAIN-SUFFIX,ads3-normal.zijieapi.com
+DOMAIN-SUFFIX,ads5-normal-hl.zijieapi.com
+DOMAIN-SUFFIX,ads5-normal.zijieapi.com
 DOMAIN-SUFFIX,app-measurement.com
 DOMAIN-SUFFIX,g.doubleclick.net
 DOMAIN-SUFFIX,rmonitor.qq.com
