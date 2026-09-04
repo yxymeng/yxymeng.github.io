@@ -1,61 +1,87 @@
 # .github/workflows/merge_rules.yml
-# 此工作流在仓库根目录下运行 merge_rules.py，合并并排除规则，生成并提交 Ruleset/Merged 目录
+# 作用：每天北京时间凌晨 3 点或手动触发 merge_rules.py，成功后仅提交真正发生变化的 Ruleset/Merged 文件。
 
 name: 合并规则工作流
+
+# merge_rules.py 需要把生成结果提交回当前仓库，因此授予 contents 写权限。
 permissions:
   contents: write
 
+# 防止定时任务和手动任务同时修改同一批规则文件；新任务启动时取消仍在执行的旧任务。
 concurrency:
   group: merge-rules
   cancel-in-progress: true
 
 on:
+  # GitHub Actions 页面可随时点击 Run workflow 手动运行。
   workflow_dispatch:
+  # GitHub cron 使用 UTC。UTC 19:00 = 北京时间次日凌晨 03:00。
   schedule:
     - cron: '0 19 * * *'
+  # V2 首次上线验收专用：仅当四个核心文件发生 push 时触发一次真实 Actions 测试。
+  # 验收完成后会移除此段，最终仍只保留 workflow_dispatch + schedule。
+  push:
+    branches:
+      - master
+    paths:
+      - 'merge_rules.py'
+      - 'merge_config.json'
+      - 'requirements.txt'
+      - '.github/workflows/merge_rules.yml'
 
 jobs:
   merge:
+    name: 合并、校验并更新规则
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout 代码
-        uses: actions/checkout@v3
+      # 1. 把仓库检出到 ${{ github.workspace }}。后续 run 默认就在这个仓库根目录执行。
+      - name: Checkout 仓库
+        uses: actions/checkout@v7
         with:
           persist-credentials: true
 
+      # 2. 固定 Python 版本，避免 ubuntu-latest 自带 Python 变化导致行为漂移。
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v7
         with:
-          python-version: '3.x'
+          python-version: '3.13'
 
-      - name: Cache pip
-        uses: actions/cache@v3
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
+      # 3. 安装 merge_rules.py 唯一的第三方依赖。
+      - name: Install dependencies
+        working-directory: ${{ github.workspace }}
+        run: python -m pip install -r requirements.txt
 
-      - name: Install deps
-        run: pip install -r requirements.txt
-
+      # 4. 执行规则合并。任何配置错误、下载连续失败或处理异常都会返回非 0，工作流立即失败且不会进入提交步骤。
       - name: Run merge script
+        working-directory: ${{ github.workspace }}
         run: python merge_rules.py
 
-      - name: List merged files
-        run: ls -R Ruleset/Merged
+      # 5. 在 Actions 日志中显示生成目录、文件大小和行数，方便快速确认结果是否异常。
+      - name: Verify generated files
+        working-directory: ${{ github.workspace }}
+        shell: bash
+        run: |
+          echo "===== Ruleset/Merged ====="
+          ls -lh Ruleset/Merged
+          echo "===== Line counts ====="
+          find Ruleset/Merged -maxdepth 1 -type f -name '*.list' -print0 | sort -z | xargs -0 -r wc -l
 
-      - name: Commit & Push
-        uses: EndBug/add-and-commit@v9
-        with:
-          author_name: GitHub Actions
-          author_email: github-actions[bot]@users.noreply.github.com
-          message: 'Auto merge and update rules'
-          add: 'Ruleset/Merged'
+      # 6. 只提交真正改变的文件。merge_rules.py 已忽略 UPDATED 时间差，因此上游规则无变化时这里不会产生无意义 commit。
+      - name: Commit & Push changes
+        working-directory: ${{ github.workspace }}
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Ruleset/Merged
 
-# 使用说明：
-# 1. 确保仓库根目录有 merge_rules.py 和 merge_config.json。
-# 2. merge_rules.py 会读取 merge_config.json，按配置合并并排除规则。
-# 3. 通过 Actions 手动触发或定时触发，生成的规则文件会自动提交到 Ruleset/Merged。
-# 4. 若需调整调度时间，修改 cron 表达式即可。
+          if git diff --cached --quiet; then
+            echo "No rule changes. Nothing to commit."
+            exit 0
+          fi
+
+          echo "===== Changed files ====="
+          git diff --cached --stat
+          git commit -m "Auto merge and update Clash rules"
+          git push
