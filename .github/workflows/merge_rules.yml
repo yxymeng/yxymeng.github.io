@@ -18,16 +18,6 @@ on:
   # GitHub cron 使用 UTC。UTC 19:00 = 北京时间次日凌晨 03:00。
   schedule:
     - cron: '0 19 * * *'
-  # V2 首次上线验收专用：仅当四个核心文件发生 push 时触发一次真实 Actions 测试。
-  # 验收完成后会移除此段，最终仍只保留 workflow_dispatch + schedule。
-  push:
-    branches:
-      - master
-    paths:
-      - 'merge_rules.py'
-      - 'merge_config.json'
-      - 'requirements.txt'
-      - '.github/workflows/merge_rules.yml'
 
 jobs:
   merge:
