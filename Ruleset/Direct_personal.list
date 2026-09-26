@@ -158,6 +158,9 @@ DOMAIN-SUFFIX,16163.com
 DOMAIN-SUFFIX,servicewechat.com
 DOMAIN-SUFFIX,shuxinyc.com
 DOMAIN-SUFFIX,wxcloudrun.com
+
+#易泊智慧停车
+DOMAIN-SUFFIX,ebopark.com
 #蓝奏云
 DOMAIN-SUFFIX,lanzoue.com
 DOMAIN-SUFFIX,lanzog.com
