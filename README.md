@@ -6,6 +6,16 @@
 3. 推荐的后端地址，直接替换前面部分的网址就行：`https://api-huacloud.com/sub?`。
 
 # 使用
+
+自动合并规则由 `merge_config.json` 定义分类，按配置顺序执行，输出为 `Ruleset/Merged/<分类名>.list`，文件名保留大小写：
+
+| 分类 | 实际输出文件 | 用途 |
+| --- | --- | --- |
+| `ads` | `Ruleset/Merged/ads.list` | 广告拦截；现有 Clash 和 Shadowrocket 配置均引用此文件 |
+| `Chinaip` | `Ruleset/Merged/Chinaip.list` | 国内直连；`exclude @ads` 使用本轮广告合并结果 |
+
+当前不会另行生成 `Ads.list` 或 `AdsUnified.list`。每轮都会重新下载并处理所有分类，但只有内容变化的文件才更新 `UPDATED` 并提交；因此只提交 `Chinaip.list` 不代表广告分类未执行。Actions 的日志和运行摘要会逐分类显示文件名、规则总数与本轮结果，文件缺失或总数不符时会阻止提交。
+
 1. 对于Clash，用于订阅转换时用到的远程配置链接：
 ```
 https://raw.githubusercontent.com/yxymeng/yxymeng.github.io/master/Ruleset/Clash.ini

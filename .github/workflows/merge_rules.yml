@@ -47,15 +47,39 @@ jobs:
         working-directory: ${{ github.workspace }}
         run: python merge_rules.py
 
-      # 5. 在 Actions 日志中显示生成目录、文件大小和行数，方便快速确认结果是否异常。
+      # 5. 逐分类检查输出文件和规则总数；摘要区分内容变化与沿用旧文件，避免把未提交误判为未生成。
       - name: Verify generated files
         working-directory: ${{ github.workspace }}
         shell: bash
         run: |
-          echo "===== Ruleset/Merged ====="
-          ls -lh Ruleset/Merged
-          echo "===== Line counts ====="
-          find Ruleset/Merged -maxdepth 1 -type f -name '*.list' -print0 | sort -z | xargs -0 -r wc -l
+          python - <<'PY'
+          import json
+          import os
+          import subprocess
+          from merge_rules import CONFIG_FILE, OUTPUT_DIR
+
+          config = json.loads(CONFIG_FILE.read_text(encoding="utf-8-sig"))
+          summary = ["| 分类 | 输出文件 | 规则数 | 内容更新时间（北京） | 本轮结果 |",
+                     "| --- | --- | ---: | --- | --- |"]
+          for category in config:
+              path = OUTPUT_DIR / f"{category}.list"
+              if not path.is_file():
+                  raise SystemExit(f"Missing generated output: {path}")
+              lines = path.read_text(encoding="utf-8-sig").splitlines()
+              rules = [line for line in lines if line.strip() and not line.startswith("#")]
+              headers = dict(line[2:].split(": ", 1) for line in lines if line.startswith("# ") and ": " in line)
+              if headers.get("TOTAL") != str(len(rules)):
+                  raise SystemExit(f"Rule count mismatch: {path} | TOTAL={headers.get('TOTAL')} | actual={len(rules)}")
+              changed = subprocess.check_output(["git", "status", "--porcelain", "--", str(path)], text=True).strip()
+              status = "内容变化，待提交" if changed else "内容未变，沿用已有文件"
+              updated = headers.get("UPDATED", "未知")
+              print(f"VERIFY [{category}] | 文件={path} | TOTAL={len(rules)} | UPDATED={updated} | {status}")
+              summary.append(f"| {category} | `{path}` | {len(rules)} | {updated} | {status} |")
+          summary.append("\n输出文件名严格使用分类名（区分大小写）；内容未变时保留 UPDATED，不产生规则提交。\n")
+          if os.environ.get("GITHUB_STEP_SUMMARY"):
+              with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as file:
+                  file.write("\n".join(summary))
+          PY
 
       # 6. 只提交真正改变的文件。merge_rules.py 已忽略 UPDATED 时间差，因此上游规则无变化时这里不会产生无意义 commit。
       - name: Commit & Push changes
@@ -72,6 +96,7 @@ jobs:
           fi
 
           echo "===== Changed files ====="
+          git diff --cached --name-status
           git diff --cached --stat
           git commit -m "Auto merge and update Clash rules"
           git push

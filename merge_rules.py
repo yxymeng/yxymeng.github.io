@@ -456,13 +456,16 @@ def write_if_changed(category, rules):
     if path.exists():
         old = path.read_text(encoding="utf-8-sig")
         if comparable_content(old) == comparable_content(candidate):
-            logging.info("WRITE [%s] | 无规则变化，保留原文件和原 UPDATED", category)
+            logging.info(
+                "WRITE [%s] | status=UNCHANGED | 文件=%s | TOTAL=%d | 无规则变化，保留原文件和原 UPDATED",
+                category, path, len(rules),
+            )
             return False
 
     temp_path = path.with_suffix(path.suffix + ".tmp")
     temp_path.write_text(candidate, encoding="utf-8", newline="\n")
     os.replace(temp_path, path)
-    logging.info("WRITE [%s] | 已更新 %s | TOTAL=%d", category, path, len(rules))
+    logging.info("WRITE [%s] | status=UPDATED | 文件=%s | TOTAL=%d", category, path, len(rules))
     return True
 
 
@@ -481,6 +484,7 @@ def main():
         with CONFIG_FILE.open("r", encoding="utf-8-sig") as file:
             config = json.load(file)
         validate_config(config)
+        logging.info("CONFIG | 分类执行顺序=%s | 输出目录=%s | 文件名保留分类名大小写", " -> ".join(config), OUTPUT_DIR)
 
         # 所有分类先在内存中完成。只要任一下载/计算失败，就不会写任何输出文件。
         generated = {}
@@ -503,7 +507,7 @@ def main():
             changed += int(write_if_changed(category, rules))
 
         logging.info("=" * 72)
-        logging.info("ALL DONE | 分类=%d | 实际更新文件=%d", len(generated), changed)
+        logging.info("ALL DONE | 分类=%d | 实际更新文件=%d | 内容未变文件=%d", len(generated), changed, len(generated) - changed)
 
     except Exception as exc:
         logging.exception("FATAL | 本轮任务失败，未提交新的规则结果：%s", exc)
