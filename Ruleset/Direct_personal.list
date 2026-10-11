@@ -98,6 +98,8 @@ DOMAIN,audio-ak.spotifycdn.com
 
 DOMAIN-SUFFIX,flydigi.com
 PROCESS-NAME,NarakaBladepoint.exe
+DOMAIN-SUFFIX,dl.delivery.mp.microsoft.com
+DOMAIN-SUFFIX,xmjl.com
 
 #虎牙
 DOMAIN-SUFFIX,node.ppio.cloud
