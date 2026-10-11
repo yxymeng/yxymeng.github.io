@@ -68,6 +68,7 @@ DOMAIN-SUFFIX,max-c.com
 DOMAIN-SUFFIX,getui.net
 DOMAIN-SUFFIX,kujiale.com
 #抖音
+PROCESS-NAME,com.ss.android.ugc.aweme
 DOMAIN-SUFFIX,ourdvsss.com
 DOMAIN-SUFFIX,bytetcc.com
 DOMAIN-SUFFIX,bytefcdnrd.com
