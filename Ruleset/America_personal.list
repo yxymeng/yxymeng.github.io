@@ -13,6 +13,7 @@ DOMAIN-SUFFIX,tiktokv.com
 #DOMAIN-SUFFIX,oaistatic.com
 DOMAIN,gist-queue-consumer-api.cloud.gist.build
 #DOMAIN-SUFFIX,oaiusercontent.com
+PROCESS-NAME,codex.exe
 
 #CherryAi等app用api
 DOMAIN-SUFFIX,chatboxai.app
@@ -61,3 +62,4 @@ DOMAIN-SUFFIX,gstatic.com
 DOMAIN-SUFFIX,xn--ngstr-lra8j.com
 IP-CIDR,74.125.0.0/16,no-resolve
 IP-CIDR,173.194.0.0/16,no-resolve
+PROCESS-NAME,Antigravity.exe
